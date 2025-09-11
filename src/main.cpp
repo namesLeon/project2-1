@@ -1,7 +1,9 @@
+#define GLFW_INCLUDE_NONE 
 #include <GLFW/glfw3.h>
 #include <glad/glad.h>
 #include <iostream>
 #include <cmath>
+
 #include <glm/glm.hpp>
 #include <glm/gtc/matrix_transform.hpp>
 #include <glm/gtc/type_ptr.hpp>
@@ -173,9 +175,9 @@ int main()
     glEnable(GL_DEPTH_TEST);
 
     // Lighting settings
-    glm::vec3 lightDir(-0.2f, -1.0f, -0.3f); // Direction from light source
-    glm::vec3 lightColor(1.0f, 1.0f, 1.0f);  // White light
-    glm::vec3 objectColor(1.0f, 0.5f, 0.31f); // Orange cube
+    glm::vec3 lightDir(-0.4f, -0.5f, -0.3f); // Direction from light source
+    glm::vec3 lightColor(1.7f, 1.0f, 1.0f);  // White light
+    glm::vec3 objectColor(2.0f, 3.5f, 1.31f); // Orange cube
 
     // Render loop
     while (!glfwWindowShouldClose(window)) {
