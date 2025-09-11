@@ -1,0 +1,35 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"type": "cppbuild",
+			"label": "C/C++: Build GIFWA Project",
+			"command": "g++",
+			"args": [
+				"-g",
+				"-std=c++17",
+				"-I${workspaceFolder}/include",
+				"-I${workspaceFolder}/include/glad",
+				"-L${workspaceFolder}/lib",
+				"${workspaceFolder}/src/main.cpp",
+				"${workspaceFolder}/src/glad.c",
+				"-lglfw3",
+				"-lopengl32",
+				"-lgdi32",
+				"-o",
+				"${workspaceFolder}/GIFWA.exe"
+			],
+			"options": {
+				"cwd": "${workspaceFolder}"
+			},
+			"problemMatcher": [
+				"$gcc"
+			],
+			"group": {
+				"kind": "build",
+				"isDefault": true
+			},
+			"detail": "Compiler: g++ - Build GIFWA OpenGL project"
+		}
+	]
+}
