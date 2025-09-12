@@ -1,15 +1,15 @@
 from abc import ABC, abstractmethod
-import vec2
+import Vec2
 
 class EyeTrackingInterface(ABC):
     @abstractmethod
-    def getNormalizedGazePosition(self) -> vec2:
+    def getNormalizedGazePosition(self) -> Vec2:
         """" Returns the normalized gaze position as a vec2 object. [0,1] range"""
         pass
 
 
     @abstractmethod
-    def getSreenGazePosition(self) -> vec2:
+    def getSreenGazePosition(self) -> Vec2:
         """ Returns the screen gaze position as a vec2 object. [0,screen_width] and [0,screen_height] range"""
         pass
     
