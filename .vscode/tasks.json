@@ -12,6 +12,7 @@
 				"-I${workspaceFolder}/include/glad",
 				"-L${workspaceFolder}/lib",
 				"${workspaceFolder}/src/main.cpp",
+				"${workspaceFolder}/src/Client.cpp",
 				"${workspaceFolder}/src/glad.c",
 				"-lglfw3",
 				"-lopengl32",

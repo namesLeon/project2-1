@@ -28,6 +28,7 @@ void run() {
         return;
     }
     #endif
+    std::cout << "Client Succesfully starting in 3 2 1..." << std::endl;
 
     // Create socket
     SOCKET client_socket = socket(AF_INET, SOCK_STREAM, 0);
