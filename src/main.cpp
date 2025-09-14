@@ -3,6 +3,7 @@
 #include <glad/glad.h>
 #include <iostream>
 #include <cmath>
+#include "headers/Client.hpp"
 
 #include <glm/glm.hpp>
 #include <glm/gtc/matrix_transform.hpp>
@@ -45,7 +46,7 @@ const char* fragmentShaderSource = R"(
     void main()
     {
         // Ambient lighting
-        float ambientStrength = 0.2;
+        float ambientStrength = 0.1;
         vec3 ambient = ambientStrength * lightColor;
         
         // Diffuse lighting
@@ -55,7 +56,7 @@ const char* fragmentShaderSource = R"(
         vec3 diffuse = diff * lightColor;
         
         // Specular lighting
-        float specularStrength = 0.5;
+        float specularStrength = 0.2;
         vec3 viewDir = normalize(viewPos - FragPos);
         vec3 reflectDir = reflect(-lightDirection, norm);
         float spec = pow(max(dot(viewDir, reflectDir), 0.0), 32);
@@ -115,6 +116,9 @@ float vertices[] = {
 
 int main()
 {
+    std::cout << "Starting GLFW  client connection..." << std::endl;
+
+   
     // Initialize GLFW
     if (!glfwInit()) {
         std::cout << "Failed to initialize GLFW" << std::endl;
@@ -123,9 +127,11 @@ int main()
 
     // Create window
     GLFWwindow* window = glfwCreateWindow(800, 600, "Lighted Rotating Cube", NULL, NULL);
+
     if (!window) {
         std::cout << "Failed to create GLFW window" << std::endl;
         glfwTerminate();
+        run();
         return -1;
     }
     glfwMakeContextCurrent(window);
