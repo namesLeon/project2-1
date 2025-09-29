@@ -1,46 +1,78 @@
 import socket
-import sys
+import sys, os 
+import threading
+import time
+sys.path.append(os.path.abspath(".."))
+import pyautogui  
+from tracker import OpenCVHaarEyeTracker  # your tracker class
+from Vec2 import Vec2
+
+HOST = '127.0.0.1'
+PORT = 5050
+
+clients = []
+tracker = OpenCVHaarEyeTracker()
+
+def handle_client(client_socket, addr):
+    print(f"[INFO] Client connected: {addr}")
+    clients.append(client_socket)
+    try:
+        name = client_socket.recv(1024).decode('utf-8')
+        print(f"[INFO] Client name: {name}")
+        client_socket.send(f"Welcome {name}".encode('utf-8'))
+    except Exception as e:
+        print(f"[ERROR] Client communication failed: {e}")
+    # Do not close here → keep connection open for broadcasts
+
+def broadcast_positions():
+    while True:
+        try:
+            if tracker.isConnected():
+                pos = tracker.getScreenGazePosition()
+            else:
+                x, y = pyautogui.position()
+                pos = Vec2(x, y)
+
+            data = f"{pos.x:.2f},{pos.y:.2f}"
+            print(f"[DEBUG] Sending: {data}")
+
+            # Send to all connected clients
+            for c in clients[:]:
+                try:
+                    c.send(data.encode('utf-8'))
+                except Exception as e:
+                    print(f"[WARN] Client disconnected: {e}")
+                    clients.remove(c)
+
+            time.sleep(0.05)  # 20 FPS
+
+        except Exception as e:
+            print(f"[ERROR] Broadcast loop: {e}")
+            time.sleep(1)
 
 def server_start():
-    try:
-        server_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-        server_socket.setsockopt(socket.SOL_SOCKET, socket.SO_REUSEADDR, 1)
-        
-        server_socket.bind(('127.0.0.1', 5050))
-        server_socket.listen(5)  
-        
-        print("Server listen on poort 5050...")
-        
-        while True:
-            (client_socket, client_address) = server_socket.accept()
-            print(f"Connected with {client_address}")
-            # we want here to send over our vec2 object as string
-            try:
-                client_name = client_socket.recv(1024).decode('utf-8')
-                print(f"Connected: {client_name}")
-                
-                what_to_send = f'Hallo {client_name}'
-                client_socket.send(what_to_send.encode('utf-8'))
-                
-                
-            except Exception as e:
-                print(f"Error with communication: {e}")
-            finally:
-                client_socket.close()
-                print("Connection closed.")
-                
-    except Exception as e:
-        print(f"Server Error: {e}")
-        raise
+    server_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+    server_socket.setsockopt(socket.SOL_SOCKET, socket.SO_REUSEADDR, 1)
+    server_socket.bind((HOST, PORT))
+    server_socket.listen(5)
+
+    print(f"[INFO] Server listening on {HOST}:{PORT}")
+
+    # Start broadcasting thread
+    threading.Thread(target=broadcast_positions, daemon=True).start()
+
+    while True:
+        client_socket, addr = server_socket.accept()
+        threading.Thread(target=handle_client, args=(client_socket, addr), daemon=True).start()
 
 def main():
     try:
         server_start()
     except KeyboardInterrupt:
-        print("\nServer Shutdown...")
+        print("\n[INFO] Server shutting down...")
         sys.exit(0)
     except Exception as e:
-        print(f"Exception error: {e}")
+        print(f"[ERROR] {e}")
         sys.exit(1)
 
 if __name__ == "__main__":
