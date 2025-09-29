@@ -1,5 +1,5 @@
 from abc import ABC, abstractmethod
-import Vec2
+from .Vec2 import Vec2   
 
 class EyeTrackingInterface(ABC):
     @abstractmethod

@@ -21,7 +21,7 @@ def main():
     cap = cv2.VideoCapture(args.device, cv2.CAP_ANY)
     cap.set(cv2.CAP_PROP_FRAME_WIDTH, args.width)
     cap.set(cv2.CAP_PROP_FRAME_HEIGHT, args.height)
-    cap.set(cv2.CAP_PROP_FPS, 30)
+    cap.set(cv2.CAP_PROP_FPS, 60)
 
     tracker = OpenCVHaarEyeTracker(min_face=args.min_face)
 
