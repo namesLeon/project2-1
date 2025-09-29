@@ -14,27 +14,25 @@ include_directories(
     ${CMAKE_SOURCE_DIR}/include/headers
 )
 
-# Voeg Client.cpp toe aan je bronbestanden
 set(SOURCES
     src/main.cpp
     src/Client.cpp
     src/glad.c
-    
+    src/gl_utils.cpp
+    src/Shader.cpp
+    src/renderer.cpp
 
 )
 
-# Maak executable
 add_executable(GIFWA ${SOURCES})
 
-# Voor Windows: link tegen de precompiled GLFW library
 if(WIN32)
-    # Link tegen de precompiled library in je lib folder
     target_link_libraries(GIFWA 
         ${CMAKE_SOURCE_DIR}/lib/libglfw3dll.a
         opengl32 
         gdi32
-        ws2_32  # Winsock library toegevoegd aan GIFWA target
-        wsock32 # Extra Winsock library (soms nodig)
+        ws2_32  
+        wsock32 
     )
     
     # Kopieer de DLL naar de build folder

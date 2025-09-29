@@ -10,6 +10,15 @@
     <ClCompile Include="C:\Users\fazev\project2-1\team_08-1\src\glad.c">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="C:\Users\fazev\project2-1\team_08-1\src\gl_utils.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\fazev\project2-1\team_08-1\src\Shader.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\fazev\project2-1\team_08-1\src\renderer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <CustomBuild Include="C:\Users\fazev\project2-1\team_08-1\CMakeLists.txt" />
