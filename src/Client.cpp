@@ -104,7 +104,7 @@ void run() {
                 // Debug print
                 std::cout << "Gaze position: (" << latestPos.x << ", " << latestPos.y << ")" << std::endl;
 
-                // TODO: Pass latestPos.x & latestPos.y to your shader project here
+                // TODO: Pass latestPos.x & latestPos.y 
 
             } catch (...) {
                 std::cerr << "Invalid data format: " << data << std::endl;

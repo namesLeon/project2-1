@@ -2,9 +2,8 @@ import socket
 import sys, os 
 import threading
 import time
-sys.path.append(os.path.abspath(".."))
 import pyautogui  
-from tracker import OpenCVHaarEyeTracker  # your tracker class
+from tracker import OpenCVHaarEyeTracker 
 from Vec2 import Vec2
 
 HOST = '127.0.0.1'
