@@ -94,6 +94,10 @@ void Shader::setVec3(const std::string& name, const glm::vec3& v) const {
     int loc = glGetUniformLocation(program_, name.c_str());
     if (loc != -1) glUniform3fv(loc, 1, &v.x);
 }
+void Shader::setVec4(const std::string& name, const glm::vec4& v) const {
+    int loc = glGetUniformLocation(program_, name.c_str());
+    if (loc != -1) glUniform4fv(loc, 1, &v.x);
+}
 void Shader::setInt(const std::string& name, int v) const {
     int loc = glGetUniformLocation(program_, name.c_str());
     if (loc != -1) glUniform1i(loc, v);

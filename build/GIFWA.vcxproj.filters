@@ -19,6 +19,9 @@
     <ClCompile Include="C:\Users\fazev\project2-1\team_08-1\src\renderer.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="C:\Users\fazev\project2-1\team_08-1\src\stb_impl.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <CustomBuild Include="C:\Users\fazev\project2-1\team_08-1\CMakeLists.txt" />

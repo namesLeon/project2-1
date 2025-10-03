@@ -12,6 +12,7 @@ include_directories(
     ${CMAKE_SOURCE_DIR}/include/GLFW
     ${CMAKE_SOURCE_DIR}/include/glm
     ${CMAKE_SOURCE_DIR}/include/headers
+    ${CMAKE_SOURCE_DIR}/maps
 )
 
 set(SOURCES
@@ -21,6 +22,7 @@ set(SOURCES
     src/gl_utils.cpp
     src/Shader.cpp
     src/renderer.cpp
+    src/stb_impl.cpp
 
 )
 
