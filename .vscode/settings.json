@@ -62,6 +62,7 @@
         "iomanip": "cpp",
         "ratio": "cpp",
         "sstream": "cpp",
-        "fstream": "cpp"
+        "fstream": "cpp",
+        "mutex": "cpp"
     }
 }

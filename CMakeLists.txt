@@ -1,20 +1,17 @@
-cmake_minimum_required(VERSION 3.10)
+cmake_minimum_required(VERSION 3.15)
 project(GIFWA LANGUAGES C CXX)
 
-# Stel C++ standaard in
+# ====== General C++ setup ======
 set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
+set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
 
-# Include directories
-include_directories(
-    ${CMAKE_SOURCE_DIR}/include
-    ${CMAKE_SOURCE_DIR}/include/glad
-    ${CMAKE_SOURCE_DIR}/include/GLFW
-    ${CMAKE_SOURCE_DIR}/include/glm
-    ${CMAKE_SOURCE_DIR}/include/headers
-    ${CMAKE_SOURCE_DIR}/maps
-)
+# ====== Detect and display vcpkg toolchain ======
+if(DEFINED CMAKE_TOOLCHAIN_FILE)
+    message(STATUS "Using toolchain: ${CMAKE_TOOLCHAIN_FILE}")
+endif()
 
+# ====== Source files ======
 set(SOURCES
     src/main.cpp
     src/Client.cpp
@@ -23,47 +20,114 @@ set(SOURCES
     src/Shader.cpp
     src/renderer.cpp
     src/stb_impl.cpp
-
+    src/BackgroundNoise.cpp
 )
 
 add_executable(GIFWA ${SOURCES})
 
-if(WIN32)
-    target_link_libraries(GIFWA 
-        ${CMAKE_SOURCE_DIR}/lib/libglfw3dll.a
-        opengl32 
-        gdi32
-        ws2_32  
-        wsock32 
-    )
-    
-    # Kopieer de DLL naar de build folder
-add_custom_command(TARGET GIFWA POST_BUILD
-    COMMAND ${CMAKE_COMMAND} -E copy
-    ${CMAKE_SOURCE_DIR}/glfw3.dll
-    $<TARGET_FILE_DIR:GIFWA>
+# ====== Include directories (common) ======
+target_include_directories(GIFWA PRIVATE
+    ${CMAKE_SOURCE_DIR}/include
+    ${CMAKE_SOURCE_DIR}/include/glad
+    ${CMAKE_SOURCE_DIR}/include/GLFW
+    ${CMAKE_SOURCE_DIR}/include/glm
+    ${CMAKE_SOURCE_DIR}/include/headers
+    ${CMAKE_SOURCE_DIR}/maps
+    ${CMAKE_SOURCE_DIR}/shaders
+    ${CMAKE_SOURCE_DIR}/sounds
 )
-endif()
 
-# Voor Linux
-if(UNIX AND NOT APPLE)
+# ====== Platform-specific setup ======
+
+# ---------- WINDOWS ----------
+if(WIN32)
+    message(STATUS "Configuring for Windows")
+
+    # Include OpenAL and FFmpeg from vcpkg (static triplet)
+    include_directories(
+        ${CMAKE_SOURCE_DIR}/vcpkg/installed/x64-windows-static/include
+        ${CMAKE_SOURCE_DIR}/vcpkg/installed/x64-windows-static/include/AL
+        ${CMAKE_SOURCE_DIR}/vcpkg/installed/x64-windows-static/include/libavcodec
+        ${CMAKE_SOURCE_DIR}/vcpkg/installed/x64-windows-static/include/libavformat
+        ${CMAKE_SOURCE_DIR}/vcpkg/installed/x64-windows-static/include/libavutil
+        ${CMAKE_SOURCE_DIR}/vcpkg/installed/x64-windows-static/include/libswresample
+    )
+    link_directories(${CMAKE_SOURCE_DIR}/vcpkg/installed/x64-windows-static/lib)
+
+    target_link_libraries(GIFWA
+        ${CMAKE_SOURCE_DIR}/lib/libglfw3dll.a
+        opengl32
+        gdi32
+        ws2_32
+        wsock32
+        openal32
+        avformat
+        avcodec
+        avutil
+        swresample
+    )
+
+    # Copy glfw DLL to build output
+    add_custom_command(TARGET GIFWA POST_BUILD
+        COMMAND ${CMAKE_COMMAND} -E copy_if_different
+        ${CMAKE_SOURCE_DIR}/glfw3.dll
+        $<TARGET_FILE_DIR:GIFWA>
+    )
+
+# ---------- LINUX ----------
+elseif(UNIX AND NOT APPLE)
+    message(STATUS "Configuring for Linux")
+
     find_package(OpenGL REQUIRED)
     find_package(glfw3 REQUIRED)
-    target_link_libraries(GIFWA GL dl glfw)
-endif()
+    find_package(PkgConfig REQUIRED)
 
-# Voor macOS
-if(APPLE)
+    pkg_check_modules(FFMPEG REQUIRED IMPORTED_TARGET
+        libavformat
+        libavcodec
+        libavutil
+        libswresample
+    )
+    pkg_check_modules(OPENAL REQUIRED IMPORTED_TARGET openal)
+
+    target_link_libraries(GIFWA
+        OpenGL::GL
+        glfw
+        PkgConfig::FFMPEG
+        PkgConfig::OPENAL
+        dl
+        pthread
+    )
+
+# ---------- MACOS ----------
+elseif(APPLE)
+    message(STATUS "Configuring for macOS")
+
     find_package(OpenGL REQUIRED)
     find_package(glfw3 REQUIRED)
     find_library(COCOA_LIBRARY Cocoa)
     find_library(IOKIT_LIBRARY IOKit)
     find_library(COREVIDEO_LIBRARY CoreVideo)
-    target_link_libraries(GIFWA 
+    find_library(OPENAL_LIBRARY OpenAL)
+
+    find_path(FFMPEG_INCLUDE_DIR libavformat/avformat.h)
+    find_library(AVFORMAT_LIBRARY avformat)
+    find_library(AVCODEC_LIBRARY avcodec)
+    find_library(AVUTIL_LIBRARY avutil)
+    find_library(SWRESAMPLE_LIBRARY swresample)
+
+    target_include_directories(GIFWA PRIVATE ${FFMPEG_INCLUDE_DIR})
+
+    target_link_libraries(GIFWA
         glfw
         ${OPENGL_LIBRARIES}
         ${COCOA_LIBRARY}
         ${IOKIT_LIBRARY}
         ${COREVIDEO_LIBRARY}
+        ${OPENAL_LIBRARY}
+        ${AVFORMAT_LIBRARY}
+        ${AVCODEC_LIBRARY}
+        ${AVUTIL_LIBRARY}
+        ${SWRESAMPLE_LIBRARY}
     )
 endif()

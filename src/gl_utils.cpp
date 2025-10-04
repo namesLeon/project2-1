@@ -1,3 +1,26 @@
+#define NOMINMAX
+#define WIN32_LEAN_AND_MEAN
+#include <windows.h>
+
+#include <iostream>
+#include <cmath>
+#include <chrono>
+#include <thread>
+#include <ctime>
+#include <algorithm> // for std::clamp
+#include <vector>
+#include <mutex>
+
+// OpenAL and FFmpeg
+#include <AL/al.h>
+#include <AL/alc.h>
+extern "C" {
+#include <libavcodec/avcodec.h>
+#include <libavformat/avformat.h>
+#include <libswresample/swresample.h>
+}
+
+
 #include "gl_utils.hpp"
 #include <glad/glad.h>
 #include <GLFW/glfw3.h>

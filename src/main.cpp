@@ -1,7 +1,25 @@
-#include "gl_utils.hpp"
-#include "Shader.hpp"
-#include "renderer.hpp"
-#include "stb_image.h"
+#define NOMINMAX
+#define WIN32_LEAN_AND_MEAN
+#include <windows.h>
+
+#include <iostream>
+#include <cmath>
+#include <chrono>
+#include <thread>
+#include <ctime>
+#include <algorithm> // for std::clamp
+#include <vector>
+#include <mutex>
+
+// OpenAL and FFmpeg
+#include <AL/al.h>
+#include <AL/alc.h>
+extern "C" {
+#include <libavcodec/avcodec.h>
+#include <libavformat/avformat.h>
+#include <libswresample/swresample.h>
+}
+
 
 
 #include <glad/glad.h>
@@ -77,9 +95,11 @@ shader.setInt("uChannel3", 1); // Wood → unit 1
     renderer.setTextures(texStone, texWood);
     auto t0 = std::chrono::steady_clock::now();
 
-    EyeInput eye; // default stays centered until SDK integration
+    EyeInput eye; 
 
-    // ==== MAIN LOOP ====
+    BackgroundNoise bg("../../sounds/venice_music.mp4", "../../sounds/city_sounds.mp4");
+    bg.start();
+
     while (!glfwWindowShouldClose(window)) {
         glfwPollEvents();
 
@@ -111,6 +131,7 @@ shader.setInt("uChannel3", 1); // Wood → unit 1
 
         glfwSwapBuffers(window);
     }
+    bg.stop();
 
     glfwTerminate();
     return 0;

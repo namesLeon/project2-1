@@ -2,6 +2,7 @@
 C:/MinGW/share/cmake-3.27/Modules/CMakeCInformation.cmake
 C:/MinGW/share/cmake-3.27/Modules/CMakeCXXInformation.cmake
 C:/MinGW/share/cmake-3.27/Modules/CMakeCommonLanguageInclude.cmake
+C:/MinGW/share/cmake-3.27/Modules/CMakeDependentOption.cmake
 C:/MinGW/share/cmake-3.27/Modules/CMakeGenericSystem.cmake
 C:/MinGW/share/cmake-3.27/Modules/CMakeInitializeConfigs.cmake
 C:/MinGW/share/cmake-3.27/Modules/CMakeLanguageInformation.cmake
@@ -23,3 +24,4 @@ C:/Users/fazev/project2-1/team_08-1/build/CMakeFiles/3.27.1/CMakeCCompiler.cmake
 C:/Users/fazev/project2-1/team_08-1/build/CMakeFiles/3.27.1/CMakeCXXCompiler.cmake
 C:/Users/fazev/project2-1/team_08-1/build/CMakeFiles/3.27.1/CMakeRCCompiler.cmake
 C:/Users/fazev/project2-1/team_08-1/build/CMakeFiles/3.27.1/CMakeSystem.cmake
+C:/Users/fazev/project2-1/team_08-1/vcpkg/scripts/buildsystems/vcpkg.cmake
