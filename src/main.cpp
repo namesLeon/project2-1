@@ -1,32 +1,27 @@
 #define NOMINMAX
 #define WIN32_LEAN_AND_MEAN
 #include <windows.h>
-
+#include <mmsystem.h> 
+#pragma comment(lib, "winmm.lib") 
 #include <iostream>
 #include <cmath>
 #include <chrono>
 #include <thread>
 #include <ctime>
-#include <algorithm> // for std::clamp
+#include <algorithm> 
 #include <vector>
 #include <mutex>
-
-// OpenAL and FFmpeg
-#include <AL/al.h>
-#include <AL/alc.h>
-extern "C" {
-#include <libavcodec/avcodec.h>
-#include <libavformat/avformat.h>
-#include <libswresample/swresample.h>
-}
-
-
 
 #include <glad/glad.h>
 #include <GLFW/glfw3.h>
 #include <glm/glm.hpp>
 #include <chrono>
 #include <iostream>
+#include "stb_image.h"
+#include "gl_utils.hpp"
+#include "Shader.hpp"
+#include "renderer.hpp"
+#include "BackgroundNoise.cpp" 
 
 
 unsigned int loadTexture(const std::string& path) {
@@ -97,8 +92,9 @@ shader.setInt("uChannel3", 1); // Wood → unit 1
 
     EyeInput eye; 
 
-    BackgroundNoise bg("../../sounds/venice_music.mp4", "../../sounds/city_sounds.mp4");
+    BackgroundNoise bg("../../sounds/venice_music.wav", "../../sounds/city_sounds.wav");
     bg.start();
+   
 
     while (!glfwWindowShouldClose(window)) {
         glfwPollEvents();

@@ -6,16 +6,8 @@
     </CustomBuild>
   </ItemGroup>
   <ItemGroup>
-    <None Include="C:\Users\fazev\project2-1\team_08-1\vcpkg\scripts\buildsystems\vcpkg.cmake">
-      <Filter>Buildsystem Input Files\vcpkg\scripts\buildsystems</Filter>
-    </None>
-  </ItemGroup>
-  <ItemGroup>
     <Filter Include="CMake Rules">
       <UniqueIdentifier>{72CFB4F5-7059-34EE-8FC7-3456F85E0389}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Buildsystem Input Files\vcpkg\scripts\buildsystems">
-      <UniqueIdentifier>{313EE426-1491-35C9-821A-E8C8B2FDA2AF}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
 </Project>

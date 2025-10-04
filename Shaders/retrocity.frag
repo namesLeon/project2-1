@@ -16,7 +16,7 @@ uniform sampler2D uChannel3; // gallery texture
 #define BUMPFACTOR 0.2
 #define EPSILON 0.1
 #define BUMPDISTANCE 200.
-#define CAMERASPEED 15.
+#define CAMERASPEED 5.
 #define BUILDINGSPACING 20.
 #define MAXBUILDINGINSET 12.
 #define GALLERYHEIGHT 10.5

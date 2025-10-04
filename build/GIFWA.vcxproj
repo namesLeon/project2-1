@@ -24,7 +24,6 @@
   <PropertyGroup Label="Globals">
     <ProjectGuid>{004712FF-5078-3EF8-9A65-8F24E387E76B}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
-    <VcpkgEnabled>false</VcpkgEnabled>
     <WindowsTargetPlatformVersion>10.0.19041.0</WindowsTargetPlatformVersion>
     <Platform>x64</Platform>
     <ProjectName>GIFWA</ProjectName>
@@ -55,7 +54,7 @@
   <ImportGroup Label="ExtensionSettings">
   </ImportGroup>
   <ImportGroup Label="PropertySheets">
-    <Import Project="do_not_import_user.props" Condition="exists('do_not_import_user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
   </ImportGroup>
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup>
@@ -87,7 +86,7 @@
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <ClCompile>
-      <AdditionalIncludeDirectories>C:\Users\fazev\project2-1\team_08-1\include;C:\Users\fazev\project2-1\team_08-1\include\glad;C:\Users\fazev\project2-1\team_08-1\include\GLFW;C:\Users\fazev\project2-1\team_08-1\include\glm;C:\Users\fazev\project2-1\team_08-1\include\headers;C:\Users\fazev\project2-1\team_08-1\maps;C:\Users\fazev\project2-1\team_08-1\shaders;C:\Users\fazev\project2-1\team_08-1\sounds;C:\Users\fazev\project2-1\team_08-1\vcpkg\installed\x64-windows-static\include;C:\Users\fazev\project2-1\team_08-1\vcpkg\installed\x64-windows-static\include\AL;C:\Users\fazev\project2-1\team_08-1\vcpkg\installed\x64-windows-static\include\libavcodec;C:\Users\fazev\project2-1\team_08-1\vcpkg\installed\x64-windows-static\include\libavformat;C:\Users\fazev\project2-1\team_08-1\vcpkg\installed\x64-windows-static\include\libavutil;C:\Users\fazev\project2-1\team_08-1\vcpkg\installed\x64-windows-static\include\libswresample;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\fazev\project2-1\team_08-1\include;C:\Users\fazev\project2-1\team_08-1\include\glad;C:\Users\fazev\project2-1\team_08-1\include\GLFW;C:\Users\fazev\project2-1\team_08-1\include\glm;C:\Users\fazev\project2-1\team_08-1\include\headers;C:\Users\fazev\project2-1\team_08-1\maps;C:\Users\fazev\project2-1\team_08-1\shaders;C:\Users\fazev\project2-1\team_08-1\sounds;C:\Users\fazev\project2-1\team_08-1\vcpkg\installed\x64-windows-static\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
       <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
       <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
@@ -104,10 +103,10 @@
     </ClCompile>
     <ResourceCompile>
       <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_DEBUG;_WINDOWS;CMAKE_INTDIR=\"Debug\"</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>C:\Users\fazev\project2-1\team_08-1\include;C:\Users\fazev\project2-1\team_08-1\include\glad;C:\Users\fazev\project2-1\team_08-1\include\GLFW;C:\Users\fazev\project2-1\team_08-1\include\glm;C:\Users\fazev\project2-1\team_08-1\include\headers;C:\Users\fazev\project2-1\team_08-1\maps;C:\Users\fazev\project2-1\team_08-1\shaders;C:\Users\fazev\project2-1\team_08-1\sounds;C:\Users\fazev\project2-1\team_08-1\vcpkg\installed\x64-windows-static\include;C:\Users\fazev\project2-1\team_08-1\vcpkg\installed\x64-windows-static\include\AL;C:\Users\fazev\project2-1\team_08-1\vcpkg\installed\x64-windows-static\include\libavcodec;C:\Users\fazev\project2-1\team_08-1\vcpkg\installed\x64-windows-static\include\libavformat;C:\Users\fazev\project2-1\team_08-1\vcpkg\installed\x64-windows-static\include\libavutil;C:\Users\fazev\project2-1\team_08-1\vcpkg\installed\x64-windows-static\include\libswresample;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\fazev\project2-1\team_08-1\include;C:\Users\fazev\project2-1\team_08-1\include\glad;C:\Users\fazev\project2-1\team_08-1\include\GLFW;C:\Users\fazev\project2-1\team_08-1\include\glm;C:\Users\fazev\project2-1\team_08-1\include\headers;C:\Users\fazev\project2-1\team_08-1\maps;C:\Users\fazev\project2-1\team_08-1\shaders;C:\Users\fazev\project2-1\team_08-1\sounds;C:\Users\fazev\project2-1\team_08-1\vcpkg\installed\x64-windows-static\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
-      <AdditionalIncludeDirectories>C:\Users\fazev\project2-1\team_08-1\include;C:\Users\fazev\project2-1\team_08-1\include\glad;C:\Users\fazev\project2-1\team_08-1\include\GLFW;C:\Users\fazev\project2-1\team_08-1\include\glm;C:\Users\fazev\project2-1\team_08-1\include\headers;C:\Users\fazev\project2-1\team_08-1\maps;C:\Users\fazev\project2-1\team_08-1\shaders;C:\Users\fazev\project2-1\team_08-1\sounds;C:\Users\fazev\project2-1\team_08-1\vcpkg\installed\x64-windows-static\include;C:\Users\fazev\project2-1\team_08-1\vcpkg\installed\x64-windows-static\include\AL;C:\Users\fazev\project2-1\team_08-1\vcpkg\installed\x64-windows-static\include\libavcodec;C:\Users\fazev\project2-1\team_08-1\vcpkg\installed\x64-windows-static\include\libavformat;C:\Users\fazev\project2-1\team_08-1\vcpkg\installed\x64-windows-static\include\libavutil;C:\Users\fazev\project2-1\team_08-1\vcpkg\installed\x64-windows-static\include\libswresample;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\fazev\project2-1\team_08-1\include;C:\Users\fazev\project2-1\team_08-1\include\glad;C:\Users\fazev\project2-1\team_08-1\include\GLFW;C:\Users\fazev\project2-1\team_08-1\include\glm;C:\Users\fazev\project2-1\team_08-1\include\headers;C:\Users\fazev\project2-1\team_08-1\maps;C:\Users\fazev\project2-1\team_08-1\shaders;C:\Users\fazev\project2-1\team_08-1\sounds;C:\Users\fazev\project2-1\team_08-1\vcpkg\installed\x64-windows-static\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -115,17 +114,8 @@
       <ProxyFileName>%(Filename)_p.c</ProxyFileName>
     </Midl>
     <PostBuildEvent>
-      <Message>	</Message>
+      <Message></Message>
       <Command>setlocal
-C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -noprofile -executionpolicy Bypass -file C:/Users/fazev/project2-1/team_08-1/vcpkg/scripts/buildsystems/msbuild/applocal.ps1 -targetBinary C:/Users/fazev/project2-1/team_08-1/build/Debug/GIFWA.exe -installedDir C:/Users/fazev/project2-1/team_08-1/vcpkg/installed/x64-windows/debug/bin -OutVariable out
-if %errorlevel% neq 0 goto :cmEnd
-:cmEnd
-endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
-:cmErrorLevel
-exit /b %1
-:cmDone
-if %errorlevel% neq 0 goto :VCEnd
-setlocal
 C:\MinGW\bin\cmake.exe -E copy_if_different C:/Users/fazev/project2-1/team_08-1/glfw3.dll C:/Users/fazev/project2-1/team_08-1/build/Debug
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
@@ -136,7 +126,7 @@ exit /b %1
 if %errorlevel% neq 0 goto :VCEnd</Command>
     </PostBuildEvent>
     <Link>
-      <AdditionalDependencies>C:\Users\fazev\project2-1\team_08-1\lib\libglfw3dll.a;opengl32.lib;gdi32.lib;ws2_32.lib;wsock32.lib;openal32.lib;avformat.lib;avcodec.lib;avutil.lib;swresample.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalDependencies>C:\Users\fazev\project2-1\team_08-1\lib\libglfw3dll.a;opengl32.lib;gdi32.lib;ws2_32.lib;wsock32.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
       <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
       <GenerateDebugInformation>true</GenerateDebugInformation>
@@ -151,7 +141,7 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <ClCompile>
-      <AdditionalIncludeDirectories>C:\Users\fazev\project2-1\team_08-1\include;C:\Users\fazev\project2-1\team_08-1\include\glad;C:\Users\fazev\project2-1\team_08-1\include\GLFW;C:\Users\fazev\project2-1\team_08-1\include\glm;C:\Users\fazev\project2-1\team_08-1\include\headers;C:\Users\fazev\project2-1\team_08-1\maps;C:\Users\fazev\project2-1\team_08-1\shaders;C:\Users\fazev\project2-1\team_08-1\sounds;C:\Users\fazev\project2-1\team_08-1\vcpkg\installed\x64-windows-static\include;C:\Users\fazev\project2-1\team_08-1\vcpkg\installed\x64-windows-static\include\AL;C:\Users\fazev\project2-1\team_08-1\vcpkg\installed\x64-windows-static\include\libavcodec;C:\Users\fazev\project2-1\team_08-1\vcpkg\installed\x64-windows-static\include\libavformat;C:\Users\fazev\project2-1\team_08-1\vcpkg\installed\x64-windows-static\include\libavutil;C:\Users\fazev\project2-1\team_08-1\vcpkg\installed\x64-windows-static\include\libswresample;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\fazev\project2-1\team_08-1\include;C:\Users\fazev\project2-1\team_08-1\include\glad;C:\Users\fazev\project2-1\team_08-1\include\GLFW;C:\Users\fazev\project2-1\team_08-1\include\glm;C:\Users\fazev\project2-1\team_08-1\include\headers;C:\Users\fazev\project2-1\team_08-1\maps;C:\Users\fazev\project2-1\team_08-1\shaders;C:\Users\fazev\project2-1\team_08-1\sounds;C:\Users\fazev\project2-1\team_08-1\vcpkg\installed\x64-windows-static\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
       <ExceptionHandling>Sync</ExceptionHandling>
       <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
@@ -168,10 +158,10 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
     </ClCompile>
     <ResourceCompile>
       <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR=\"Release\"</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>C:\Users\fazev\project2-1\team_08-1\include;C:\Users\fazev\project2-1\team_08-1\include\glad;C:\Users\fazev\project2-1\team_08-1\include\GLFW;C:\Users\fazev\project2-1\team_08-1\include\glm;C:\Users\fazev\project2-1\team_08-1\include\headers;C:\Users\fazev\project2-1\team_08-1\maps;C:\Users\fazev\project2-1\team_08-1\shaders;C:\Users\fazev\project2-1\team_08-1\sounds;C:\Users\fazev\project2-1\team_08-1\vcpkg\installed\x64-windows-static\include;C:\Users\fazev\project2-1\team_08-1\vcpkg\installed\x64-windows-static\include\AL;C:\Users\fazev\project2-1\team_08-1\vcpkg\installed\x64-windows-static\include\libavcodec;C:\Users\fazev\project2-1\team_08-1\vcpkg\installed\x64-windows-static\include\libavformat;C:\Users\fazev\project2-1\team_08-1\vcpkg\installed\x64-windows-static\include\libavutil;C:\Users\fazev\project2-1\team_08-1\vcpkg\installed\x64-windows-static\include\libswresample;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\fazev\project2-1\team_08-1\include;C:\Users\fazev\project2-1\team_08-1\include\glad;C:\Users\fazev\project2-1\team_08-1\include\GLFW;C:\Users\fazev\project2-1\team_08-1\include\glm;C:\Users\fazev\project2-1\team_08-1\include\headers;C:\Users\fazev\project2-1\team_08-1\maps;C:\Users\fazev\project2-1\team_08-1\shaders;C:\Users\fazev\project2-1\team_08-1\sounds;C:\Users\fazev\project2-1\team_08-1\vcpkg\installed\x64-windows-static\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
-      <AdditionalIncludeDirectories>C:\Users\fazev\project2-1\team_08-1\include;C:\Users\fazev\project2-1\team_08-1\include\glad;C:\Users\fazev\project2-1\team_08-1\include\GLFW;C:\Users\fazev\project2-1\team_08-1\include\glm;C:\Users\fazev\project2-1\team_08-1\include\headers;C:\Users\fazev\project2-1\team_08-1\maps;C:\Users\fazev\project2-1\team_08-1\shaders;C:\Users\fazev\project2-1\team_08-1\sounds;C:\Users\fazev\project2-1\team_08-1\vcpkg\installed\x64-windows-static\include;C:\Users\fazev\project2-1\team_08-1\vcpkg\installed\x64-windows-static\include\AL;C:\Users\fazev\project2-1\team_08-1\vcpkg\installed\x64-windows-static\include\libavcodec;C:\Users\fazev\project2-1\team_08-1\vcpkg\installed\x64-windows-static\include\libavformat;C:\Users\fazev\project2-1\team_08-1\vcpkg\installed\x64-windows-static\include\libavutil;C:\Users\fazev\project2-1\team_08-1\vcpkg\installed\x64-windows-static\include\libswresample;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\fazev\project2-1\team_08-1\include;C:\Users\fazev\project2-1\team_08-1\include\glad;C:\Users\fazev\project2-1\team_08-1\include\GLFW;C:\Users\fazev\project2-1\team_08-1\include\glm;C:\Users\fazev\project2-1\team_08-1\include\headers;C:\Users\fazev\project2-1\team_08-1\maps;C:\Users\fazev\project2-1\team_08-1\shaders;C:\Users\fazev\project2-1\team_08-1\sounds;C:\Users\fazev\project2-1\team_08-1\vcpkg\installed\x64-windows-static\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -179,17 +169,8 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
       <ProxyFileName>%(Filename)_p.c</ProxyFileName>
     </Midl>
     <PostBuildEvent>
-      <Message>	</Message>
+      <Message></Message>
       <Command>setlocal
-C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -noprofile -executionpolicy Bypass -file C:/Users/fazev/project2-1/team_08-1/vcpkg/scripts/buildsystems/msbuild/applocal.ps1 -targetBinary C:/Users/fazev/project2-1/team_08-1/build/Release/GIFWA.exe -installedDir C:/Users/fazev/project2-1/team_08-1/vcpkg/installed/x64-windows/bin -OutVariable out
-if %errorlevel% neq 0 goto :cmEnd
-:cmEnd
-endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
-:cmErrorLevel
-exit /b %1
-:cmDone
-if %errorlevel% neq 0 goto :VCEnd
-setlocal
 C:\MinGW\bin\cmake.exe -E copy_if_different C:/Users/fazev/project2-1/team_08-1/glfw3.dll C:/Users/fazev/project2-1/team_08-1/build/Release
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
@@ -200,7 +181,7 @@ exit /b %1
 if %errorlevel% neq 0 goto :VCEnd</Command>
     </PostBuildEvent>
     <Link>
-      <AdditionalDependencies>C:\Users\fazev\project2-1\team_08-1\lib\libglfw3dll.a;opengl32.lib;gdi32.lib;ws2_32.lib;wsock32.lib;openal32.lib;avformat.lib;avcodec.lib;avutil.lib;swresample.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalDependencies>C:\Users\fazev\project2-1\team_08-1\lib\libglfw3dll.a;opengl32.lib;gdi32.lib;ws2_32.lib;wsock32.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
       <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
       <GenerateDebugInformation>false</GenerateDebugInformation>
@@ -215,7 +196,7 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
     <ClCompile>
-      <AdditionalIncludeDirectories>C:\Users\fazev\project2-1\team_08-1\include;C:\Users\fazev\project2-1\team_08-1\include\glad;C:\Users\fazev\project2-1\team_08-1\include\GLFW;C:\Users\fazev\project2-1\team_08-1\include\glm;C:\Users\fazev\project2-1\team_08-1\include\headers;C:\Users\fazev\project2-1\team_08-1\maps;C:\Users\fazev\project2-1\team_08-1\shaders;C:\Users\fazev\project2-1\team_08-1\sounds;C:\Users\fazev\project2-1\team_08-1\vcpkg\installed\x64-windows-static\include;C:\Users\fazev\project2-1\team_08-1\vcpkg\installed\x64-windows-static\include\AL;C:\Users\fazev\project2-1\team_08-1\vcpkg\installed\x64-windows-static\include\libavcodec;C:\Users\fazev\project2-1\team_08-1\vcpkg\installed\x64-windows-static\include\libavformat;C:\Users\fazev\project2-1\team_08-1\vcpkg\installed\x64-windows-static\include\libavutil;C:\Users\fazev\project2-1\team_08-1\vcpkg\installed\x64-windows-static\include\libswresample;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\fazev\project2-1\team_08-1\include;C:\Users\fazev\project2-1\team_08-1\include\glad;C:\Users\fazev\project2-1\team_08-1\include\GLFW;C:\Users\fazev\project2-1\team_08-1\include\glm;C:\Users\fazev\project2-1\team_08-1\include\headers;C:\Users\fazev\project2-1\team_08-1\maps;C:\Users\fazev\project2-1\team_08-1\shaders;C:\Users\fazev\project2-1\team_08-1\sounds;C:\Users\fazev\project2-1\team_08-1\vcpkg\installed\x64-windows-static\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
       <ExceptionHandling>Sync</ExceptionHandling>
       <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
@@ -232,10 +213,10 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
     </ClCompile>
     <ResourceCompile>
       <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR=\"MinSizeRel\"</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>C:\Users\fazev\project2-1\team_08-1\include;C:\Users\fazev\project2-1\team_08-1\include\glad;C:\Users\fazev\project2-1\team_08-1\include\GLFW;C:\Users\fazev\project2-1\team_08-1\include\glm;C:\Users\fazev\project2-1\team_08-1\include\headers;C:\Users\fazev\project2-1\team_08-1\maps;C:\Users\fazev\project2-1\team_08-1\shaders;C:\Users\fazev\project2-1\team_08-1\sounds;C:\Users\fazev\project2-1\team_08-1\vcpkg\installed\x64-windows-static\include;C:\Users\fazev\project2-1\team_08-1\vcpkg\installed\x64-windows-static\include\AL;C:\Users\fazev\project2-1\team_08-1\vcpkg\installed\x64-windows-static\include\libavcodec;C:\Users\fazev\project2-1\team_08-1\vcpkg\installed\x64-windows-static\include\libavformat;C:\Users\fazev\project2-1\team_08-1\vcpkg\installed\x64-windows-static\include\libavutil;C:\Users\fazev\project2-1\team_08-1\vcpkg\installed\x64-windows-static\include\libswresample;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\fazev\project2-1\team_08-1\include;C:\Users\fazev\project2-1\team_08-1\include\glad;C:\Users\fazev\project2-1\team_08-1\include\GLFW;C:\Users\fazev\project2-1\team_08-1\include\glm;C:\Users\fazev\project2-1\team_08-1\include\headers;C:\Users\fazev\project2-1\team_08-1\maps;C:\Users\fazev\project2-1\team_08-1\shaders;C:\Users\fazev\project2-1\team_08-1\sounds;C:\Users\fazev\project2-1\team_08-1\vcpkg\installed\x64-windows-static\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
-      <AdditionalIncludeDirectories>C:\Users\fazev\project2-1\team_08-1\include;C:\Users\fazev\project2-1\team_08-1\include\glad;C:\Users\fazev\project2-1\team_08-1\include\GLFW;C:\Users\fazev\project2-1\team_08-1\include\glm;C:\Users\fazev\project2-1\team_08-1\include\headers;C:\Users\fazev\project2-1\team_08-1\maps;C:\Users\fazev\project2-1\team_08-1\shaders;C:\Users\fazev\project2-1\team_08-1\sounds;C:\Users\fazev\project2-1\team_08-1\vcpkg\installed\x64-windows-static\include;C:\Users\fazev\project2-1\team_08-1\vcpkg\installed\x64-windows-static\include\AL;C:\Users\fazev\project2-1\team_08-1\vcpkg\installed\x64-windows-static\include\libavcodec;C:\Users\fazev\project2-1\team_08-1\vcpkg\installed\x64-windows-static\include\libavformat;C:\Users\fazev\project2-1\team_08-1\vcpkg\installed\x64-windows-static\include\libavutil;C:\Users\fazev\project2-1\team_08-1\vcpkg\installed\x64-windows-static\include\libswresample;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\fazev\project2-1\team_08-1\include;C:\Users\fazev\project2-1\team_08-1\include\glad;C:\Users\fazev\project2-1\team_08-1\include\GLFW;C:\Users\fazev\project2-1\team_08-1\include\glm;C:\Users\fazev\project2-1\team_08-1\include\headers;C:\Users\fazev\project2-1\team_08-1\maps;C:\Users\fazev\project2-1\team_08-1\shaders;C:\Users\fazev\project2-1\team_08-1\sounds;C:\Users\fazev\project2-1\team_08-1\vcpkg\installed\x64-windows-static\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -243,17 +224,8 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
       <ProxyFileName>%(Filename)_p.c</ProxyFileName>
     </Midl>
     <PostBuildEvent>
-      <Message>	</Message>
+      <Message></Message>
       <Command>setlocal
-C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -noprofile -executionpolicy Bypass -file C:/Users/fazev/project2-1/team_08-1/vcpkg/scripts/buildsystems/msbuild/applocal.ps1 -targetBinary C:/Users/fazev/project2-1/team_08-1/build/MinSizeRel/GIFWA.exe -installedDir C:/Users/fazev/project2-1/team_08-1/vcpkg/installed/x64-windows/bin -OutVariable out
-if %errorlevel% neq 0 goto :cmEnd
-:cmEnd
-endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
-:cmErrorLevel
-exit /b %1
-:cmDone
-if %errorlevel% neq 0 goto :VCEnd
-setlocal
 C:\MinGW\bin\cmake.exe -E copy_if_different C:/Users/fazev/project2-1/team_08-1/glfw3.dll C:/Users/fazev/project2-1/team_08-1/build/MinSizeRel
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
@@ -264,7 +236,7 @@ exit /b %1
 if %errorlevel% neq 0 goto :VCEnd</Command>
     </PostBuildEvent>
     <Link>
-      <AdditionalDependencies>C:\Users\fazev\project2-1\team_08-1\lib\libglfw3dll.a;opengl32.lib;gdi32.lib;ws2_32.lib;wsock32.lib;openal32.lib;avformat.lib;avcodec.lib;avutil.lib;swresample.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalDependencies>C:\Users\fazev\project2-1\team_08-1\lib\libglfw3dll.a;opengl32.lib;gdi32.lib;ws2_32.lib;wsock32.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
       <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
       <GenerateDebugInformation>false</GenerateDebugInformation>
@@ -279,7 +251,7 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
     <ClCompile>
-      <AdditionalIncludeDirectories>C:\Users\fazev\project2-1\team_08-1\include;C:\Users\fazev\project2-1\team_08-1\include\glad;C:\Users\fazev\project2-1\team_08-1\include\GLFW;C:\Users\fazev\project2-1\team_08-1\include\glm;C:\Users\fazev\project2-1\team_08-1\include\headers;C:\Users\fazev\project2-1\team_08-1\maps;C:\Users\fazev\project2-1\team_08-1\shaders;C:\Users\fazev\project2-1\team_08-1\sounds;C:\Users\fazev\project2-1\team_08-1\vcpkg\installed\x64-windows-static\include;C:\Users\fazev\project2-1\team_08-1\vcpkg\installed\x64-windows-static\include\AL;C:\Users\fazev\project2-1\team_08-1\vcpkg\installed\x64-windows-static\include\libavcodec;C:\Users\fazev\project2-1\team_08-1\vcpkg\installed\x64-windows-static\include\libavformat;C:\Users\fazev\project2-1\team_08-1\vcpkg\installed\x64-windows-static\include\libavutil;C:\Users\fazev\project2-1\team_08-1\vcpkg\installed\x64-windows-static\include\libswresample;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\fazev\project2-1\team_08-1\include;C:\Users\fazev\project2-1\team_08-1\include\glad;C:\Users\fazev\project2-1\team_08-1\include\GLFW;C:\Users\fazev\project2-1\team_08-1\include\glm;C:\Users\fazev\project2-1\team_08-1\include\headers;C:\Users\fazev\project2-1\team_08-1\maps;C:\Users\fazev\project2-1\team_08-1\shaders;C:\Users\fazev\project2-1\team_08-1\sounds;C:\Users\fazev\project2-1\team_08-1\vcpkg\installed\x64-windows-static\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
       <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
       <ExceptionHandling>Sync</ExceptionHandling>
@@ -295,10 +267,10 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
     </ClCompile>
     <ResourceCompile>
       <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR=\"RelWithDebInfo\"</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>C:\Users\fazev\project2-1\team_08-1\include;C:\Users\fazev\project2-1\team_08-1\include\glad;C:\Users\fazev\project2-1\team_08-1\include\GLFW;C:\Users\fazev\project2-1\team_08-1\include\glm;C:\Users\fazev\project2-1\team_08-1\include\headers;C:\Users\fazev\project2-1\team_08-1\maps;C:\Users\fazev\project2-1\team_08-1\shaders;C:\Users\fazev\project2-1\team_08-1\sounds;C:\Users\fazev\project2-1\team_08-1\vcpkg\installed\x64-windows-static\include;C:\Users\fazev\project2-1\team_08-1\vcpkg\installed\x64-windows-static\include\AL;C:\Users\fazev\project2-1\team_08-1\vcpkg\installed\x64-windows-static\include\libavcodec;C:\Users\fazev\project2-1\team_08-1\vcpkg\installed\x64-windows-static\include\libavformat;C:\Users\fazev\project2-1\team_08-1\vcpkg\installed\x64-windows-static\include\libavutil;C:\Users\fazev\project2-1\team_08-1\vcpkg\installed\x64-windows-static\include\libswresample;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\fazev\project2-1\team_08-1\include;C:\Users\fazev\project2-1\team_08-1\include\glad;C:\Users\fazev\project2-1\team_08-1\include\GLFW;C:\Users\fazev\project2-1\team_08-1\include\glm;C:\Users\fazev\project2-1\team_08-1\include\headers;C:\Users\fazev\project2-1\team_08-1\maps;C:\Users\fazev\project2-1\team_08-1\shaders;C:\Users\fazev\project2-1\team_08-1\sounds;C:\Users\fazev\project2-1\team_08-1\vcpkg\installed\x64-windows-static\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
-      <AdditionalIncludeDirectories>C:\Users\fazev\project2-1\team_08-1\include;C:\Users\fazev\project2-1\team_08-1\include\glad;C:\Users\fazev\project2-1\team_08-1\include\GLFW;C:\Users\fazev\project2-1\team_08-1\include\glm;C:\Users\fazev\project2-1\team_08-1\include\headers;C:\Users\fazev\project2-1\team_08-1\maps;C:\Users\fazev\project2-1\team_08-1\shaders;C:\Users\fazev\project2-1\team_08-1\sounds;C:\Users\fazev\project2-1\team_08-1\vcpkg\installed\x64-windows-static\include;C:\Users\fazev\project2-1\team_08-1\vcpkg\installed\x64-windows-static\include\AL;C:\Users\fazev\project2-1\team_08-1\vcpkg\installed\x64-windows-static\include\libavcodec;C:\Users\fazev\project2-1\team_08-1\vcpkg\installed\x64-windows-static\include\libavformat;C:\Users\fazev\project2-1\team_08-1\vcpkg\installed\x64-windows-static\include\libavutil;C:\Users\fazev\project2-1\team_08-1\vcpkg\installed\x64-windows-static\include\libswresample;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\fazev\project2-1\team_08-1\include;C:\Users\fazev\project2-1\team_08-1\include\glad;C:\Users\fazev\project2-1\team_08-1\include\GLFW;C:\Users\fazev\project2-1\team_08-1\include\glm;C:\Users\fazev\project2-1\team_08-1\include\headers;C:\Users\fazev\project2-1\team_08-1\maps;C:\Users\fazev\project2-1\team_08-1\shaders;C:\Users\fazev\project2-1\team_08-1\sounds;C:\Users\fazev\project2-1\team_08-1\vcpkg\installed\x64-windows-static\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -306,17 +278,8 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
       <ProxyFileName>%(Filename)_p.c</ProxyFileName>
     </Midl>
     <PostBuildEvent>
-      <Message>	</Message>
+      <Message></Message>
       <Command>setlocal
-C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -noprofile -executionpolicy Bypass -file C:/Users/fazev/project2-1/team_08-1/vcpkg/scripts/buildsystems/msbuild/applocal.ps1 -targetBinary C:/Users/fazev/project2-1/team_08-1/build/RelWithDebInfo/GIFWA.exe -installedDir C:/Users/fazev/project2-1/team_08-1/vcpkg/installed/x64-windows/bin -OutVariable out
-if %errorlevel% neq 0 goto :cmEnd
-:cmEnd
-endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
-:cmErrorLevel
-exit /b %1
-:cmDone
-if %errorlevel% neq 0 goto :VCEnd
-setlocal
 C:\MinGW\bin\cmake.exe -E copy_if_different C:/Users/fazev/project2-1/team_08-1/glfw3.dll C:/Users/fazev/project2-1/team_08-1/build/RelWithDebInfo
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
@@ -327,7 +290,7 @@ exit /b %1
 if %errorlevel% neq 0 goto :VCEnd</Command>
     </PostBuildEvent>
     <Link>
-      <AdditionalDependencies>C:\Users\fazev\project2-1\team_08-1\lib\libglfw3dll.a;opengl32.lib;gdi32.lib;ws2_32.lib;wsock32.lib;openal32.lib;avformat.lib;avcodec.lib;avutil.lib;swresample.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalDependencies>C:\Users\fazev\project2-1\team_08-1\lib\libglfw3dll.a;opengl32.lib;gdi32.lib;ws2_32.lib;wsock32.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
       <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
       <GenerateDebugInformation>true</GenerateDebugInformation>
@@ -353,7 +316,7 @@ endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
 exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\MinGW\share\cmake-3.27\Modules\CMakeCInformation.cmake;C:\MinGW\share\cmake-3.27\Modules\CMakeCXXInformation.cmake;C:\MinGW\share\cmake-3.27\Modules\CMakeCommonLanguageInclude.cmake;C:\MinGW\share\cmake-3.27\Modules\CMakeDependentOption.cmake;C:\MinGW\share\cmake-3.27\Modules\CMakeGenericSystem.cmake;C:\MinGW\share\cmake-3.27\Modules\CMakeInitializeConfigs.cmake;C:\MinGW\share\cmake-3.27\Modules\CMakeLanguageInformation.cmake;C:\MinGW\share\cmake-3.27\Modules\CMakeRCInformation.cmake;C:\MinGW\share\cmake-3.27\Modules\CMakeSystemSpecificInformation.cmake;C:\MinGW\share\cmake-3.27\Modules\CMakeSystemSpecificInitialize.cmake;C:\MinGW\share\cmake-3.27\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\MinGW\share\cmake-3.27\Modules\Compiler\MSVC-C.cmake;C:\MinGW\share\cmake-3.27\Modules\Compiler\MSVC-CXX.cmake;C:\MinGW\share\cmake-3.27\Modules\Compiler\MSVC.cmake;C:\MinGW\share\cmake-3.27\Modules\Platform\Windows-Initialize.cmake;C:\MinGW\share\cmake-3.27\Modules\Platform\Windows-MSVC-C.cmake;C:\MinGW\share\cmake-3.27\Modules\Platform\Windows-MSVC-CXX.cmake;C:\MinGW\share\cmake-3.27\Modules\Platform\Windows-MSVC.cmake;C:\MinGW\share\cmake-3.27\Modules\Platform\Windows.cmake;C:\MinGW\share\cmake-3.27\Modules\Platform\WindowsPaths.cmake;C:\Users\fazev\project2-1\team_08-1\build\CMakeFiles\3.27.1\CMakeCCompiler.cmake;C:\Users\fazev\project2-1\team_08-1\build\CMakeFiles\3.27.1\CMakeCXXCompiler.cmake;C:\Users\fazev\project2-1\team_08-1\build\CMakeFiles\3.27.1\CMakeRCCompiler.cmake;C:\Users\fazev\project2-1\team_08-1\build\CMakeFiles\3.27.1\CMakeSystem.cmake;C:\Users\fazev\project2-1\team_08-1\vcpkg\scripts\buildsystems\vcpkg.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\MinGW\share\cmake-3.27\Modules\CMakeCInformation.cmake;C:\MinGW\share\cmake-3.27\Modules\CMakeCXXInformation.cmake;C:\MinGW\share\cmake-3.27\Modules\CMakeCommonLanguageInclude.cmake;C:\MinGW\share\cmake-3.27\Modules\CMakeGenericSystem.cmake;C:\MinGW\share\cmake-3.27\Modules\CMakeInitializeConfigs.cmake;C:\MinGW\share\cmake-3.27\Modules\CMakeLanguageInformation.cmake;C:\MinGW\share\cmake-3.27\Modules\CMakeRCInformation.cmake;C:\MinGW\share\cmake-3.27\Modules\CMakeSystemSpecificInformation.cmake;C:\MinGW\share\cmake-3.27\Modules\CMakeSystemSpecificInitialize.cmake;C:\MinGW\share\cmake-3.27\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\MinGW\share\cmake-3.27\Modules\Compiler\MSVC-C.cmake;C:\MinGW\share\cmake-3.27\Modules\Compiler\MSVC-CXX.cmake;C:\MinGW\share\cmake-3.27\Modules\Compiler\MSVC.cmake;C:\MinGW\share\cmake-3.27\Modules\Platform\Windows-Initialize.cmake;C:\MinGW\share\cmake-3.27\Modules\Platform\Windows-MSVC-C.cmake;C:\MinGW\share\cmake-3.27\Modules\Platform\Windows-MSVC-CXX.cmake;C:\MinGW\share\cmake-3.27\Modules\Platform\Windows-MSVC.cmake;C:\MinGW\share\cmake-3.27\Modules\Platform\Windows.cmake;C:\MinGW\share\cmake-3.27\Modules\Platform\WindowsPaths.cmake;C:\Users\fazev\project2-1\team_08-1\build\CMakeFiles\3.27.1\CMakeCCompiler.cmake;C:\Users\fazev\project2-1\team_08-1\build\CMakeFiles\3.27.1\CMakeCXXCompiler.cmake;C:\Users\fazev\project2-1\team_08-1\build\CMakeFiles\3.27.1\CMakeRCCompiler.cmake;C:\Users\fazev\project2-1\team_08-1\build\CMakeFiles\3.27.1\CMakeSystem.cmake;%(AdditionalInputs)</AdditionalInputs>
       <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\fazev\project2-1\team_08-1\build\CMakeFiles\generate.stamp</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
       <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule C:/Users/fazev/project2-1/team_08-1/CMakeLists.txt</Message>
@@ -366,7 +329,7 @@ endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
 exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\MinGW\share\cmake-3.27\Modules\CMakeCInformation.cmake;C:\MinGW\share\cmake-3.27\Modules\CMakeCXXInformation.cmake;C:\MinGW\share\cmake-3.27\Modules\CMakeCommonLanguageInclude.cmake;C:\MinGW\share\cmake-3.27\Modules\CMakeDependentOption.cmake;C:\MinGW\share\cmake-3.27\Modules\CMakeGenericSystem.cmake;C:\MinGW\share\cmake-3.27\Modules\CMakeInitializeConfigs.cmake;C:\MinGW\share\cmake-3.27\Modules\CMakeLanguageInformation.cmake;C:\MinGW\share\cmake-3.27\Modules\CMakeRCInformation.cmake;C:\MinGW\share\cmake-3.27\Modules\CMakeSystemSpecificInformation.cmake;C:\MinGW\share\cmake-3.27\Modules\CMakeSystemSpecificInitialize.cmake;C:\MinGW\share\cmake-3.27\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\MinGW\share\cmake-3.27\Modules\Compiler\MSVC-C.cmake;C:\MinGW\share\cmake-3.27\Modules\Compiler\MSVC-CXX.cmake;C:\MinGW\share\cmake-3.27\Modules\Compiler\MSVC.cmake;C:\MinGW\share\cmake-3.27\Modules\Platform\Windows-Initialize.cmake;C:\MinGW\share\cmake-3.27\Modules\Platform\Windows-MSVC-C.cmake;C:\MinGW\share\cmake-3.27\Modules\Platform\Windows-MSVC-CXX.cmake;C:\MinGW\share\cmake-3.27\Modules\Platform\Windows-MSVC.cmake;C:\MinGW\share\cmake-3.27\Modules\Platform\Windows.cmake;C:\MinGW\share\cmake-3.27\Modules\Platform\WindowsPaths.cmake;C:\Users\fazev\project2-1\team_08-1\build\CMakeFiles\3.27.1\CMakeCCompiler.cmake;C:\Users\fazev\project2-1\team_08-1\build\CMakeFiles\3.27.1\CMakeCXXCompiler.cmake;C:\Users\fazev\project2-1\team_08-1\build\CMakeFiles\3.27.1\CMakeRCCompiler.cmake;C:\Users\fazev\project2-1\team_08-1\build\CMakeFiles\3.27.1\CMakeSystem.cmake;C:\Users\fazev\project2-1\team_08-1\vcpkg\scripts\buildsystems\vcpkg.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\MinGW\share\cmake-3.27\Modules\CMakeCInformation.cmake;C:\MinGW\share\cmake-3.27\Modules\CMakeCXXInformation.cmake;C:\MinGW\share\cmake-3.27\Modules\CMakeCommonLanguageInclude.cmake;C:\MinGW\share\cmake-3.27\Modules\CMakeGenericSystem.cmake;C:\MinGW\share\cmake-3.27\Modules\CMakeInitializeConfigs.cmake;C:\MinGW\share\cmake-3.27\Modules\CMakeLanguageInformation.cmake;C:\MinGW\share\cmake-3.27\Modules\CMakeRCInformation.cmake;C:\MinGW\share\cmake-3.27\Modules\CMakeSystemSpecificInformation.cmake;C:\MinGW\share\cmake-3.27\Modules\CMakeSystemSpecificInitialize.cmake;C:\MinGW\share\cmake-3.27\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\MinGW\share\cmake-3.27\Modules\Compiler\MSVC-C.cmake;C:\MinGW\share\cmake-3.27\Modules\Compiler\MSVC-CXX.cmake;C:\MinGW\share\cmake-3.27\Modules\Compiler\MSVC.cmake;C:\MinGW\share\cmake-3.27\Modules\Platform\Windows-Initialize.cmake;C:\MinGW\share\cmake-3.27\Modules\Platform\Windows-MSVC-C.cmake;C:\MinGW\share\cmake-3.27\Modules\Platform\Windows-MSVC-CXX.cmake;C:\MinGW\share\cmake-3.27\Modules\Platform\Windows-MSVC.cmake;C:\MinGW\share\cmake-3.27\Modules\Platform\Windows.cmake;C:\MinGW\share\cmake-3.27\Modules\Platform\WindowsPaths.cmake;C:\Users\fazev\project2-1\team_08-1\build\CMakeFiles\3.27.1\CMakeCCompiler.cmake;C:\Users\fazev\project2-1\team_08-1\build\CMakeFiles\3.27.1\CMakeCXXCompiler.cmake;C:\Users\fazev\project2-1\team_08-1\build\CMakeFiles\3.27.1\CMakeRCCompiler.cmake;C:\Users\fazev\project2-1\team_08-1\build\CMakeFiles\3.27.1\CMakeSystem.cmake;%(AdditionalInputs)</AdditionalInputs>
       <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\fazev\project2-1\team_08-1\build\CMakeFiles\generate.stamp</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
       <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule C:/Users/fazev/project2-1/team_08-1/CMakeLists.txt</Message>
@@ -379,7 +342,7 @@ endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
 exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\MinGW\share\cmake-3.27\Modules\CMakeCInformation.cmake;C:\MinGW\share\cmake-3.27\Modules\CMakeCXXInformation.cmake;C:\MinGW\share\cmake-3.27\Modules\CMakeCommonLanguageInclude.cmake;C:\MinGW\share\cmake-3.27\Modules\CMakeDependentOption.cmake;C:\MinGW\share\cmake-3.27\Modules\CMakeGenericSystem.cmake;C:\MinGW\share\cmake-3.27\Modules\CMakeInitializeConfigs.cmake;C:\MinGW\share\cmake-3.27\Modules\CMakeLanguageInformation.cmake;C:\MinGW\share\cmake-3.27\Modules\CMakeRCInformation.cmake;C:\MinGW\share\cmake-3.27\Modules\CMakeSystemSpecificInformation.cmake;C:\MinGW\share\cmake-3.27\Modules\CMakeSystemSpecificInitialize.cmake;C:\MinGW\share\cmake-3.27\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\MinGW\share\cmake-3.27\Modules\Compiler\MSVC-C.cmake;C:\MinGW\share\cmake-3.27\Modules\Compiler\MSVC-CXX.cmake;C:\MinGW\share\cmake-3.27\Modules\Compiler\MSVC.cmake;C:\MinGW\share\cmake-3.27\Modules\Platform\Windows-Initialize.cmake;C:\MinGW\share\cmake-3.27\Modules\Platform\Windows-MSVC-C.cmake;C:\MinGW\share\cmake-3.27\Modules\Platform\Windows-MSVC-CXX.cmake;C:\MinGW\share\cmake-3.27\Modules\Platform\Windows-MSVC.cmake;C:\MinGW\share\cmake-3.27\Modules\Platform\Windows.cmake;C:\MinGW\share\cmake-3.27\Modules\Platform\WindowsPaths.cmake;C:\Users\fazev\project2-1\team_08-1\build\CMakeFiles\3.27.1\CMakeCCompiler.cmake;C:\Users\fazev\project2-1\team_08-1\build\CMakeFiles\3.27.1\CMakeCXXCompiler.cmake;C:\Users\fazev\project2-1\team_08-1\build\CMakeFiles\3.27.1\CMakeRCCompiler.cmake;C:\Users\fazev\project2-1\team_08-1\build\CMakeFiles\3.27.1\CMakeSystem.cmake;C:\Users\fazev\project2-1\team_08-1\vcpkg\scripts\buildsystems\vcpkg.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\MinGW\share\cmake-3.27\Modules\CMakeCInformation.cmake;C:\MinGW\share\cmake-3.27\Modules\CMakeCXXInformation.cmake;C:\MinGW\share\cmake-3.27\Modules\CMakeCommonLanguageInclude.cmake;C:\MinGW\share\cmake-3.27\Modules\CMakeGenericSystem.cmake;C:\MinGW\share\cmake-3.27\Modules\CMakeInitializeConfigs.cmake;C:\MinGW\share\cmake-3.27\Modules\CMakeLanguageInformation.cmake;C:\MinGW\share\cmake-3.27\Modules\CMakeRCInformation.cmake;C:\MinGW\share\cmake-3.27\Modules\CMakeSystemSpecificInformation.cmake;C:\MinGW\share\cmake-3.27\Modules\CMakeSystemSpecificInitialize.cmake;C:\MinGW\share\cmake-3.27\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\MinGW\share\cmake-3.27\Modules\Compiler\MSVC-C.cmake;C:\MinGW\share\cmake-3.27\Modules\Compiler\MSVC-CXX.cmake;C:\MinGW\share\cmake-3.27\Modules\Compiler\MSVC.cmake;C:\MinGW\share\cmake-3.27\Modules\Platform\Windows-Initialize.cmake;C:\MinGW\share\cmake-3.27\Modules\Platform\Windows-MSVC-C.cmake;C:\MinGW\share\cmake-3.27\Modules\Platform\Windows-MSVC-CXX.cmake;C:\MinGW\share\cmake-3.27\Modules\Platform\Windows-MSVC.cmake;C:\MinGW\share\cmake-3.27\Modules\Platform\Windows.cmake;C:\MinGW\share\cmake-3.27\Modules\Platform\WindowsPaths.cmake;C:\Users\fazev\project2-1\team_08-1\build\CMakeFiles\3.27.1\CMakeCCompiler.cmake;C:\Users\fazev\project2-1\team_08-1\build\CMakeFiles\3.27.1\CMakeCXXCompiler.cmake;C:\Users\fazev\project2-1\team_08-1\build\CMakeFiles\3.27.1\CMakeRCCompiler.cmake;C:\Users\fazev\project2-1\team_08-1\build\CMakeFiles\3.27.1\CMakeSystem.cmake;%(AdditionalInputs)</AdditionalInputs>
       <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\fazev\project2-1\team_08-1\build\CMakeFiles\generate.stamp</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
       <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule C:/Users/fazev/project2-1/team_08-1/CMakeLists.txt</Message>
@@ -392,7 +355,7 @@ endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
 exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\MinGW\share\cmake-3.27\Modules\CMakeCInformation.cmake;C:\MinGW\share\cmake-3.27\Modules\CMakeCXXInformation.cmake;C:\MinGW\share\cmake-3.27\Modules\CMakeCommonLanguageInclude.cmake;C:\MinGW\share\cmake-3.27\Modules\CMakeDependentOption.cmake;C:\MinGW\share\cmake-3.27\Modules\CMakeGenericSystem.cmake;C:\MinGW\share\cmake-3.27\Modules\CMakeInitializeConfigs.cmake;C:\MinGW\share\cmake-3.27\Modules\CMakeLanguageInformation.cmake;C:\MinGW\share\cmake-3.27\Modules\CMakeRCInformation.cmake;C:\MinGW\share\cmake-3.27\Modules\CMakeSystemSpecificInformation.cmake;C:\MinGW\share\cmake-3.27\Modules\CMakeSystemSpecificInitialize.cmake;C:\MinGW\share\cmake-3.27\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\MinGW\share\cmake-3.27\Modules\Compiler\MSVC-C.cmake;C:\MinGW\share\cmake-3.27\Modules\Compiler\MSVC-CXX.cmake;C:\MinGW\share\cmake-3.27\Modules\Compiler\MSVC.cmake;C:\MinGW\share\cmake-3.27\Modules\Platform\Windows-Initialize.cmake;C:\MinGW\share\cmake-3.27\Modules\Platform\Windows-MSVC-C.cmake;C:\MinGW\share\cmake-3.27\Modules\Platform\Windows-MSVC-CXX.cmake;C:\MinGW\share\cmake-3.27\Modules\Platform\Windows-MSVC.cmake;C:\MinGW\share\cmake-3.27\Modules\Platform\Windows.cmake;C:\MinGW\share\cmake-3.27\Modules\Platform\WindowsPaths.cmake;C:\Users\fazev\project2-1\team_08-1\build\CMakeFiles\3.27.1\CMakeCCompiler.cmake;C:\Users\fazev\project2-1\team_08-1\build\CMakeFiles\3.27.1\CMakeCXXCompiler.cmake;C:\Users\fazev\project2-1\team_08-1\build\CMakeFiles\3.27.1\CMakeRCCompiler.cmake;C:\Users\fazev\project2-1\team_08-1\build\CMakeFiles\3.27.1\CMakeSystem.cmake;C:\Users\fazev\project2-1\team_08-1\vcpkg\scripts\buildsystems\vcpkg.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\MinGW\share\cmake-3.27\Modules\CMakeCInformation.cmake;C:\MinGW\share\cmake-3.27\Modules\CMakeCXXInformation.cmake;C:\MinGW\share\cmake-3.27\Modules\CMakeCommonLanguageInclude.cmake;C:\MinGW\share\cmake-3.27\Modules\CMakeGenericSystem.cmake;C:\MinGW\share\cmake-3.27\Modules\CMakeInitializeConfigs.cmake;C:\MinGW\share\cmake-3.27\Modules\CMakeLanguageInformation.cmake;C:\MinGW\share\cmake-3.27\Modules\CMakeRCInformation.cmake;C:\MinGW\share\cmake-3.27\Modules\CMakeSystemSpecificInformation.cmake;C:\MinGW\share\cmake-3.27\Modules\CMakeSystemSpecificInitialize.cmake;C:\MinGW\share\cmake-3.27\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\MinGW\share\cmake-3.27\Modules\Compiler\MSVC-C.cmake;C:\MinGW\share\cmake-3.27\Modules\Compiler\MSVC-CXX.cmake;C:\MinGW\share\cmake-3.27\Modules\Compiler\MSVC.cmake;C:\MinGW\share\cmake-3.27\Modules\Platform\Windows-Initialize.cmake;C:\MinGW\share\cmake-3.27\Modules\Platform\Windows-MSVC-C.cmake;C:\MinGW\share\cmake-3.27\Modules\Platform\Windows-MSVC-CXX.cmake;C:\MinGW\share\cmake-3.27\Modules\Platform\Windows-MSVC.cmake;C:\MinGW\share\cmake-3.27\Modules\Platform\Windows.cmake;C:\MinGW\share\cmake-3.27\Modules\Platform\WindowsPaths.cmake;C:\Users\fazev\project2-1\team_08-1\build\CMakeFiles\3.27.1\CMakeCCompiler.cmake;C:\Users\fazev\project2-1\team_08-1\build\CMakeFiles\3.27.1\CMakeCXXCompiler.cmake;C:\Users\fazev\project2-1\team_08-1\build\CMakeFiles\3.27.1\CMakeRCCompiler.cmake;C:\Users\fazev\project2-1\team_08-1\build\CMakeFiles\3.27.1\CMakeSystem.cmake;%(AdditionalInputs)</AdditionalInputs>
       <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\fazev\project2-1\team_08-1\build\CMakeFiles\generate.stamp</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
     </CustomBuild>

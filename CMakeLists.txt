@@ -46,11 +46,6 @@ if(WIN32)
     # Include OpenAL and FFmpeg from vcpkg (static triplet)
     include_directories(
         ${CMAKE_SOURCE_DIR}/vcpkg/installed/x64-windows-static/include
-        ${CMAKE_SOURCE_DIR}/vcpkg/installed/x64-windows-static/include/AL
-        ${CMAKE_SOURCE_DIR}/vcpkg/installed/x64-windows-static/include/libavcodec
-        ${CMAKE_SOURCE_DIR}/vcpkg/installed/x64-windows-static/include/libavformat
-        ${CMAKE_SOURCE_DIR}/vcpkg/installed/x64-windows-static/include/libavutil
-        ${CMAKE_SOURCE_DIR}/vcpkg/installed/x64-windows-static/include/libswresample
     )
     link_directories(${CMAKE_SOURCE_DIR}/vcpkg/installed/x64-windows-static/lib)
 
@@ -60,11 +55,6 @@ if(WIN32)
         gdi32
         ws2_32
         wsock32
-        openal32
-        avformat
-        avcodec
-        avutil
-        swresample
     )
 
     # Copy glfw DLL to build output

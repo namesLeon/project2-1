@@ -11,14 +11,6 @@
 #include <vector>
 #include <mutex>
 
-// OpenAL and FFmpeg
-#include <AL/al.h>
-#include <AL/alc.h>
-extern "C" {
-#include <libavcodec/avcodec.h>
-#include <libavformat/avformat.h>
-#include <libswresample/swresample.h>
-}
 
 
 #include "gl_utils.hpp"
