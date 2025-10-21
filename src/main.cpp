@@ -127,7 +127,7 @@ shader.setInt("uChannel3", 1); // Wood → unit 1
 
         glfwSwapBuffers(window);
     }
-    bg.stop();
+    // bg.stop();
 
     glfwTerminate();
     return 0;
