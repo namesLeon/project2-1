@@ -3,6 +3,7 @@ from typing import Optional, Tuple, List
 from collections import deque
 import cv2
 import numpy as np
+from pathlib import Path
 
 from ...base import EyeTracker, Gaze, Box
 from ...tracking_interface import EyeTrackingInterface
@@ -517,3 +518,14 @@ class OpenCVHaarEyeTracker(EyeTracker, EyeTrackingInterface):
         sx = float(f @ self._cal_Mx)
         sy = float(f @ self._cal_My)
         return sx, sy
+    def print_normalized_gaze(self, decimals: int = 3) -> str:
+        n = self.getNormalizedGazePosition()
+        out = f"normalized-Eye-Gaze-positions: x:{n.x:.{decimals}f} y:{n.y:.{decimals}f}"
+        print(out)
+        return out
+    def _write_gaze_for_cpp(self):
+        n = self.getNormalizedGazePosition()
+        Path("gaze_out.txt").write_text(
+        f"normalized-Eye-Gaze-positions: x:{n.x:.6f} y:{n.y:.6f}",
+        encoding="utf-8"
+    )

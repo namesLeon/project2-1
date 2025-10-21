@@ -14,8 +14,4 @@ class EyeTrackingInterface(ABC):
         pass
     
 
-    # Added method to check connection status, useful for error handling
-    @abstractmethod
-    def isConnected(self) -> bool:
-        """ Returns True if the eye tracker is connected, False otherwise."""
-        pass
+ 
