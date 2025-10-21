@@ -328,22 +328,22 @@ void main(){
     vec2 p=-1.0+2.0*q;
     p.x*=uResolution.x/uResolution.y;
 
-    // camera positie langs het pad
+    
     vec3 ro=path(time);
 
-    // standaard camera basis (kijkt vooruit langs +Z)
+    
     vec3 cw=vec3(0.0,0.0,1.0); // forward
     vec3 cu=vec3(1.0,0.0,0.0); // right
     vec3 cv=vec3(0.0,1.0,0.0); // up
 
-    // yaw/pitch controls (muis → later eye tracking)
+    // yaw/pitch controls 
     float yaw  =(uMouse.z>0.0)?((uMouse.x/uResolution.x)-0.5)*1.5:0.0;
     float pitch=(uMouse.z>0.0)?((uMouse.y/uResolution.y)-0.5)*1.0:0.0;
 
-    // basis ray in front plane
+   
     vec3 rd=normalize(p.x*cu+p.y*cv+2.1*cw);
 
-    // rotatie matrices
+    // rotati matrices
     mat3 rotYaw=mat3(
         cos(yaw),0.0,-sin(yaw),
         0.0,1.0,0.0,

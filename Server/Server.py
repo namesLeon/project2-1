@@ -2,7 +2,7 @@ import socket
 import sys, os 
 import threading
 import time
-import pyautogui  
+import pyautogui
 from tracker import OpenCVHaarEyeTracker 
 from Vec2 import Vec2
 
