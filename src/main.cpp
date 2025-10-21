@@ -92,8 +92,8 @@ shader.setInt("uChannel3", 1); // Wood → unit 1
 
     EyeInput eye; 
 
-    BackgroundNoise bg("../../sounds/venice_music.wav", "../../sounds/city_sounds.wav");
-    bg.start();
+    // BackgroundNoise bg("../../sounds/venice_music.wav", "../../sounds/city_sounds.wav");
+    // bg.start();
    
 
     while (!glfwWindowShouldClose(window)) {
