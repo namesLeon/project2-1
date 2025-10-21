@@ -3,14 +3,15 @@ import sys, os
 import threading
 import time
 import pyautogui
-from tracker import OpenCVHaarEyeTracker 
-from Vec2 import Vec2
+from core.tracking.Vec2 import Vec2
+import scripts.run_eye_tracker as rt
 
 HOST = '127.0.0.1'
 PORT = 5050
 
 clients = []
-tracker = OpenCVHaarEyeTracker()
+tracker = rt.OpenCVHaarEyeTracker(min_face=120)
+
 
 def handle_client(client_socket, addr):
     print(f"[INFO] Client connected: {addr}")
