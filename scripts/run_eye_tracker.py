@@ -5,10 +5,8 @@ import cv2
 from core.tracking.backends.opencv_haar.tracker import OpenCVHaarEyeTracker
 from core.tracking.utils.draw import draw_gaze_overlay
 from core.tracking.postprocess.smoothing import EMA
+
 smoother = EMA(alpha=0.35)
-
-
-
 
 def main():
     ap = argparse.ArgumentParser()
@@ -44,13 +42,13 @@ def main():
         dt = now - last
         last = now
         if dt > 0:
-            fps = 0.9*fps + 0.1*(1.0/dt) if fps > 0 else (1.0/dt)
+            fps = 0.9 * fps + 0.1 * (1.0 / dt) if fps > 0 else (1.0 / dt)
 
         draw_gaze_overlay(frame, g, fps=fps)
         cv2.imshow("Eye Tracker", frame)
 
         key = cv2.waitKey(1) & 0xFF
-        if key == ord('q') or key == 27:  # q or ESC
+        if key == ord("q") or key == 27:  # esc or q to quit
             break
 
     cap.release()

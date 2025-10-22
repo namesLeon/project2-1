@@ -6,7 +6,7 @@ import numpy as np
 from pathlib import Path
 
 from ...base import EyeTracker, Gaze, Box
-from ...tracking_interface import EyeTrackingInterface
+from ...Tracking_Interface import EyeTrackingInterface
 from ...Vec2 import Vec2
 
 
@@ -218,7 +218,7 @@ def _pupil_center_precise(eye_gray: np.ndarray) -> Optional[Tuple[int, int]]:
 class OpenCVHaarEyeTracker(EyeTracker, EyeTrackingInterface):
     """
     Single-eye tracker implementing EyeTrackingInterface:
-      - getNormalizedGazePosition() -> Vec2 in [0,1]
+      - getNormalized`wdym`ePosition() -> Vec2 in [0,1]
       - getScreenGazePosition()     -> Vec2 in pixels
       - isConnected()               -> bool
 
@@ -529,3 +529,6 @@ class OpenCVHaarEyeTracker(EyeTracker, EyeTrackingInterface):
         f"normalized-Eye-Gaze-positions: x:{n.x:.6f} y:{n.y:.6f}",
         encoding="utf-8"
     )
+        
+if __name__ == "__main__":
+    main()
