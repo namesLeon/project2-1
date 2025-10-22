@@ -39,6 +39,7 @@ def main():
 
         g = tracker.process(frame)
         g.gaze_xy = smoother.update(g.gaze_xy)
+        tracker._write_gaze_for_cpp()
         now = time.time()
         dt = now - last
         last = now
@@ -55,3 +56,5 @@ def main():
     cap.release()
     cv2.destroyAllWindows()
 
+if __name__ == "__main__":
+    main()
