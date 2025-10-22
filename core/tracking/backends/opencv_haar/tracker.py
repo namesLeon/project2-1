@@ -530,5 +530,5 @@ class OpenCVHaarEyeTracker(EyeTracker, EyeTrackingInterface):
         encoding="utf-8"
     )
         
-    if __name__ == "__main__":
-        main()
+if __name__ == "__main__":
+    main()
