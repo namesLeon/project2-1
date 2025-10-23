@@ -35,6 +35,7 @@ target_include_directories(GIFWA PRIVATE
     ${CMAKE_SOURCE_DIR}/maps
     ${CMAKE_SOURCE_DIR}/shaders
     ${CMAKE_SOURCE_DIR}/sounds
+    ${CMAKE_SOURCE_DIR}/vcpkg/src
 )
 
 # ====== Platform-specific setup ======
@@ -43,7 +44,6 @@ target_include_directories(GIFWA PRIVATE
 if(WIN32)
     message(STATUS "Configuring for Windows")
 
-    # Include OpenAL and FFmpeg from vcpkg (static triplet)
     include_directories(
         ${CMAKE_SOURCE_DIR}/vcpkg/installed/x64-windows-static/include
     )
@@ -57,13 +57,6 @@ if(WIN32)
         wsock32
     )
 
-    # Copy glfw DLL to build output
-    add_custom_command(TARGET GIFWA POST_BUILD
-        COMMAND ${CMAKE_COMMAND} -E copy_if_different
-        ${CMAKE_SOURCE_DIR}/glfw3.dll
-        $<TARGET_FILE_DIR:GIFWA>
-    )
-
 # ---------- LINUX ----------
 elseif(UNIX AND NOT APPLE)
     message(STATUS "Configuring for Linux")
@@ -72,18 +65,12 @@ elseif(UNIX AND NOT APPLE)
     find_package(glfw3 REQUIRED)
     find_package(PkgConfig REQUIRED)
 
-    pkg_check_modules(FFMPEG REQUIRED IMPORTED_TARGET
-        libavformat
-        libavcodec
-        libavutil
-        libswresample
-    )
+    # Keep OpenAL via pkg-config; FFmpeg removed
     pkg_check_modules(OPENAL REQUIRED IMPORTED_TARGET openal)
 
     target_link_libraries(GIFWA
         OpenGL::GL
         glfw
-        PkgConfig::FFMPEG
         PkgConfig::OPENAL
         dl
         pthread
@@ -100,13 +87,7 @@ elseif(APPLE)
     find_library(COREVIDEO_LIBRARY CoreVideo)
     find_library(OPENAL_LIBRARY OpenAL)
 
-    find_path(FFMPEG_INCLUDE_DIR libavformat/avformat.h)
-    find_library(AVFORMAT_LIBRARY avformat)
-    find_library(AVCODEC_LIBRARY avcodec)
-    find_library(AVUTIL_LIBRARY avutil)
-    find_library(SWRESAMPLE_LIBRARY swresample)
-
-    target_include_directories(GIFWA PRIVATE ${FFMPEG_INCLUDE_DIR})
+    # FFmpeg find_* and include dirs REMOVED
 
     target_link_libraries(GIFWA
         glfw
@@ -115,9 +96,5 @@ elseif(APPLE)
         ${IOKIT_LIBRARY}
         ${COREVIDEO_LIBRARY}
         ${OPENAL_LIBRARY}
-        ${AVFORMAT_LIBRARY}
-        ${AVCODEC_LIBRARY}
-        ${AVUTIL_LIBRARY}
-        ${SWRESAMPLE_LIBRARY}
     )
 endif()

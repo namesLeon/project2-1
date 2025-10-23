@@ -6,6 +6,8 @@ out vec4 FragColor;
 uniform float uTime;
 uniform vec2 uResolution;
 uniform vec4 uMouse;
+uniform vec2 uEyeGaze; 
+uniform int  uHasEye; 
 
 uniform sampler2D uChannel0; // noise
 uniform sampler2D uChannel1; // building texture
@@ -322,41 +324,50 @@ vec3 path(float _time){
 
 // ===== Main =====
 void main(){
-    time=uTime+43.;
-    vec2 fragCoord=gl_FragCoord.xy;
-    vec2 q=fragCoord/uResolution;
-    vec2 p=-1.0+2.0*q;
-    p.x*=uResolution.x/uResolution.y;
+    time = uTime + 43.0;
+    vec2 fragCoord = gl_FragCoord.xy;
+    vec2 q = fragCoord / uResolution;
+    vec2 p = -1.0 + 2.0*q;
+    p.x *= uResolution.x/uResolution.y;
 
-    
-    vec3 ro=path(time);
+    // ----- camera position -----
+    vec3 ro = path(time);
 
-    
-    vec3 cw=vec3(0.0,0.0,1.0); // forward
-    vec3 cu=vec3(1.0,0.0,0.0); // right
-    vec3 cv=vec3(0.0,1.0,0.0); // up
+    vec3 cw = vec3(0.0, 0.0, 1.0); // forward
+    vec3 cu = vec3(1.0, 0.0, 0.0); // right
+    vec3 cv = vec3(0.0, 1.0, 0.0); // up
 
-    // yaw/pitch controls 
-    float yaw  =(uMouse.z>0.0)?((uMouse.x/uResolution.x)-0.5)*1.5:0.0;
-    float pitch=(uMouse.z>0.0)?((uMouse.y/uResolution.y)-0.5)*1.0:0.0;
+ 
+    vec2 controlUV = (uHasEye == 1)
+        ? uEyeGaze
+        : ((uMouse.z > 0.0) ? (uMouse.xy / uResolution) : vec2(0.5, 0.5));
 
    
-    vec3 rd=normalize(p.x*cu+p.y*cv+2.1*cw);
 
-    // rotati matrices
-    mat3 rotYaw=mat3(
-        cos(yaw),0.0,-sin(yaw),
-        0.0,1.0,0.0,
-        sin(yaw),0.0,cos(yaw)
+    // Sensitivity
+    const float YAW_GAIN   = 1.5;
+    const float PITCH_GAIN = 1.0;
+
+    float yaw   = (controlUV.x - 0.5) * YAW_GAIN;
+    float pitch = (controlUV.y - 0.5) * PITCH_GAIN;
+
+    // Ray dir before rotation
+    vec3 rd = normalize(p.x*cu + p.y*cv + 2.1*cw);
+
+    // Rotation matrices 
+    mat3 rotYaw = mat3(
+        cos(yaw), 0.0, -sin(yaw),
+        0.0,      1.0,  0.0,
+        sin(yaw), 0.0,  cos(yaw)
     );
-    mat3 rotPitch=mat3(
-        1.0,0.0,0.0,
-        0.0,cos(pitch),-sin(pitch),
-        0.0,sin(pitch),cos(pitch)
+    mat3 rotPitch = mat3(
+        1.0, 0.0,       0.0,
+        0.0, cos(pitch), -sin(pitch),
+        0.0, sin(pitch),  cos(pitch)
     );
 
-    // toepassen yaw en pitch
-    rd=rotYaw*rotPitch*rd;
+    // Apply gaze-controlled yaw/pitch
+    rd = rotYaw * rotPitch * rd;
 
     //-----------------------------------------------------
     // render
