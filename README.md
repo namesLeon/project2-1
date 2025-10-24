@@ -1,6 +1,6 @@
 # Team_08 Project 2-1: Venice parallex effect
 
-## How to build
+## How to build shader
 - Firstly we want to make sure were in the "team_08" directory
 - We need to make sure the "team_08/build" directory is deleted
 - Run the following commands
@@ -10,6 +10,10 @@
   cmake -S . -B build -DCMAKE_BUILD_TYPE=Release
   cmake --build build --config Release
   ```
+
+## How to run eye tracker
+- in a new terminal you want to make sure you are in the `team_08` directory then run the line: `python3 -m scripts.run_eye_tracker`
+- click 'esc' or 'q' to kill
 
 ## What you should be seeing
 You should now be on a boat in venice, the eye tracker is working, so if you move your head around you should be seeing the parallex effect.
