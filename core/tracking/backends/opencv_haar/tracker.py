@@ -526,7 +526,7 @@ class OpenCVHaarEyeTracker(EyeTracker, EyeTrackingInterface):
     def _write_gaze_for_cpp(self):
         n = self.getNormalizedGazePosition()
         Path("gaze_out.txt").write_text(
-        f"normalized-Eye-Gaze-positions: x:{n.x:.6f} y:{n.y:.6f}",
+        f"normalized-Eye-Gaze-positions: x:{n.x:.6f} y:{n.y:.6f}\n",
         encoding="utf-8"
     )
         
