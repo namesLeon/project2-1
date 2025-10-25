@@ -1,29 +1,27 @@
-# Team_08 GitLab Coding & Collaboration Rules
+# Team_08 Project 2-1: Venice parallex effect
 
-To ensure consistency, maintainability, and smooth collaboration across Team_08, we follow these rules when working with GitLab.
+## How to build shader
+- Firstly we want to make sure were in the "team_08" directory
+- We need to make sure the "team_08/build" directory is deleted
+- Run the following commands
+  ```bash(Optional if windows/Linux)
+  rm -rf build
+  mkdir build
+  cmake -S . -B build -DCMAKE_BUILD_TYPE=Release
+  cmake --build build --config Release
+  ```
+  (it should be in the Release)
+  Mandatory
+  ```bash
+  cd build/Release
+  run ./GIFWA
+  ```
 
----
+## How to run eye tracker
+- in a new terminal you want to make sure you are in the `team_08` directory then run the line: `python3 -m scripts.run_eye_tracker`
+- click 'esc' or 'q' to kill
 
-##  Repository Structure
-- Keep the repository clean and organized.
-- Place code in appropriate directories (`src/`, `tests/`, `docs/`, etc.).
-- Avoid committing generated or build files (use `.gitignore`).
+## What you should be seeing
+You should now be on a boat in venice, the eye tracker is not fully working (yet), we are writing to the gaze_out.txt file and the position should update.
 
----
-
-##  Branching Strategy
-- **Main branch**: always production-ready and passing tests.
-- **Develop branch**: staging area for features before merging into `main`.
-- **Feature branches**:  
-  - Use the naming convention:  
-    ```
-    feature/<short-description>
-    bugfix/<short-description>
-    hotfix/<short-description>
-    ```
-  - Example: `feature/login-auth`, `bugfix/navbar-overlap`.
-
----
-
-##  Commit Messages
--   To be honest, just keep it short
+<!-- - Our script for running the our code is located in: "team_08/scripts/run_eye_tracker.py".  -->
