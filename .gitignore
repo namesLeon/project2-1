@@ -19,3 +19,4 @@ scripts/__pycache__/__init__.cpython-313.pyc
 scripts/__pycache__/run_eye_tracker.cpython-313.pyc
 scripts/run_eye_tracker.py
 *.pyc
+*.pyc

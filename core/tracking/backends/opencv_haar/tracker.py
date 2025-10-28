@@ -6,7 +6,7 @@ import cv2
 import numpy as np
 
 from ...base import EyeTracker, Gaze, Box
-from ...tracking_interface import EyeTrackingInterface
+from ...Tracking_Interface import EyeTrackingInterface
 from ...Vec2 import Vec2
 
 
