@@ -1,7 +1,6 @@
 sounds/city_sounds.wav
 sounds/Venice_music.wav
 *.mp4
-*.pyc
 core/__pycache__/__init__.cpython-313.pyc
 core/tracking/__pycache__/__init__.cpython-313.pyc
 core/tracking/__pycache__/base.cpython-313.pyc
@@ -17,7 +16,5 @@ core/tracking/utils/__pycache__/__init__.cpython-313.pyc
 core/tracking/utils/__pycache__/draw.cpython-313.pyc
 scripts/__pycache__/__init__.cpython-313.pyc
 scripts/__pycache__/run_eye_tracker.cpython-313.pyc
+*.pyc
 scripts/run_eye_tracker.py
-*.pyc
-*.pyc
-*.pyc

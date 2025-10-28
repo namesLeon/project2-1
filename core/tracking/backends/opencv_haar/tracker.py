@@ -21,10 +21,11 @@ from .calibration import Calibrator
 
 class OpenCVHaarEyeTracker(EyeTracker, EyeTrackingInterface):
     """
-    Single-eye tracker which implements EyeTrackingInterface:
+    Eye tracker which implements EyeTrackingInterface tracking only your left eye:
       - getNormalizedGazePosition() returns Vec2 between [0,1]
       - getScreenGazePosition() returns Vec2 in pixels
       - isConnected() returns bool
+
     """
 
     # eyetracker constructor
