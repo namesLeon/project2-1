@@ -40,7 +40,6 @@ def pupil_center_precise(eye_gray: np.ndarray) -> Optional[Tuple[int, int]]:
     single-eye pupil center finder.
     returns (cx, cy) in the eye ROI coordinate system, or None if not found.
     """
-
     h, w = eye_gray.shape[:2]  # get height and width of ROI
     if h < 10 or w < 10:  # rejects small ROIs
         return None
