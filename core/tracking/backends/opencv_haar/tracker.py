@@ -1,12 +1,12 @@
+from ast import main
 from pathlib import Path
 from typing import Optional, Tuple, List
 from collections import deque
 import cv2
 import numpy as np
-from pathlib import Path
 
 from ...base import EyeTracker, Gaze, Box
-from ...Tracking_Interface import EyeTrackingInterface
+from ...tracking_interface import EyeTrackingInterface
 from ...Vec2 import Vec2
 
 
@@ -59,13 +59,18 @@ def _eye_roi_from_face_single(face: Box, frame_shape, eye_side: str) -> Box | No
 
     y0 = int(fy + 0.28 * fh)
     y1 = int(fy + 0.52 * fh)
-    lx0 = int(fx + 0.14 * fw); lx1 = int(fx + 0.46 * fw)
-    rx0 = int(fx + 0.54 * fw); rx1 = int(fx + 0.86 * fw)
+    lx0 = int(fx + 0.14 * fw)
+    lx1 = int(fx + 0.46 * fw)
+    rx0 = int(fx + 0.54 * fw)
+    rx1 = int(fx + 0.86 * fw)
 
     def clamp(x0, y0, x1, y1):
-        x0 = max(0, x0); y0 = max(0, y0)
-        x1 = min(W - 1, x1); y1 = min(H - 1, y1)
-        w = max(1, x1 - x0); h = max(1, y1 - y0)
+        x0 = max(0, x0)
+        y0 = max(0, y0)
+        x1 = min(W - 1, x1)
+        y1 = min(H - 1, y1)
+        w = max(1, x1 - x0)
+        h = max(1, y1 - y0)
         return Box(x0, y0, w, h) if (w >= 6 and h >= 6) else None
 
     left = clamp(lx0, y0, lx1, y1)
@@ -90,7 +95,9 @@ def _suppress_highlights(gray: np.ndarray) -> np.ndarray:
     return suppressed
 
 
-def _subpixel_refine(gray: np.ndarray, pt: Tuple[int, int], win: int = 5) -> Tuple[float, float]:
+def _subpixel_refine(
+    gray: np.ndarray, pt: Tuple[int, int], win: int = 5
+) -> Tuple[float, float]:
     """Refine a point to subpixel accuracy around a small window."""
     x, y = pt
     h, w = gray.shape[:2]
@@ -107,15 +114,8 @@ def _subpixel_refine(gray: np.ndarray, pt: Tuple[int, int], win: int = 5) -> Tup
         return float(x), float(y)
 
 
+# avoid the eyelid because was previously jumping to eyelids.
 def _pupil_center_precise(eye_gray: np.ndarray) -> Optional[Tuple[int, int]]:
-    """
-    High-accuracy pupil center:
-      1) CLAHE + bilateral filter + highlight suppression
-      2) Edge path: Canny → contours → fitEllipse → dark check
-      3) Fallback: binary inversion by percentile + morphology → contour moments
-      4) Subpixel refine around best
-    Coordinates returned are in the eye_gray coordinate system.
-    """
     h, w = eye_gray.shape[:2]
     if h < 10 or w < 10:
         return None
@@ -165,18 +165,21 @@ def _pupil_center_precise(eye_gray: np.ndarray) -> Optional[Tuple[int, int]]:
         dark_mean = float(cv2.mean(g, mask=mask)[0])
         circularity = min(MA, ma) / max(MA, ma)
         center_y = cy
-        top_penalty = 1.0 - min(1.0, center_y / (0.35 * H)) 
+        top_penalty = 1.0 - min(1.0, center_y / (0.35 * H))
         score = (mean_all - dark_mean) * (0.7 + 0.3 * circularity) - 1.6 * top_penalty
         if score > best_score:
             best_score = score
             best_pt = (int(round(cx)), int(round(cy)))
 
-
     if best_pt is None:
         p = np.percentile(g, 12)
         _, th = cv2.threshold(g, int(p), 255, cv2.THRESH_BINARY_INV)
-        th = cv2.morphologyEx(th, cv2.MORPH_OPEN, np.ones((3, 3), np.uint8), iterations=1)
-        th = cv2.morphologyEx(th, cv2.MORPH_CLOSE, np.ones((3, 3), np.uint8), iterations=1)
+        th = cv2.morphologyEx(
+            th, cv2.MORPH_OPEN, np.ones((3, 3), np.uint8), iterations=1
+        )
+        th = cv2.morphologyEx(
+            th, cv2.MORPH_CLOSE, np.ones((3, 3), np.uint8), iterations=1
+        )
         contours, _ = cv2.findContours(th, cv2.RETR_EXTERNAL, cv2.CHAIN_APPROX_SIMPLE)
         if contours:
             area_min2 = 0.006 * (W * H)
@@ -200,7 +203,9 @@ def _pupil_center_precise(eye_gray: np.ndarray) -> Optional[Tuple[int, int]]:
                 dark_mean = float(cv2.mean(g, mask=mask)[0])
                 cy = y + hh / 2.0
                 top_penalty = 1.0 - min(1.0, cy / (0.35 * H))
-                score = (float(np.mean(g)) - dark_mean) * (0.6 + 0.4 * circularity) - 1.6 * top_penalty
+                score = (float(np.mean(g)) - dark_mean) * (
+                    0.6 + 0.4 * circularity
+                ) - 1.6 * top_penalty
                 if score > best_score:
                     M = cv2.moments(c)
                     if M["m00"] > 1e-6:
@@ -218,7 +223,7 @@ def _pupil_center_precise(eye_gray: np.ndarray) -> Optional[Tuple[int, int]]:
 class OpenCVHaarEyeTracker(EyeTracker, EyeTrackingInterface):
     """
     Single-eye tracker implementing EyeTrackingInterface:
-      - getNormalized`wdym`ePosition() -> Vec2 in [0,1]
+      - getNormalizedGazePosition() -> Vec2 in [0,1]
       - getScreenGazePosition()     -> Vec2 in pixels
       - isConnected()               -> bool
 
@@ -232,8 +237,8 @@ class OpenCVHaarEyeTracker(EyeTracker, EyeTrackingInterface):
         min_neighbors: int = 5,
         screen_width: Optional[int] = None,
         screen_height: Optional[int] = None,
-        eye_side: str = "right",  
-        smooth_window: int = 5,   
+        eye_side: str = "right",
+        smooth_window: int = 5,
         conf_threshold: float = 3.0,
     ):
         self.face_cascade = _load_cascade("haarcascade_frontalface_default.xml")
@@ -246,29 +251,28 @@ class OpenCVHaarEyeTracker(EyeTracker, EyeTrackingInterface):
         self.detect_every = 20
         self.frame_idx = 0
         self.downscale = 0.5
- 
+
         self._last_norm_xy: Optional[tuple[float, float]] = None  # [0,1]
         self._connected: bool = False
 
         self.eye_side = eye_side if eye_side in ("right", "left", "auto") else "right"
 
-        self._screen_w, self._screen_h = self._resolve_screen_size(screen_width, screen_height)
+        self._screen_w, self._screen_h = self._resolve_screen_size(
+            screen_width, screen_height
+        )
 
         self._face_box: Optional[Box] = None
         self._eye_box: Optional[Box] = None
-
 
         self._kf = None
 
         self._dx_hist: deque = deque(maxlen=max(1, smooth_window))
         self._dy_hist: deque = deque(maxlen=max(1, smooth_window))
 
-
-        self._cal_pts_scr: List[tuple[float, float]] = [] 
-        self._cal_pts_pix: List[tuple[float, float]] = [] 
+        self._cal_pts_scr: List[tuple[float, float]] = []
+        self._cal_pts_pix: List[tuple[float, float]] = []
         self._cal_Mx: Optional[np.ndarray] = None
-        self._cal_My: Optional[np.ndarray] = None 
-
+        self._cal_My: Optional[np.ndarray] = None
 
         self.gaze_last: Optional[tuple[float, float]] = None
 
@@ -331,7 +335,9 @@ class OpenCVHaarEyeTracker(EyeTracker, EyeTrackingInterface):
                     self.face_tracker = None
                     self._face_box = None
 
-            if self._face_box is None or (self.frame_idx % (self.detect_every * 2) == 0):
+            if self._face_box is None or (
+                self.frame_idx % (self.detect_every * 2) == 0
+            ):
                 small = cv2.resize(gray, (0, 0), fx=self.downscale, fy=self.downscale)
                 faces = self.face_cascade.detectMultiScale(
                     small,
@@ -358,15 +364,18 @@ class OpenCVHaarEyeTracker(EyeTracker, EyeTrackingInterface):
                 else:
                     self._face_box = None
 
-            
             if self._face_box is not None:
-                new_eye = _eye_roi_from_face_single(self._face_box, frame_bgr.shape, self.eye_side)
+                new_eye = _eye_roi_from_face_single(
+                    self._face_box, frame_bgr.shape, self.eye_side
+                )
                 if new_eye is not None:
                     eye_box = new_eye
                     csrt_eye = _make_csrt()
                     if csrt_eye is not None:
                         self.eye_tracker = csrt_eye
-                        self.eye_tracker.init(frame_bgr, (eye_box.x, eye_box.y, eye_box.w, eye_box.h))
+                        self.eye_tracker.init(
+                            frame_bgr, (eye_box.x, eye_box.y, eye_box.w, eye_box.h)
+                        )
                     self._eye_box = eye_box
                 else:
                     self.eye_tracker = None
@@ -376,7 +385,7 @@ class OpenCVHaarEyeTracker(EyeTracker, EyeTrackingInterface):
             self._connected = False
             return Gaze(ok=False)
 
-        roi = gray[eye_box.y: eye_box.y + eye_box.h, eye_box.x: eye_box.x + eye_box.w]
+        roi = gray[eye_box.y : eye_box.y + eye_box.h, eye_box.x : eye_box.x + eye_box.w]
         pc = _pupil_center_precise(roi)
         if pc is None:
             self._connected = False
@@ -395,6 +404,7 @@ class OpenCVHaarEyeTracker(EyeTracker, EyeTrackingInterface):
 
         cx_f, cy_f = self._kf_step(cx, cy)
 
+        # this makes it not update if the user blinks
         conf = self._pupil_confidence(roi, int(cx_f), int(cy_f))
         if conf < self._conf_threshold:
             self._connected = False
@@ -437,6 +447,7 @@ class OpenCVHaarEyeTracker(EyeTracker, EyeTrackingInterface):
             return int(w), int(h)
         try:
             import tkinter as _tk
+
             root = _tk.Tk()
             root.withdraw()
             sw = root.winfo_screenwidth()
@@ -446,16 +457,14 @@ class OpenCVHaarEyeTracker(EyeTracker, EyeTrackingInterface):
         except Exception:
             return 1920, 1080
 
-
+    # makes movement more smooth tracking - corrects, predicts where the pupil shoudl be given its last coordinates.
     def _ensure_kf(self, cx: float, cy: float):
         kf = cv2.KalmanFilter(4, 2, 0)
         dt = 1.0 / 60.0
-        kf.transitionMatrix = np.array([[1, 0, dt, 0],
-                                        [0, 1, 0, dt],
-                                        [0, 0, 1, 0],
-                                        [0, 0, 0, 1]], np.float32)
-        kf.measurementMatrix = np.array([[1, 0, 0, 0],
-                                         [0, 1, 0, 0]], np.float32)
+        kf.transitionMatrix = np.array(
+            [[1, 0, dt, 0], [0, 1, 0, dt], [0, 0, 1, 0], [0, 0, 0, 1]], np.float32
+        )
+        kf.measurementMatrix = np.array([[1, 0, 0, 0], [0, 1, 0, 0]], np.float32)
         q = 1e-2
         r = 2.0
         kf.processNoiseCov = np.eye(4, dtype=np.float32) * q
@@ -497,7 +506,7 @@ class OpenCVHaarEyeTracker(EyeTracker, EyeTrackingInterface):
         return np.array([1.0, dx, dy, dx * dx, dx * dy, dy * dy], dtype=np.float64)
 
     def _fit_calibration(self):
-        if len(self._cal_pts_scr) < 4:  
+        if len(self._cal_pts_scr) < 4:
             self._cal_Mx = None
             self._cal_My = None
             return
@@ -518,17 +527,6 @@ class OpenCVHaarEyeTracker(EyeTracker, EyeTrackingInterface):
         sx = float(f @ self._cal_Mx)
         sy = float(f @ self._cal_My)
         return sx, sy
-    def print_normalized_gaze(self, decimals: int = 3) -> str:
-        n = self.getNormalizedGazePosition()
-        out = f"normalized-Eye-Gaze-positions: x:{n.x:.{decimals}f} y:{n.y:.{decimals}f}"
-        print(out)
-        return out
-    def _write_gaze_for_cpp(self):
-        n = self.getNormalizedGazePosition()
-        Path("gaze_out.txt").write_text(
-        f"normalized-Eye-Gaze-positions: x:{n.x:.6f} y:{n.y:.6f}\n",
-        encoding="utf-8"
-    )
-        
+
 if __name__ == "__main__":
     main()
