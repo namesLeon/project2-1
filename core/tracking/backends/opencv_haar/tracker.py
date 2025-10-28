@@ -1,6 +1,7 @@
 from typing import Optional, List
 import cv2
 import numpy as np
+from pathlib import Path
 
 from ...base import EyeTracker, Gaze, Box
 from ...Tracking_Interface import EyeTrackingInterface
@@ -17,6 +18,8 @@ from .vision_utils import (
 from .pupil_proc import pupil_center_precise, pupil_confidence
 from .filters import Kalman2D, MedianSmoother
 from .calibration import Calibrator
+
+log_fp = open(Path("gaze_out.txt"), "w", buffering=1)
 
 
 class OpenCVHaarEyeTracker(EyeTracker, EyeTrackingInterface):
@@ -98,7 +101,7 @@ class OpenCVHaarEyeTracker(EyeTracker, EyeTrackingInterface):
     def isConnected(self) -> bool:
         return bool(self._connected)
 
-    # -------------- calibration methods ---------------
+    # calibration methods
     def clear_calibration(self):
         self._cal.clear()  # clears all calibration data
 
@@ -108,7 +111,7 @@ class OpenCVHaarEyeTracker(EyeTracker, EyeTrackingInterface):
         dx, dy = self.gaze_last
         self._cal.add_sample(dx, dy, float(screen_x), float(screen_y))
 
-    # ---------------- main loop ----------------
+    # main loop
     def process(self, frame_bgr: np.ndarray) -> Gaze:
         self.frame_idx += 1  # goes to next frame
         gray = cv2.cvtColor(

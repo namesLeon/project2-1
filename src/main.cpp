@@ -1,7 +1,7 @@
 #define NOMINMAX
 #define WIN32_LEAN_AND_MEAN
-#include <windows.h>
-#include <mmsystem.h>
+// #include <windows.h>
+// #include <mmsystem.h>
 #pragma comment(lib, "winmm.lib")
 
 #include <algorithm>
@@ -75,13 +75,13 @@ int main() {
     }
 
     Shader shader;
-    if (!shader.loadFromFiles("../../Shaders/quad.vert", "../../Shaders/retrocity.frag")) {
+    if (!shader.loadFromFiles("../Shaders/quad.vert", "../Shaders/retrocity.frag")) {
         std::cerr << "[ERROR] Failed to load shaders.\n";
         return -2;
     }
 
-    unsigned int texStone = loadTexture("../../maps/Stone.jpg");
-    unsigned int texWood  = loadTexture("../../maps/WoodFloor.jpg");
+    unsigned int texStone = loadTexture("../maps/Stone.jpg");
+    unsigned int texWood  = loadTexture("../maps/WoodFloor.jpg");
 
     shader.use();
     shader.setInt("uChannel0", 0);
