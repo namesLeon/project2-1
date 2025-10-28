@@ -19,3 +19,4 @@ class EyeTrackingInterface(ABC):
     def isConnected(self) -> bool:
         """ Returns True if the eye tracker is connected, False otherwise."""
         pass
+ 
