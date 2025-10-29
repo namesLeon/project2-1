@@ -1,3 +1,3 @@
-C:/Users/fazev/project2-1/team_08-1/build/CMakeFiles/GIFWA.dir
-C:/Users/fazev/project2-1/team_08-1/build/CMakeFiles/ALL_BUILD.dir
-C:/Users/fazev/project2-1/team_08-1/build/CMakeFiles/ZERO_CHECK.dir
+C:/Users/linxi/OneDrive/Desktop/Project 2-1/team_08/build/CMakeFiles/GIFWA.dir
+C:/Users/linxi/OneDrive/Desktop/Project 2-1/team_08/build/CMakeFiles/ALL_BUILD.dir
+C:/Users/linxi/OneDrive/Desktop/Project 2-1/team_08/build/CMakeFiles/ZERO_CHECK.dir
