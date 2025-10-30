@@ -1,1 +1,1 @@
-normalized-Eye-Gaze-positions: x:0.474199 y:0.590048
+normalized-Eye-Gaze-positions: x:0.541963 y:0.483814
