@@ -4,8 +4,9 @@ import cv2
 
 from core.tracking.backends.opencv_haar.tracker import OpenCVHaarEyeTracker
 from core.tracking.utils.draw import draw_gaze_overlay
-from core.tracking.postprocess.smoothing import EMA
-smoother = EMA(alpha=0.35)
+from core.tracking.postprocess.CircleSmoothing import CircleSmooth
+from core.tracking.postprocess.EMASmoothing import EMA
+smoother = CircleSmooth()
 
 
 
