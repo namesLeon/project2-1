@@ -12,14 +12,21 @@ class CircleSmooth:
     # at some rate. The center of the circle is the only value returned, so it can accuratly filter out the
     # jitters.
 
+    # The varibles in CAPS and be tuned to try and get the smoothing algorthim to be more accurate.
+
     def __init__(self):
         self.center = None
+        # Used for saving where the center should move.
+        self.newCenter = None
+        # Used to keep track of the state of the circle.
+        self.isMoving = False
         # Radius of the smoothing circle in the eye box units.
         self.RADIUS = 0.12
         # The rate at which the center moves to the next center spot
         # measured in percentage. So, the circle travels a certain percent
         # to the new center spot each update.
         self.INTERPOLATION_RATE = 0.1
+        self.counter = 0
 
     # Checks if the current gaze_xy point is inside the circle.
     def isInsideCircle(self, xy):
@@ -47,7 +54,20 @@ class CircleSmooth:
         else:
             # This is the linear interpolation that lets the circle move towards
             # the new gaze position instead of instantly jumping to it.
-            x = self.center[0]+(xy[0]-self.center[0])*self.INTERPOLATION_RATE
-            y = self.center[1]+(xy[1]-self.center[1])*self.INTERPOLATION_RATE
-            self.center = (x, y)
-            return self.center
+            if not self.isMoving:
+                self.newCenter = xy
+                x = self.center[0]+(self.newCenter[0]-self.center[0])*self.INTERPOLATION_RATE
+                y = self.center[1]+(self.newCenter[1]-self.center[1])*self.INTERPOLATION_RATE
+                self.center = (x, y)
+                self.isMoving = True
+                return self.center
+            else:
+                x = self.center[0]+(self.newCenter[0]-self.center[0])*self.INTERPOLATION_RATE
+                y = self.center[1]+(self.newCenter[1]-self.center[1])*self.INTERPOLATION_RATE
+                self.center = (x, y)
+                if self.counter == int(1/self.INTERPOLATION_RATE):
+                    self.isMoving = False
+                    self.counter = 0
+                else:
+                    self.counter+=1
+                return self.center
