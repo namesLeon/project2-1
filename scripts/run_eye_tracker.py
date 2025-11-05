@@ -7,6 +7,7 @@ from core.tracking.utils.draw import draw_gaze_overlay
 from core.tracking.postprocess.CircleSmoothing import CircleSmooth
 from core.tracking.postprocess.EMASmoothing import EMA
 smoother = CircleSmooth()
+smoother2 = EMA(0.35)
 
 
 
@@ -40,6 +41,7 @@ def main():
 
         g = tracker.process(frame)
         g.gaze_xy = smoother.update(g.gaze_xy)
+        g.gaze_xy = smoother2.update(g.gaze_xy)
         now = time.time()
         dt = now - last
         last = now
