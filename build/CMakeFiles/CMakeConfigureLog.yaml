@@ -59,13 +59,17 @@ events:
         - "C:\\Program Files\\Java\\jdk-25.0.1\\bin"
         - "C:\\Users\\linxi\\Downloads\\apache-maven-3.9.11-bin\\apache-maven-3.9.11\\bin"
         - "C:\\Program Files\\Git\\cmd"
+        - "C:\\Program Files\\nodejs"
         - "C:\\Users\\linxi\\AppData\\Local\\Microsoft\\WindowsApps"
         - "C:\\Program Files\\Graphviz\\bin"
         - "C:\\Users\\linxi\\AppData\\Local\\Programs\\Microsoft VS Code\\bin"
         - "C:\\Program Files\\Unity\\Hub\\Editor\\6000.0.51f1\\Editor\\Data\\PlaybackEngines\\AndroidPlayer\\SDK\\platform-tools"
         - "C:\\msys64\\mingw64\\bin"
         - "C:\\Program Files (x86)\\Nmap"
+        - "C:\\Users\\linxi\\.local\\bin"
+        - "C:\\Users\\linxi\\AppData\\Roaming\\npm"
         - "C:\\Users\\linxi\\.vscode\\extensions\\ms-python.debugpy-2025.14.1-win32-x64\\bundled\\scripts\\noConfigScripts"
+        - "C:\\Users\\linxi\\AppData\\Roaming\\Code\\User\\globalStorage\\github.copilot-chat\\debugCommand"
         - "C:\\Program Files\\Git\\usr\\bin\\vendor_perl"
         - "C:\\Program Files\\Git\\usr\\bin\\core_perl"
   -
@@ -84,7 +88,7 @@ events:
       The output was:
       0
       MSBuild version 17.14.23+b0019275e for .NET Framework
-      Build started 10/31/2025 3:50:02 PM.
+      Build started 11/6/2025 9:50:49 AM.
       
       Project "C:\\Users\\linxi\\OneDrive\\Desktop\\Project 2-1\\team_08\\build\\CMakeFiles\\4.1.1\\CompilerIdC\\CompilerIdC.vcxproj" on node 1 (default targets).
       PrepareForBuild:
@@ -113,7 +117,7 @@ events:
           0 Warning(s)
           0 Error(s)
       
-      Time Elapsed 00:00:00.97
+      Time Elapsed 00:00:00.57
       
       
       Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "CompilerIdC.exe"
@@ -166,13 +170,17 @@ events:
       - "C:/Program Files/Java/jdk-25.0.1/bin/"
       - "C:/Users/linxi/Downloads/apache-maven-3.9.11-bin/apache-maven-3.9.11/bin/"
       - "C:/Program Files/Git/cmd/"
+      - "C:/Program Files/nodejs/"
       - "C:/Users/linxi/AppData/Local/Microsoft/WindowsApps/"
       - "C:/Program Files/Graphviz/bin/"
       - "C:/Users/linxi/AppData/Local/Programs/Microsoft VS Code/bin/"
       - "C:/Program Files/Unity/Hub/Editor/6000.0.51f1/Editor/Data/PlaybackEngines/AndroidPlayer/SDK/platform-tools/"
       - "C:/msys64/mingw64/bin/"
       - "C:/Program Files (x86)/Nmap/"
+      - "C:/Users/linxi/.local/bin/"
+      - "C:/Users/linxi/AppData/Roaming/npm/"
       - "C:/Users/linxi/.vscode/extensions/ms-python.debugpy-2025.14.1-win32-x64/bundled/scripts/noConfigScripts/"
+      - "C:/Users/linxi/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/"
       - "C:/Program Files/Git/usr/bin/vendor_perl/"
       - "C:/Program Files/Git/usr/bin/core_perl/"
     searched_directories:
@@ -204,13 +212,17 @@ events:
         - "C:\\Program Files\\Java\\jdk-25.0.1\\bin"
         - "C:\\Users\\linxi\\Downloads\\apache-maven-3.9.11-bin\\apache-maven-3.9.11\\bin"
         - "C:\\Program Files\\Git\\cmd"
+        - "C:\\Program Files\\nodejs"
         - "C:\\Users\\linxi\\AppData\\Local\\Microsoft\\WindowsApps"
         - "C:\\Program Files\\Graphviz\\bin"
         - "C:\\Users\\linxi\\AppData\\Local\\Programs\\Microsoft VS Code\\bin"
         - "C:\\Program Files\\Unity\\Hub\\Editor\\6000.0.51f1\\Editor\\Data\\PlaybackEngines\\AndroidPlayer\\SDK\\platform-tools"
         - "C:\\msys64\\mingw64\\bin"
         - "C:\\Program Files (x86)\\Nmap"
+        - "C:\\Users\\linxi\\.local\\bin"
+        - "C:\\Users\\linxi\\AppData\\Roaming\\npm"
         - "C:\\Users\\linxi\\.vscode\\extensions\\ms-python.debugpy-2025.14.1-win32-x64\\bundled\\scripts\\noConfigScripts"
+        - "C:\\Users\\linxi\\AppData\\Roaming\\Code\\User\\globalStorage\\github.copilot-chat\\debugCommand"
         - "C:\\Program Files\\Git\\usr\\bin\\vendor_perl"
         - "C:\\Program Files\\Git\\usr\\bin\\core_perl"
   -
@@ -256,13 +268,17 @@ events:
       - "C:/Program Files/Java/jdk-25.0.1/bin/"
       - "C:/Users/linxi/Downloads/apache-maven-3.9.11-bin/apache-maven-3.9.11/bin/"
       - "C:/Program Files/Git/cmd/"
+      - "C:/Program Files/nodejs/"
       - "C:/Users/linxi/AppData/Local/Microsoft/WindowsApps/"
       - "C:/Program Files/Graphviz/bin/"
       - "C:/Users/linxi/AppData/Local/Programs/Microsoft VS Code/bin/"
       - "C:/Program Files/Unity/Hub/Editor/6000.0.51f1/Editor/Data/PlaybackEngines/AndroidPlayer/SDK/platform-tools/"
       - "C:/msys64/mingw64/bin/"
       - "C:/Program Files (x86)/Nmap/"
+      - "C:/Users/linxi/.local/bin/"
+      - "C:/Users/linxi/AppData/Roaming/npm/"
       - "C:/Users/linxi/.vscode/extensions/ms-python.debugpy-2025.14.1-win32-x64/bundled/scripts/noConfigScripts/"
+      - "C:/Users/linxi/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/"
       - "C:/Program Files/Git/usr/bin/vendor_perl/"
       - "C:/Program Files/Git/usr/bin/core_perl/"
     searched_directories:
@@ -329,6 +345,9 @@ events:
       - "C:/Program Files/Git/cmd/lld-link.com"
       - "C:/Program Files/Git/cmd/lld-link.exe"
       - "C:/Program Files/Git/cmd/lld-link"
+      - "C:/Program Files/nodejs/lld-link.com"
+      - "C:/Program Files/nodejs/lld-link.exe"
+      - "C:/Program Files/nodejs/lld-link"
       - "C:/Users/linxi/AppData/Local/Microsoft/WindowsApps/lld-link.com"
       - "C:/Users/linxi/AppData/Local/Microsoft/WindowsApps/lld-link.exe"
       - "C:/Users/linxi/AppData/Local/Microsoft/WindowsApps/lld-link"
@@ -347,9 +366,18 @@ events:
       - "C:/Program Files (x86)/Nmap/lld-link.com"
       - "C:/Program Files (x86)/Nmap/lld-link.exe"
       - "C:/Program Files (x86)/Nmap/lld-link"
+      - "C:/Users/linxi/.local/bin/lld-link.com"
+      - "C:/Users/linxi/.local/bin/lld-link.exe"
+      - "C:/Users/linxi/.local/bin/lld-link"
+      - "C:/Users/linxi/AppData/Roaming/npm/lld-link.com"
+      - "C:/Users/linxi/AppData/Roaming/npm/lld-link.exe"
+      - "C:/Users/linxi/AppData/Roaming/npm/lld-link"
       - "C:/Users/linxi/.vscode/extensions/ms-python.debugpy-2025.14.1-win32-x64/bundled/scripts/noConfigScripts/lld-link.com"
       - "C:/Users/linxi/.vscode/extensions/ms-python.debugpy-2025.14.1-win32-x64/bundled/scripts/noConfigScripts/lld-link.exe"
       - "C:/Users/linxi/.vscode/extensions/ms-python.debugpy-2025.14.1-win32-x64/bundled/scripts/noConfigScripts/lld-link"
+      - "C:/Users/linxi/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/lld-link.com"
+      - "C:/Users/linxi/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/lld-link.exe"
+      - "C:/Users/linxi/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/lld-link"
       - "C:/Program Files/Git/usr/bin/vendor_perl/lld-link.com"
       - "C:/Program Files/Git/usr/bin/vendor_perl/lld-link.exe"
       - "C:/Program Files/Git/usr/bin/vendor_perl/lld-link"
@@ -383,13 +411,17 @@ events:
         - "C:\\Program Files\\Java\\jdk-25.0.1\\bin"
         - "C:\\Users\\linxi\\Downloads\\apache-maven-3.9.11-bin\\apache-maven-3.9.11\\bin"
         - "C:\\Program Files\\Git\\cmd"
+        - "C:\\Program Files\\nodejs"
         - "C:\\Users\\linxi\\AppData\\Local\\Microsoft\\WindowsApps"
         - "C:\\Program Files\\Graphviz\\bin"
         - "C:\\Users\\linxi\\AppData\\Local\\Programs\\Microsoft VS Code\\bin"
         - "C:\\Program Files\\Unity\\Hub\\Editor\\6000.0.51f1\\Editor\\Data\\PlaybackEngines\\AndroidPlayer\\SDK\\platform-tools"
         - "C:\\msys64\\mingw64\\bin"
         - "C:\\Program Files (x86)\\Nmap"
+        - "C:\\Users\\linxi\\.local\\bin"
+        - "C:\\Users\\linxi\\AppData\\Roaming\\npm"
         - "C:\\Users\\linxi\\.vscode\\extensions\\ms-python.debugpy-2025.14.1-win32-x64\\bundled\\scripts\\noConfigScripts"
+        - "C:\\Users\\linxi\\AppData\\Roaming\\Code\\User\\globalStorage\\github.copilot-chat\\debugCommand"
         - "C:\\Program Files\\Git\\usr\\bin\\vendor_perl"
         - "C:\\Program Files\\Git\\usr\\bin\\core_perl"
   -
@@ -433,13 +465,17 @@ events:
       - "C:/Program Files/Java/jdk-25.0.1/bin/"
       - "C:/Users/linxi/Downloads/apache-maven-3.9.11-bin/apache-maven-3.9.11/bin/"
       - "C:/Program Files/Git/cmd/"
+      - "C:/Program Files/nodejs/"
       - "C:/Users/linxi/AppData/Local/Microsoft/WindowsApps/"
       - "C:/Program Files/Graphviz/bin/"
       - "C:/Users/linxi/AppData/Local/Programs/Microsoft VS Code/bin/"
       - "C:/Program Files/Unity/Hub/Editor/6000.0.51f1/Editor/Data/PlaybackEngines/AndroidPlayer/SDK/platform-tools/"
       - "C:/msys64/mingw64/bin/"
       - "C:/Program Files (x86)/Nmap/"
+      - "C:/Users/linxi/.local/bin/"
+      - "C:/Users/linxi/AppData/Roaming/npm/"
       - "C:/Users/linxi/.vscode/extensions/ms-python.debugpy-2025.14.1-win32-x64/bundled/scripts/noConfigScripts/"
+      - "C:/Users/linxi/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/"
       - "C:/Program Files/Git/usr/bin/vendor_perl/"
       - "C:/Program Files/Git/usr/bin/core_perl/"
     searched_directories:
@@ -471,13 +507,17 @@ events:
         - "C:\\Program Files\\Java\\jdk-25.0.1\\bin"
         - "C:\\Users\\linxi\\Downloads\\apache-maven-3.9.11-bin\\apache-maven-3.9.11\\bin"
         - "C:\\Program Files\\Git\\cmd"
+        - "C:\\Program Files\\nodejs"
         - "C:\\Users\\linxi\\AppData\\Local\\Microsoft\\WindowsApps"
         - "C:\\Program Files\\Graphviz\\bin"
         - "C:\\Users\\linxi\\AppData\\Local\\Programs\\Microsoft VS Code\\bin"
         - "C:\\Program Files\\Unity\\Hub\\Editor\\6000.0.51f1\\Editor\\Data\\PlaybackEngines\\AndroidPlayer\\SDK\\platform-tools"
         - "C:\\msys64\\mingw64\\bin"
         - "C:\\Program Files (x86)\\Nmap"
+        - "C:\\Users\\linxi\\.local\\bin"
+        - "C:\\Users\\linxi\\AppData\\Roaming\\npm"
         - "C:\\Users\\linxi\\.vscode\\extensions\\ms-python.debugpy-2025.14.1-win32-x64\\bundled\\scripts\\noConfigScripts"
+        - "C:\\Users\\linxi\\AppData\\Roaming\\Code\\User\\globalStorage\\github.copilot-chat\\debugCommand"
         - "C:\\Program Files\\Git\\usr\\bin\\vendor_perl"
         - "C:\\Program Files\\Git\\usr\\bin\\core_perl"
   -
@@ -521,13 +561,17 @@ events:
       - "C:/Program Files/Java/jdk-25.0.1/bin/"
       - "C:/Users/linxi/Downloads/apache-maven-3.9.11-bin/apache-maven-3.9.11/bin/"
       - "C:/Program Files/Git/cmd/"
+      - "C:/Program Files/nodejs/"
       - "C:/Users/linxi/AppData/Local/Microsoft/WindowsApps/"
       - "C:/Program Files/Graphviz/bin/"
       - "C:/Users/linxi/AppData/Local/Programs/Microsoft VS Code/bin/"
       - "C:/Program Files/Unity/Hub/Editor/6000.0.51f1/Editor/Data/PlaybackEngines/AndroidPlayer/SDK/platform-tools/"
       - "C:/msys64/mingw64/bin/"
       - "C:/Program Files (x86)/Nmap/"
+      - "C:/Users/linxi/.local/bin/"
+      - "C:/Users/linxi/AppData/Roaming/npm/"
       - "C:/Users/linxi/.vscode/extensions/ms-python.debugpy-2025.14.1-win32-x64/bundled/scripts/noConfigScripts/"
+      - "C:/Users/linxi/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/"
       - "C:/Program Files/Git/usr/bin/vendor_perl/"
       - "C:/Program Files/Git/usr/bin/core_perl/"
     searched_directories:
@@ -594,6 +638,9 @@ events:
       - "C:/Program Files/Git/cmd/mt.com"
       - "C:/Program Files/Git/cmd/mt.exe"
       - "C:/Program Files/Git/cmd/mt"
+      - "C:/Program Files/nodejs/mt.com"
+      - "C:/Program Files/nodejs/mt.exe"
+      - "C:/Program Files/nodejs/mt"
       - "C:/Users/linxi/AppData/Local/Microsoft/WindowsApps/mt.com"
       - "C:/Users/linxi/AppData/Local/Microsoft/WindowsApps/mt.exe"
       - "C:/Users/linxi/AppData/Local/Microsoft/WindowsApps/mt"
@@ -612,9 +659,18 @@ events:
       - "C:/Program Files (x86)/Nmap/mt.com"
       - "C:/Program Files (x86)/Nmap/mt.exe"
       - "C:/Program Files (x86)/Nmap/mt"
+      - "C:/Users/linxi/.local/bin/mt.com"
+      - "C:/Users/linxi/.local/bin/mt.exe"
+      - "C:/Users/linxi/.local/bin/mt"
+      - "C:/Users/linxi/AppData/Roaming/npm/mt.com"
+      - "C:/Users/linxi/AppData/Roaming/npm/mt.exe"
+      - "C:/Users/linxi/AppData/Roaming/npm/mt"
       - "C:/Users/linxi/.vscode/extensions/ms-python.debugpy-2025.14.1-win32-x64/bundled/scripts/noConfigScripts/mt.com"
       - "C:/Users/linxi/.vscode/extensions/ms-python.debugpy-2025.14.1-win32-x64/bundled/scripts/noConfigScripts/mt.exe"
       - "C:/Users/linxi/.vscode/extensions/ms-python.debugpy-2025.14.1-win32-x64/bundled/scripts/noConfigScripts/mt"
+      - "C:/Users/linxi/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/mt.com"
+      - "C:/Users/linxi/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/mt.exe"
+      - "C:/Users/linxi/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/mt"
       - "C:/Program Files/Git/usr/bin/vendor_perl/mt.com"
       - "C:/Program Files/Git/usr/bin/vendor_perl/mt.exe"
       - "C:/Program Files/Git/usr/bin/vendor_perl/mt"
@@ -648,13 +704,17 @@ events:
         - "C:\\Program Files\\Java\\jdk-25.0.1\\bin"
         - "C:\\Users\\linxi\\Downloads\\apache-maven-3.9.11-bin\\apache-maven-3.9.11\\bin"
         - "C:\\Program Files\\Git\\cmd"
+        - "C:\\Program Files\\nodejs"
         - "C:\\Users\\linxi\\AppData\\Local\\Microsoft\\WindowsApps"
         - "C:\\Program Files\\Graphviz\\bin"
         - "C:\\Users\\linxi\\AppData\\Local\\Programs\\Microsoft VS Code\\bin"
         - "C:\\Program Files\\Unity\\Hub\\Editor\\6000.0.51f1\\Editor\\Data\\PlaybackEngines\\AndroidPlayer\\SDK\\platform-tools"
         - "C:\\msys64\\mingw64\\bin"
         - "C:\\Program Files (x86)\\Nmap"
+        - "C:\\Users\\linxi\\.local\\bin"
+        - "C:\\Users\\linxi\\AppData\\Roaming\\npm"
         - "C:\\Users\\linxi\\.vscode\\extensions\\ms-python.debugpy-2025.14.1-win32-x64\\bundled\\scripts\\noConfigScripts"
+        - "C:\\Users\\linxi\\AppData\\Roaming\\Code\\User\\globalStorage\\github.copilot-chat\\debugCommand"
         - "C:\\Program Files\\Git\\usr\\bin\\vendor_perl"
         - "C:\\Program Files\\Git\\usr\\bin\\core_perl"
   -
@@ -698,13 +758,17 @@ events:
       - "C:/Program Files/Java/jdk-25.0.1/bin/"
       - "C:/Users/linxi/Downloads/apache-maven-3.9.11-bin/apache-maven-3.9.11/bin/"
       - "C:/Program Files/Git/cmd/"
+      - "C:/Program Files/nodejs/"
       - "C:/Users/linxi/AppData/Local/Microsoft/WindowsApps/"
       - "C:/Program Files/Graphviz/bin/"
       - "C:/Users/linxi/AppData/Local/Programs/Microsoft VS Code/bin/"
       - "C:/Program Files/Unity/Hub/Editor/6000.0.51f1/Editor/Data/PlaybackEngines/AndroidPlayer/SDK/platform-tools/"
       - "C:/msys64/mingw64/bin/"
       - "C:/Program Files (x86)/Nmap/"
+      - "C:/Users/linxi/.local/bin/"
+      - "C:/Users/linxi/AppData/Roaming/npm/"
       - "C:/Users/linxi/.vscode/extensions/ms-python.debugpy-2025.14.1-win32-x64/bundled/scripts/noConfigScripts/"
+      - "C:/Users/linxi/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/"
       - "C:/Program Files/Git/usr/bin/vendor_perl/"
       - "C:/Program Files/Git/usr/bin/core_perl/"
     searched_directories:
@@ -736,13 +800,17 @@ events:
         - "C:\\Program Files\\Java\\jdk-25.0.1\\bin"
         - "C:\\Users\\linxi\\Downloads\\apache-maven-3.9.11-bin\\apache-maven-3.9.11\\bin"
         - "C:\\Program Files\\Git\\cmd"
+        - "C:\\Program Files\\nodejs"
         - "C:\\Users\\linxi\\AppData\\Local\\Microsoft\\WindowsApps"
         - "C:\\Program Files\\Graphviz\\bin"
         - "C:\\Users\\linxi\\AppData\\Local\\Programs\\Microsoft VS Code\\bin"
         - "C:\\Program Files\\Unity\\Hub\\Editor\\6000.0.51f1\\Editor\\Data\\PlaybackEngines\\AndroidPlayer\\SDK\\platform-tools"
         - "C:\\msys64\\mingw64\\bin"
         - "C:\\Program Files (x86)\\Nmap"
+        - "C:\\Users\\linxi\\.local\\bin"
+        - "C:\\Users\\linxi\\AppData\\Roaming\\npm"
         - "C:\\Users\\linxi\\.vscode\\extensions\\ms-python.debugpy-2025.14.1-win32-x64\\bundled\\scripts\\noConfigScripts"
+        - "C:\\Users\\linxi\\AppData\\Roaming\\Code\\User\\globalStorage\\github.copilot-chat\\debugCommand"
         - "C:\\Program Files\\Git\\usr\\bin\\vendor_perl"
         - "C:\\Program Files\\Git\\usr\\bin\\core_perl"
   -
@@ -796,13 +864,17 @@ events:
         - "C:\\Program Files\\Java\\jdk-25.0.1\\bin"
         - "C:\\Users\\linxi\\Downloads\\apache-maven-3.9.11-bin\\apache-maven-3.9.11\\bin"
         - "C:\\Program Files\\Git\\cmd"
+        - "C:\\Program Files\\nodejs"
         - "C:\\Users\\linxi\\AppData\\Local\\Microsoft\\WindowsApps"
         - "C:\\Program Files\\Graphviz\\bin"
         - "C:\\Users\\linxi\\AppData\\Local\\Programs\\Microsoft VS Code\\bin"
         - "C:\\Program Files\\Unity\\Hub\\Editor\\6000.0.51f1\\Editor\\Data\\PlaybackEngines\\AndroidPlayer\\SDK\\platform-tools"
         - "C:\\msys64\\mingw64\\bin"
         - "C:\\Program Files (x86)\\Nmap"
+        - "C:\\Users\\linxi\\.local\\bin"
+        - "C:\\Users\\linxi\\AppData\\Roaming\\npm"
         - "C:\\Users\\linxi\\.vscode\\extensions\\ms-python.debugpy-2025.14.1-win32-x64\\bundled\\scripts\\noConfigScripts"
+        - "C:\\Users\\linxi\\AppData\\Roaming\\Code\\User\\globalStorage\\github.copilot-chat\\debugCommand"
         - "C:\\Program Files\\Git\\usr\\bin\\vendor_perl"
         - "C:\\Program Files\\Git\\usr\\bin\\core_perl"
   -
@@ -821,7 +893,7 @@ events:
       The output was:
       0
       MSBuild version 17.14.23+b0019275e for .NET Framework
-      Build started 10/31/2025 3:50:03 PM.
+      Build started 11/6/2025 9:50:50 AM.
       
       Project "C:\\Users\\linxi\\OneDrive\\Desktop\\Project 2-1\\team_08\\build\\CMakeFiles\\4.1.1\\CompilerIdCXX\\CompilerIdCXX.vcxproj" on node 1 (default targets).
       PrepareForBuild:
@@ -850,7 +922,7 @@ events:
           0 Warning(s)
           0 Error(s)
       
-      Time Elapsed 00:00:00.61
+      Time Elapsed 00:00:00.58
       
       
       Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "CompilerIdCXX.exe"
@@ -903,13 +975,17 @@ events:
       - "C:/Program Files/Java/jdk-25.0.1/bin/"
       - "C:/Users/linxi/Downloads/apache-maven-3.9.11-bin/apache-maven-3.9.11/bin/"
       - "C:/Program Files/Git/cmd/"
+      - "C:/Program Files/nodejs/"
       - "C:/Users/linxi/AppData/Local/Microsoft/WindowsApps/"
       - "C:/Program Files/Graphviz/bin/"
       - "C:/Users/linxi/AppData/Local/Programs/Microsoft VS Code/bin/"
       - "C:/Program Files/Unity/Hub/Editor/6000.0.51f1/Editor/Data/PlaybackEngines/AndroidPlayer/SDK/platform-tools/"
       - "C:/msys64/mingw64/bin/"
       - "C:/Program Files (x86)/Nmap/"
+      - "C:/Users/linxi/.local/bin/"
+      - "C:/Users/linxi/AppData/Roaming/npm/"
       - "C:/Users/linxi/.vscode/extensions/ms-python.debugpy-2025.14.1-win32-x64/bundled/scripts/noConfigScripts/"
+      - "C:/Users/linxi/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/"
       - "C:/Program Files/Git/usr/bin/vendor_perl/"
       - "C:/Program Files/Git/usr/bin/core_perl/"
     searched_directories:
@@ -976,6 +1052,9 @@ events:
       - "C:/Program Files/Git/cmd/lld-link.com"
       - "C:/Program Files/Git/cmd/lld-link.exe"
       - "C:/Program Files/Git/cmd/lld-link"
+      - "C:/Program Files/nodejs/lld-link.com"
+      - "C:/Program Files/nodejs/lld-link.exe"
+      - "C:/Program Files/nodejs/lld-link"
       - "C:/Users/linxi/AppData/Local/Microsoft/WindowsApps/lld-link.com"
       - "C:/Users/linxi/AppData/Local/Microsoft/WindowsApps/lld-link.exe"
       - "C:/Users/linxi/AppData/Local/Microsoft/WindowsApps/lld-link"
@@ -994,9 +1073,18 @@ events:
       - "C:/Program Files (x86)/Nmap/lld-link.com"
       - "C:/Program Files (x86)/Nmap/lld-link.exe"
       - "C:/Program Files (x86)/Nmap/lld-link"
+      - "C:/Users/linxi/.local/bin/lld-link.com"
+      - "C:/Users/linxi/.local/bin/lld-link.exe"
+      - "C:/Users/linxi/.local/bin/lld-link"
+      - "C:/Users/linxi/AppData/Roaming/npm/lld-link.com"
+      - "C:/Users/linxi/AppData/Roaming/npm/lld-link.exe"
+      - "C:/Users/linxi/AppData/Roaming/npm/lld-link"
       - "C:/Users/linxi/.vscode/extensions/ms-python.debugpy-2025.14.1-win32-x64/bundled/scripts/noConfigScripts/lld-link.com"
       - "C:/Users/linxi/.vscode/extensions/ms-python.debugpy-2025.14.1-win32-x64/bundled/scripts/noConfigScripts/lld-link.exe"
       - "C:/Users/linxi/.vscode/extensions/ms-python.debugpy-2025.14.1-win32-x64/bundled/scripts/noConfigScripts/lld-link"
+      - "C:/Users/linxi/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/lld-link.com"
+      - "C:/Users/linxi/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/lld-link.exe"
+      - "C:/Users/linxi/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/lld-link"
       - "C:/Program Files/Git/usr/bin/vendor_perl/lld-link.com"
       - "C:/Program Files/Git/usr/bin/vendor_perl/lld-link.exe"
       - "C:/Program Files/Git/usr/bin/vendor_perl/lld-link"
@@ -1030,13 +1118,17 @@ events:
         - "C:\\Program Files\\Java\\jdk-25.0.1\\bin"
         - "C:\\Users\\linxi\\Downloads\\apache-maven-3.9.11-bin\\apache-maven-3.9.11\\bin"
         - "C:\\Program Files\\Git\\cmd"
+        - "C:\\Program Files\\nodejs"
         - "C:\\Users\\linxi\\AppData\\Local\\Microsoft\\WindowsApps"
         - "C:\\Program Files\\Graphviz\\bin"
         - "C:\\Users\\linxi\\AppData\\Local\\Programs\\Microsoft VS Code\\bin"
         - "C:\\Program Files\\Unity\\Hub\\Editor\\6000.0.51f1\\Editor\\Data\\PlaybackEngines\\AndroidPlayer\\SDK\\platform-tools"
         - "C:\\msys64\\mingw64\\bin"
         - "C:\\Program Files (x86)\\Nmap"
+        - "C:\\Users\\linxi\\.local\\bin"
+        - "C:\\Users\\linxi\\AppData\\Roaming\\npm"
         - "C:\\Users\\linxi\\.vscode\\extensions\\ms-python.debugpy-2025.14.1-win32-x64\\bundled\\scripts\\noConfigScripts"
+        - "C:\\Users\\linxi\\AppData\\Roaming\\Code\\User\\globalStorage\\github.copilot-chat\\debugCommand"
         - "C:\\Program Files\\Git\\usr\\bin\\vendor_perl"
         - "C:\\Program Files\\Git\\usr\\bin\\core_perl"
   -
@@ -1082,13 +1174,17 @@ events:
       - "C:/Program Files/Java/jdk-25.0.1/bin/"
       - "C:/Users/linxi/Downloads/apache-maven-3.9.11-bin/apache-maven-3.9.11/bin/"
       - "C:/Program Files/Git/cmd/"
+      - "C:/Program Files/nodejs/"
       - "C:/Users/linxi/AppData/Local/Microsoft/WindowsApps/"
       - "C:/Program Files/Graphviz/bin/"
       - "C:/Users/linxi/AppData/Local/Programs/Microsoft VS Code/bin/"
       - "C:/Program Files/Unity/Hub/Editor/6000.0.51f1/Editor/Data/PlaybackEngines/AndroidPlayer/SDK/platform-tools/"
       - "C:/msys64/mingw64/bin/"
       - "C:/Program Files (x86)/Nmap/"
+      - "C:/Users/linxi/.local/bin/"
+      - "C:/Users/linxi/AppData/Roaming/npm/"
       - "C:/Users/linxi/.vscode/extensions/ms-python.debugpy-2025.14.1-win32-x64/bundled/scripts/noConfigScripts/"
+      - "C:/Users/linxi/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/"
       - "C:/Program Files/Git/usr/bin/vendor_perl/"
       - "C:/Program Files/Git/usr/bin/core_perl/"
       - "C:/Program Files/bin/"
@@ -1164,6 +1260,9 @@ events:
       - "C:/Program Files/Git/cmd/rc.com"
       - "C:/Program Files/Git/cmd/rc.exe"
       - "C:/Program Files/Git/cmd/rc"
+      - "C:/Program Files/nodejs/rc.com"
+      - "C:/Program Files/nodejs/rc.exe"
+      - "C:/Program Files/nodejs/rc"
       - "C:/Users/linxi/AppData/Local/Microsoft/WindowsApps/rc.com"
       - "C:/Users/linxi/AppData/Local/Microsoft/WindowsApps/rc.exe"
       - "C:/Users/linxi/AppData/Local/Microsoft/WindowsApps/rc"
@@ -1182,9 +1281,18 @@ events:
       - "C:/Program Files (x86)/Nmap/rc.com"
       - "C:/Program Files (x86)/Nmap/rc.exe"
       - "C:/Program Files (x86)/Nmap/rc"
+      - "C:/Users/linxi/.local/bin/rc.com"
+      - "C:/Users/linxi/.local/bin/rc.exe"
+      - "C:/Users/linxi/.local/bin/rc"
+      - "C:/Users/linxi/AppData/Roaming/npm/rc.com"
+      - "C:/Users/linxi/AppData/Roaming/npm/rc.exe"
+      - "C:/Users/linxi/AppData/Roaming/npm/rc"
       - "C:/Users/linxi/.vscode/extensions/ms-python.debugpy-2025.14.1-win32-x64/bundled/scripts/noConfigScripts/rc.com"
       - "C:/Users/linxi/.vscode/extensions/ms-python.debugpy-2025.14.1-win32-x64/bundled/scripts/noConfigScripts/rc.exe"
       - "C:/Users/linxi/.vscode/extensions/ms-python.debugpy-2025.14.1-win32-x64/bundled/scripts/noConfigScripts/rc"
+      - "C:/Users/linxi/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/rc.com"
+      - "C:/Users/linxi/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/rc.exe"
+      - "C:/Users/linxi/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/rc"
       - "C:/Program Files/Git/usr/bin/vendor_perl/rc.com"
       - "C:/Program Files/Git/usr/bin/vendor_perl/rc.exe"
       - "C:/Program Files/Git/usr/bin/vendor_perl/rc"
@@ -1254,13 +1362,17 @@ events:
         - "C:\\Program Files\\Java\\jdk-25.0.1\\bin"
         - "C:\\Users\\linxi\\Downloads\\apache-maven-3.9.11-bin\\apache-maven-3.9.11\\bin"
         - "C:\\Program Files\\Git\\cmd"
+        - "C:\\Program Files\\nodejs"
         - "C:\\Users\\linxi\\AppData\\Local\\Microsoft\\WindowsApps"
         - "C:\\Program Files\\Graphviz\\bin"
         - "C:\\Users\\linxi\\AppData\\Local\\Programs\\Microsoft VS Code\\bin"
         - "C:\\Program Files\\Unity\\Hub\\Editor\\6000.0.51f1\\Editor\\Data\\PlaybackEngines\\AndroidPlayer\\SDK\\platform-tools"
         - "C:\\msys64\\mingw64\\bin"
         - "C:\\Program Files (x86)\\Nmap"
+        - "C:\\Users\\linxi\\.local\\bin"
+        - "C:\\Users\\linxi\\AppData\\Roaming\\npm"
         - "C:\\Users\\linxi\\.vscode\\extensions\\ms-python.debugpy-2025.14.1-win32-x64\\bundled\\scripts\\noConfigScripts"
+        - "C:\\Users\\linxi\\AppData\\Roaming\\Code\\User\\globalStorage\\github.copilot-chat\\debugCommand"
         - "C:\\Program Files\\Git\\usr\\bin\\vendor_perl"
         - "C:\\Program Files\\Git\\usr\\bin\\core_perl"
       CMAKE_INSTALL_PREFIX: "C:/Program Files (x86)/GIFWA"
@@ -1278,8 +1390,8 @@ events:
     checks:
       - "Detecting C compiler ABI info"
     directories:
-      source: "C:/Users/linxi/OneDrive/Desktop/Project 2-1/team_08/build/CMakeFiles/CMakeScratch/TryCompile-ttlumq"
-      binary: "C:/Users/linxi/OneDrive/Desktop/Project 2-1/team_08/build/CMakeFiles/CMakeScratch/TryCompile-ttlumq"
+      source: "C:/Users/linxi/OneDrive/Desktop/Project 2-1/team_08/build/CMakeFiles/CMakeScratch/TryCompile-0d9qlf"
+      binary: "C:/Users/linxi/OneDrive/Desktop/Project 2-1/team_08/build/CMakeFiles/CMakeScratch/TryCompile-0d9qlf"
     cmakeVariables:
       CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS"
       CMAKE_C_FLAGS_DEBUG: "/Zi /Ob0 /Od /RTC1"
@@ -1288,40 +1400,40 @@ events:
       variable: "CMAKE_C_ABI_COMPILED"
       cached: true
       stdout: |
-        Change Dir: 'C:/Users/linxi/OneDrive/Desktop/Project 2-1/team_08/build/CMakeFiles/CMakeScratch/TryCompile-ttlumq'
+        Change Dir: 'C:/Users/linxi/OneDrive/Desktop/Project 2-1/team_08/build/CMakeFiles/CMakeScratch/TryCompile-0d9qlf'
         
-        Run Build Command(s): "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_6afbd.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
+        Run Build Command(s): "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_5ae45.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
         MSBuild version 17.14.23+b0019275e for .NET Framework
-        Build started 10/31/2025 3:50:05 PM.
+        Build started 11/6/2025 9:50:50 AM.
         
-        Project "C:\\Users\\linxi\\OneDrive\\Desktop\\Project 2-1\\team_08\\build\\CMakeFiles\\CMakeScratch\\TryCompile-ttlumq\\cmTC_6afbd.vcxproj" on node 1 (default targets).
+        Project "C:\\Users\\linxi\\OneDrive\\Desktop\\Project 2-1\\team_08\\build\\CMakeFiles\\CMakeScratch\\TryCompile-0d9qlf\\cmTC_5ae45.vcxproj" on node 1 (default targets).
         PrepareForBuild:
-          Creating directory "cmTC_6afbd.dir\\Debug\\".
+          Creating directory "cmTC_5ae45.dir\\Debug\\".
           Structured output is enabled. The formatting of compiler diagnostics will reflect the error hierarchy. See https://aka.ms/cpp/structured-output for more details.
-          Creating directory "C:\\Users\\linxi\\OneDrive\\Desktop\\Project 2-1\\team_08\\build\\CMakeFiles\\CMakeScratch\\TryCompile-ttlumq\\Debug\\".
-          Creating directory "cmTC_6afbd.dir\\Debug\\cmTC_6afbd.tlog\\".
+          Creating directory "C:\\Users\\linxi\\OneDrive\\Desktop\\Project 2-1\\team_08\\build\\CMakeFiles\\CMakeScratch\\TryCompile-0d9qlf\\Debug\\".
+          Creating directory "cmTC_5ae45.dir\\Debug\\cmTC_5ae45.tlog\\".
         InitializeBuildStatus:
-          Creating "cmTC_6afbd.dir\\Debug\\cmTC_6afbd.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
-          Touching "cmTC_6afbd.dir\\Debug\\cmTC_6afbd.tlog\\unsuccessfulbuild".
+          Creating "cmTC_5ae45.dir\\Debug\\cmTC_5ae45.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
+          Touching "cmTC_5ae45.dir\\Debug\\cmTC_5ae45.tlog\\unsuccessfulbuild".
         ClCompile:
-          C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64\\CL.exe /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /Fo"cmTC_6afbd.dir\\Debug\\\\" /Fd"cmTC_6afbd.dir\\Debug\\vc143.pdb" /external:W1 /Gd /TC /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-4.1\\Modules\\CMakeCCompilerABI.c"
+          C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64\\CL.exe /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /Fo"cmTC_5ae45.dir\\Debug\\\\" /Fd"cmTC_5ae45.dir\\Debug\\vc143.pdb" /external:W1 /Gd /TC /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-4.1\\Modules\\CMakeCCompilerABI.c"
           Microsoft (R) C/C++ Optimizing Compiler Version 19.44.35219 for x64
           Copyright (C) Microsoft Corporation.  All rights reserved.
-          cl /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /Fo"cmTC_6afbd.dir\\Debug\\\\" /Fd"cmTC_6afbd.dir\\Debug\\vc143.pdb" /external:W1 /Gd /TC /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-4.1\\Modules\\CMakeCCompilerABI.c"
+          cl /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /Fo"cmTC_5ae45.dir\\Debug\\\\" /Fd"cmTC_5ae45.dir\\Debug\\vc143.pdb" /external:W1 /Gd /TC /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-4.1\\Modules\\CMakeCCompilerABI.c"
           CMakeCCompilerABI.c
         Link:
-          C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64\\link.exe /OUT:"C:\\Users\\linxi\\OneDrive\\Desktop\\Project 2-1\\team_08\\build\\CMakeFiles\\CMakeScratch\\TryCompile-ttlumq\\Debug\\cmTC_6afbd.exe" /INCREMENTAL /ILK:"cmTC_6afbd.dir\\Debug\\cmTC_6afbd.ilk" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/linxi/OneDrive/Desktop/Project 2-1/team_08/build/CMakeFiles/CMakeScratch/TryCompile-ttlumq/Debug/cmTC_6afbd.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /IMPLIB:"C:/Users/linxi/OneDrive/Desktop/Project 2-1/team_08/build/CMakeFiles/CMakeScratch/TryCompile-ttlumq/Debug/cmTC_6afbd.lib" /MACHINE:X64  /machine:x64 cmTC_6afbd.dir\\Debug\\CMakeCCompilerABI.obj
-          cmTC_6afbd.vcxproj -> C:\\Users\\linxi\\OneDrive\\Desktop\\Project 2-1\\team_08\\build\\CMakeFiles\\CMakeScratch\\TryCompile-ttlumq\\Debug\\cmTC_6afbd.exe
+          C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64\\link.exe /OUT:"C:\\Users\\linxi\\OneDrive\\Desktop\\Project 2-1\\team_08\\build\\CMakeFiles\\CMakeScratch\\TryCompile-0d9qlf\\Debug\\cmTC_5ae45.exe" /INCREMENTAL /ILK:"cmTC_5ae45.dir\\Debug\\cmTC_5ae45.ilk" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/linxi/OneDrive/Desktop/Project 2-1/team_08/build/CMakeFiles/CMakeScratch/TryCompile-0d9qlf/Debug/cmTC_5ae45.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /IMPLIB:"C:/Users/linxi/OneDrive/Desktop/Project 2-1/team_08/build/CMakeFiles/CMakeScratch/TryCompile-0d9qlf/Debug/cmTC_5ae45.lib" /MACHINE:X64  /machine:x64 cmTC_5ae45.dir\\Debug\\CMakeCCompilerABI.obj
+          cmTC_5ae45.vcxproj -> C:\\Users\\linxi\\OneDrive\\Desktop\\Project 2-1\\team_08\\build\\CMakeFiles\\CMakeScratch\\TryCompile-0d9qlf\\Debug\\cmTC_5ae45.exe
         FinalizeBuildStatus:
-          Deleting file "cmTC_6afbd.dir\\Debug\\cmTC_6afbd.tlog\\unsuccessfulbuild".
-          Touching "cmTC_6afbd.dir\\Debug\\cmTC_6afbd.tlog\\cmTC_6afbd.lastbuildstate".
-        Done Building Project "C:\\Users\\linxi\\OneDrive\\Desktop\\Project 2-1\\team_08\\build\\CMakeFiles\\CMakeScratch\\TryCompile-ttlumq\\cmTC_6afbd.vcxproj" (default targets).
+          Deleting file "cmTC_5ae45.dir\\Debug\\cmTC_5ae45.tlog\\unsuccessfulbuild".
+          Touching "cmTC_5ae45.dir\\Debug\\cmTC_5ae45.tlog\\cmTC_5ae45.lastbuildstate".
+        Done Building Project "C:\\Users\\linxi\\OneDrive\\Desktop\\Project 2-1\\team_08\\build\\CMakeFiles\\CMakeScratch\\TryCompile-0d9qlf\\cmTC_5ae45.vcxproj" (default targets).
         
         Build succeeded.
             0 Warning(s)
             0 Error(s)
         
-        Time Elapsed 00:00:00.54
+        Time Elapsed 00:00:00.49
         
       exitCode: 0
   -
@@ -1361,8 +1473,8 @@ events:
     checks:
       - "Detecting CXX compiler ABI info"
     directories:
-      source: "C:/Users/linxi/OneDrive/Desktop/Project 2-1/team_08/build/CMakeFiles/CMakeScratch/TryCompile-zjuv3l"
-      binary: "C:/Users/linxi/OneDrive/Desktop/Project 2-1/team_08/build/CMakeFiles/CMakeScratch/TryCompile-zjuv3l"
+      source: "C:/Users/linxi/OneDrive/Desktop/Project 2-1/team_08/build/CMakeFiles/CMakeScratch/TryCompile-hvsg01"
+      binary: "C:/Users/linxi/OneDrive/Desktop/Project 2-1/team_08/build/CMakeFiles/CMakeScratch/TryCompile-hvsg01"
     cmakeVariables:
       CMAKE_CXX_FLAGS: "/DWIN32 /D_WINDOWS /GR /EHsc"
       CMAKE_CXX_FLAGS_DEBUG: "/Zi /Ob0 /Od /RTC1"
@@ -1372,40 +1484,40 @@ events:
       variable: "CMAKE_CXX_ABI_COMPILED"
       cached: true
       stdout: |
-        Change Dir: 'C:/Users/linxi/OneDrive/Desktop/Project 2-1/team_08/build/CMakeFiles/CMakeScratch/TryCompile-zjuv3l'
+        Change Dir: 'C:/Users/linxi/OneDrive/Desktop/Project 2-1/team_08/build/CMakeFiles/CMakeScratch/TryCompile-hvsg01'
         
-        Run Build Command(s): "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_c4ff2.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
+        Run Build Command(s): "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_d53fe.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
         MSBuild version 17.14.23+b0019275e for .NET Framework
-        Build started 10/31/2025 3:50:06 PM.
+        Build started 11/6/2025 9:50:51 AM.
         
-        Project "C:\\Users\\linxi\\OneDrive\\Desktop\\Project 2-1\\team_08\\build\\CMakeFiles\\CMakeScratch\\TryCompile-zjuv3l\\cmTC_c4ff2.vcxproj" on node 1 (default targets).
+        Project "C:\\Users\\linxi\\OneDrive\\Desktop\\Project 2-1\\team_08\\build\\CMakeFiles\\CMakeScratch\\TryCompile-hvsg01\\cmTC_d53fe.vcxproj" on node 1 (default targets).
         PrepareForBuild:
-          Creating directory "cmTC_c4ff2.dir\\Debug\\".
+          Creating directory "cmTC_d53fe.dir\\Debug\\".
           Structured output is enabled. The formatting of compiler diagnostics will reflect the error hierarchy. See https://aka.ms/cpp/structured-output for more details.
-          Creating directory "C:\\Users\\linxi\\OneDrive\\Desktop\\Project 2-1\\team_08\\build\\CMakeFiles\\CMakeScratch\\TryCompile-zjuv3l\\Debug\\".
-          Creating directory "cmTC_c4ff2.dir\\Debug\\cmTC_c4ff2.tlog\\".
+          Creating directory "C:\\Users\\linxi\\OneDrive\\Desktop\\Project 2-1\\team_08\\build\\CMakeFiles\\CMakeScratch\\TryCompile-hvsg01\\Debug\\".
+          Creating directory "cmTC_d53fe.dir\\Debug\\cmTC_d53fe.tlog\\".
         InitializeBuildStatus:
-          Creating "cmTC_c4ff2.dir\\Debug\\cmTC_c4ff2.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
-          Touching "cmTC_c4ff2.dir\\Debug\\cmTC_c4ff2.tlog\\unsuccessfulbuild".
+          Creating "cmTC_d53fe.dir\\Debug\\cmTC_d53fe.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
+          Touching "cmTC_d53fe.dir\\Debug\\cmTC_d53fe.tlog\\unsuccessfulbuild".
         ClCompile:
-          C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64\\CL.exe /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /GS /fp:precise /GR /Fo"cmTC_c4ff2.dir\\Debug\\\\" /Fd"cmTC_c4ff2.dir\\Debug\\vc143.pdb" /external:W1 /Gd /TP /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-4.1\\Modules\\CMakeCXXCompilerABI.cpp"
+          C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64\\CL.exe /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /GS /fp:precise /GR /Fo"cmTC_d53fe.dir\\Debug\\\\" /Fd"cmTC_d53fe.dir\\Debug\\vc143.pdb" /external:W1 /Gd /TP /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-4.1\\Modules\\CMakeCXXCompilerABI.cpp"
           Microsoft (R) C/C++ Optimizing Compiler Version 19.44.35219 for x64
           Copyright (C) Microsoft Corporation.  All rights reserved.
-          cl /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /GS /fp:precise /GR /Fo"cmTC_c4ff2.dir\\Debug\\\\" /Fd"cmTC_c4ff2.dir\\Debug\\vc143.pdb" /external:W1 /Gd /TP /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-4.1\\Modules\\CMakeCXXCompilerABI.cpp"
+          cl /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /GS /fp:precise /GR /Fo"cmTC_d53fe.dir\\Debug\\\\" /Fd"cmTC_d53fe.dir\\Debug\\vc143.pdb" /external:W1 /Gd /TP /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-4.1\\Modules\\CMakeCXXCompilerABI.cpp"
           CMakeCXXCompilerABI.cpp
         Link:
-          C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64\\link.exe /OUT:"C:\\Users\\linxi\\OneDrive\\Desktop\\Project 2-1\\team_08\\build\\CMakeFiles\\CMakeScratch\\TryCompile-zjuv3l\\Debug\\cmTC_c4ff2.exe" /INCREMENTAL /ILK:"cmTC_c4ff2.dir\\Debug\\cmTC_c4ff2.ilk" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/linxi/OneDrive/Desktop/Project 2-1/team_08/build/CMakeFiles/CMakeScratch/TryCompile-zjuv3l/Debug/cmTC_c4ff2.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /IMPLIB:"C:/Users/linxi/OneDrive/Desktop/Project 2-1/team_08/build/CMakeFiles/CMakeScratch/TryCompile-zjuv3l/Debug/cmTC_c4ff2.lib" /MACHINE:X64  /machine:x64 cmTC_c4ff2.dir\\Debug\\CMakeCXXCompilerABI.obj
-          cmTC_c4ff2.vcxproj -> C:\\Users\\linxi\\OneDrive\\Desktop\\Project 2-1\\team_08\\build\\CMakeFiles\\CMakeScratch\\TryCompile-zjuv3l\\Debug\\cmTC_c4ff2.exe
+          C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64\\link.exe /OUT:"C:\\Users\\linxi\\OneDrive\\Desktop\\Project 2-1\\team_08\\build\\CMakeFiles\\CMakeScratch\\TryCompile-hvsg01\\Debug\\cmTC_d53fe.exe" /INCREMENTAL /ILK:"cmTC_d53fe.dir\\Debug\\cmTC_d53fe.ilk" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/linxi/OneDrive/Desktop/Project 2-1/team_08/build/CMakeFiles/CMakeScratch/TryCompile-hvsg01/Debug/cmTC_d53fe.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /IMPLIB:"C:/Users/linxi/OneDrive/Desktop/Project 2-1/team_08/build/CMakeFiles/CMakeScratch/TryCompile-hvsg01/Debug/cmTC_d53fe.lib" /MACHINE:X64  /machine:x64 cmTC_d53fe.dir\\Debug\\CMakeCXXCompilerABI.obj
+          cmTC_d53fe.vcxproj -> C:\\Users\\linxi\\OneDrive\\Desktop\\Project 2-1\\team_08\\build\\CMakeFiles\\CMakeScratch\\TryCompile-hvsg01\\Debug\\cmTC_d53fe.exe
         FinalizeBuildStatus:
-          Deleting file "cmTC_c4ff2.dir\\Debug\\cmTC_c4ff2.tlog\\unsuccessfulbuild".
-          Touching "cmTC_c4ff2.dir\\Debug\\cmTC_c4ff2.tlog\\cmTC_c4ff2.lastbuildstate".
-        Done Building Project "C:\\Users\\linxi\\OneDrive\\Desktop\\Project 2-1\\team_08\\build\\CMakeFiles\\CMakeScratch\\TryCompile-zjuv3l\\cmTC_c4ff2.vcxproj" (default targets).
+          Deleting file "cmTC_d53fe.dir\\Debug\\cmTC_d53fe.tlog\\unsuccessfulbuild".
+          Touching "cmTC_d53fe.dir\\Debug\\cmTC_d53fe.tlog\\cmTC_d53fe.lastbuildstate".
+        Done Building Project "C:\\Users\\linxi\\OneDrive\\Desktop\\Project 2-1\\team_08\\build\\CMakeFiles\\CMakeScratch\\TryCompile-hvsg01\\cmTC_d53fe.vcxproj" (default targets).
         
         Build succeeded.
             0 Warning(s)
             0 Error(s)
         
-        Time Elapsed 00:00:00.53
+        Time Elapsed 00:00:00.49
         
       exitCode: 0
   -
