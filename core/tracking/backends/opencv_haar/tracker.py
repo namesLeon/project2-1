@@ -247,7 +247,7 @@ class OpenCVHaarEyeTracker(EyeTracker, EyeTrackingInterface):
         sx, sy = self._cal.map_to_screen(dx, dy, self._screen_w, self._screen_h)
         self._last_norm_xy = (sx / self._screen_w, sy / self._screen_h)
         self._connected = True
-        self._write_gaze_for_cpp()  # write to gaze_out.txt
+        # self._write_gaze_for_cpp()  # write to gaze_out.txt
 
         # we return the gaze object
         return Gaze(
@@ -262,9 +262,9 @@ class OpenCVHaarEyeTracker(EyeTracker, EyeTrackingInterface):
         )
 
     # logs gaze to text file to communicate with world
-    def _write_gaze_for_cpp(self):
-        n = self.getNormalizedGazePosition()
+    def _write_gaze_for_cpp(self, gaze_xy):
+        #n = self.getNormalizedGazePosition()
         Path("gaze_out.txt").write_text(
-            f"normalized-Eye-Gaze-positions: x:{n.x:.6f} y:{n.y:.6f}\n",
+            f"normalized-Eye-Gaze-positions: x:{gaze_xy[0]:.6f} y:{gaze_xy[1]:.6f}\n",
             encoding="utf-8",
         )

@@ -42,6 +42,15 @@ def main():
         g = tracker.process(frame)
         g.gaze_xy = smoother.update(g.gaze_xy)
         g.gaze_xy = smoother2.update(g.gaze_xy)
+
+        # Skip over the first null instance of g.
+        if g.gaze_xy:
+            # Scales the gaze tuple from (-1, 1) to (0, 1).
+            x = (g.gaze_xy[0] + 1)/2
+            y = (g.gaze_xy[1] + 1)/2
+
+            tracker._write_gaze_for_cpp((x, y))  # write to gaze_out.txt
+        
         now = time.time()
         dt = now - last
         last = now
