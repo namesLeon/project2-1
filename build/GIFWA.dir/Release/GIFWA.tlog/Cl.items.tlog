@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 C:\Users\linxi\OneDrive\Desktop\Project 2-1\team_08\src\main.cpp;C:\Users\linxi\OneDrive\Desktop\Project 2-1\team_08\build\GIFWA.dir\Release\main.obj
 C:\Users\linxi\OneDrive\Desktop\Project 2-1\team_08\src\Client.cpp;C:\Users\linxi\OneDrive\Desktop\Project 2-1\team_08\build\GIFWA.dir\Release\Client.obj
 C:\Users\linxi\OneDrive\Desktop\Project 2-1\team_08\src\glad.c;C:\Users\linxi\OneDrive\Desktop\Project 2-1\team_08\build\GIFWA.dir\Release\glad.obj
@@ -6,3 +7,13 @@ C:\Users\linxi\OneDrive\Desktop\Project 2-1\team_08\src\Shader.cpp;C:\Users\linx
 C:\Users\linxi\OneDrive\Desktop\Project 2-1\team_08\src\renderer.cpp;C:\Users\linxi\OneDrive\Desktop\Project 2-1\team_08\build\GIFWA.dir\Release\renderer.obj
 C:\Users\linxi\OneDrive\Desktop\Project 2-1\team_08\src\stb_impl.cpp;C:\Users\linxi\OneDrive\Desktop\Project 2-1\team_08\build\GIFWA.dir\Release\stb_impl.obj
 C:\Users\linxi\OneDrive\Desktop\Project 2-1\team_08\src\BackgroundNoise.cpp;C:\Users\linxi\OneDrive\Desktop\Project 2-1\team_08\build\GIFWA.dir\Release\BackgroundNoise.obj
+=======
+C:\Users\fazev\project2-1\team_08-1\src\main.cpp;C:\Users\fazev\project2-1\team_08-1\build\GIFWA.dir\Release\main.obj
+C:\Users\fazev\project2-1\team_08-1\src\Client.cpp;C:\Users\fazev\project2-1\team_08-1\build\GIFWA.dir\Release\Client.obj
+C:\Users\fazev\project2-1\team_08-1\src\glad.c;C:\Users\fazev\project2-1\team_08-1\build\GIFWA.dir\Release\glad.obj
+C:\Users\fazev\project2-1\team_08-1\src\gl_utils.cpp;C:\Users\fazev\project2-1\team_08-1\build\GIFWA.dir\Release\gl_utils.obj
+C:\Users\fazev\project2-1\team_08-1\src\Shader.cpp;C:\Users\fazev\project2-1\team_08-1\build\GIFWA.dir\Release\Shader.obj
+C:\Users\fazev\project2-1\team_08-1\src\renderer.cpp;C:\Users\fazev\project2-1\team_08-1\build\GIFWA.dir\Release\renderer.obj
+C:\Users\fazev\project2-1\team_08-1\src\stb_impl.cpp;C:\Users\fazev\project2-1\team_08-1\build\GIFWA.dir\Release\stb_impl.obj
+C:\Users\fazev\project2-1\team_08-1\src\BackgroundNoise.cpp;C:\Users\fazev\project2-1\team_08-1\build\GIFWA.dir\Release\BackgroundNoise.obj
+>>>>>>> c7a5110e96cd28a5524743bebd3e87fc40a6bf4c

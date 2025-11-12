@@ -4,6 +4,7 @@ events:
   -
     kind: "message-v1"
     backtrace:
+<<<<<<< HEAD
       - "C:/Program Files/CMake/share/cmake-4.1/Modules/CMakeDetermineSystem.cmake:212 (message)"
       - "CMakeLists.txt:2 (project)"
     message: |
@@ -78,6 +79,18 @@ events:
       - "C:/Program Files/CMake/share/cmake-4.1/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
       - "C:/Program Files/CMake/share/cmake-4.1/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
       - "C:/Program Files/CMake/share/cmake-4.1/Modules/CMakeDetermineCCompiler.cmake:122 (CMAKE_DETERMINE_COMPILER_ID)"
+=======
+      - "C:/MinGW/share/cmake-3.27/Modules/CMakeDetermineSystem.cmake:211 (message)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      The system is: Windows - 6.2.9200 - AMD64
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/MinGW/share/cmake-3.27/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "C:/MinGW/share/cmake-3.27/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "C:/MinGW/share/cmake-3.27/Modules/CMakeDetermineCCompiler.cmake:123 (CMAKE_DETERMINE_COMPILER_ID)"
+>>>>>>> c7a5110e96cd28a5524743bebd3e87fc40a6bf4c
       - "CMakeLists.txt:2 (project)"
     message: |
       Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
@@ -88,9 +101,15 @@ events:
       The output was:
       0
       MSBuild version 17.14.23+b0019275e for .NET Framework
+<<<<<<< HEAD
       Build started 11/6/2025 9:50:49 AM.
       
       Project "C:\\Users\\linxi\\OneDrive\\Desktop\\Project 2-1\\team_08\\build\\CMakeFiles\\4.1.1\\CompilerIdC\\CompilerIdC.vcxproj" on node 1 (default targets).
+=======
+      Build started 4-10-2025 18:22:45.
+      
+      Project "C:\\Users\\fazev\\project2-1\\team_08-1\\build\\CMakeFiles\\3.27.1\\CompilerIdC\\CompilerIdC.vcxproj" on node 1 (default targets).
+>>>>>>> c7a5110e96cd28a5524743bebd3e87fc40a6bf4c
       PrepareForBuild:
         Creating directory "Debug\\".
         Structured output is enabled. The formatting of compiler diagnostics will reflect the error hierarchy. See https://aka.ms/cpp/structured-output for more details.
@@ -103,7 +122,11 @@ events:
         CMakeCCompilerId.c
       Link:
         C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:".\\CompilerIdC.exe" /INCREMENTAL:NO /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /PDB:".\\CompilerIdC.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:".\\CompilerIdC.lib" /MACHINE:X64 Debug\\CMakeCCompilerId.obj
+<<<<<<< HEAD
         CompilerIdC.vcxproj -> C:\\Users\\linxi\\OneDrive\\Desktop\\Project 2-1\\team_08\\build\\CMakeFiles\\4.1.1\\CompilerIdC\\CompilerIdC.exe
+=======
+        CompilerIdC.vcxproj -> C:\\Users\\fazev\\project2-1\\team_08-1\\build\\CMakeFiles\\3.27.1\\CompilerIdC\\CompilerIdC.exe
+>>>>>>> c7a5110e96cd28a5524743bebd3e87fc40a6bf4c
       PostBuildEvent:
         for %%i in (cl.exe) do @echo CMAKE_C_COMPILER=%%~$PATH:i
         :VCEnd
@@ -111,13 +134,21 @@ events:
       FinalizeBuildStatus:
         Deleting file "Debug\\CompilerIdC.tlog\\unsuccessfulbuild".
         Touching "Debug\\CompilerIdC.tlog\\CompilerIdC.lastbuildstate".
+<<<<<<< HEAD
       Done Building Project "C:\\Users\\linxi\\OneDrive\\Desktop\\Project 2-1\\team_08\\build\\CMakeFiles\\4.1.1\\CompilerIdC\\CompilerIdC.vcxproj" (default targets).
+=======
+      Done Building Project "C:\\Users\\fazev\\project2-1\\team_08-1\\build\\CMakeFiles\\3.27.1\\CompilerIdC\\CompilerIdC.vcxproj" (default targets).
+>>>>>>> c7a5110e96cd28a5524743bebd3e87fc40a6bf4c
       
       Build succeeded.
           0 Warning(s)
           0 Error(s)
       
+<<<<<<< HEAD
       Time Elapsed 00:00:00.57
+=======
+      Time Elapsed 00:00:00.93
+>>>>>>> c7a5110e96cd28a5524743bebd3e87fc40a6bf4c
       
       
       Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "CompilerIdC.exe"
@@ -125,6 +156,7 @@ events:
       Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "CompilerIdC.vcxproj"
       
       The C compiler identification is MSVC, found in:
+<<<<<<< HEAD
         C:/Users/linxi/OneDrive/Desktop/Project 2-1/team_08/build/CMakeFiles/4.1.1/CompilerIdC/CompilerIdC.exe
       
   -
@@ -883,6 +915,16 @@ events:
       - "C:/Program Files/CMake/share/cmake-4.1/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
       - "C:/Program Files/CMake/share/cmake-4.1/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
       - "C:/Program Files/CMake/share/cmake-4.1/Modules/CMakeDetermineCXXCompiler.cmake:125 (CMAKE_DETERMINE_COMPILER_ID)"
+=======
+        C:/Users/fazev/project2-1/team_08-1/build/CMakeFiles/3.27.1/CompilerIdC/CompilerIdC.exe
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/MinGW/share/cmake-3.27/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "C:/MinGW/share/cmake-3.27/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "C:/MinGW/share/cmake-3.27/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
+>>>>>>> c7a5110e96cd28a5524743bebd3e87fc40a6bf4c
       - "CMakeLists.txt:2 (project)"
     message: |
       Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
@@ -893,9 +935,15 @@ events:
       The output was:
       0
       MSBuild version 17.14.23+b0019275e for .NET Framework
+<<<<<<< HEAD
       Build started 11/6/2025 9:50:50 AM.
       
       Project "C:\\Users\\linxi\\OneDrive\\Desktop\\Project 2-1\\team_08\\build\\CMakeFiles\\4.1.1\\CompilerIdCXX\\CompilerIdCXX.vcxproj" on node 1 (default targets).
+=======
+      Build started 4-10-2025 18:22:46.
+      
+      Project "C:\\Users\\fazev\\project2-1\\team_08-1\\build\\CMakeFiles\\3.27.1\\CompilerIdCXX\\CompilerIdCXX.vcxproj" on node 1 (default targets).
+>>>>>>> c7a5110e96cd28a5524743bebd3e87fc40a6bf4c
       PrepareForBuild:
         Creating directory "Debug\\".
         Structured output is enabled. The formatting of compiler diagnostics will reflect the error hierarchy. See https://aka.ms/cpp/structured-output for more details.
@@ -908,7 +956,11 @@ events:
         CMakeCXXCompilerId.cpp
       Link:
         C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:".\\CompilerIdCXX.exe" /INCREMENTAL:NO /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /PDB:".\\CompilerIdCXX.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:".\\CompilerIdCXX.lib" /MACHINE:X64 Debug\\CMakeCXXCompilerId.obj
+<<<<<<< HEAD
         CompilerIdCXX.vcxproj -> C:\\Users\\linxi\\OneDrive\\Desktop\\Project 2-1\\team_08\\build\\CMakeFiles\\4.1.1\\CompilerIdCXX\\CompilerIdCXX.exe
+=======
+        CompilerIdCXX.vcxproj -> C:\\Users\\fazev\\project2-1\\team_08-1\\build\\CMakeFiles\\3.27.1\\CompilerIdCXX\\CompilerIdCXX.exe
+>>>>>>> c7a5110e96cd28a5524743bebd3e87fc40a6bf4c
       PostBuildEvent:
         for %%i in (cl.exe) do @echo CMAKE_CXX_COMPILER=%%~$PATH:i
         :VCEnd
@@ -916,13 +968,21 @@ events:
       FinalizeBuildStatus:
         Deleting file "Debug\\CompilerIdCXX.tlog\\unsuccessfulbuild".
         Touching "Debug\\CompilerIdCXX.tlog\\CompilerIdCXX.lastbuildstate".
+<<<<<<< HEAD
       Done Building Project "C:\\Users\\linxi\\OneDrive\\Desktop\\Project 2-1\\team_08\\build\\CMakeFiles\\4.1.1\\CompilerIdCXX\\CompilerIdCXX.vcxproj" (default targets).
+=======
+      Done Building Project "C:\\Users\\fazev\\project2-1\\team_08-1\\build\\CMakeFiles\\3.27.1\\CompilerIdCXX\\CompilerIdCXX.vcxproj" (default targets).
+>>>>>>> c7a5110e96cd28a5524743bebd3e87fc40a6bf4c
       
       Build succeeded.
           0 Warning(s)
           0 Error(s)
       
+<<<<<<< HEAD
       Time Elapsed 00:00:00.58
+=======
+      Time Elapsed 00:00:00.68
+>>>>>>> c7a5110e96cd28a5524743bebd3e87fc40a6bf4c
       
       
       Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "CompilerIdCXX.exe"
@@ -930,6 +990,7 @@ events:
       Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "CompilerIdCXX.vcxproj"
       
       The CXX compiler identification is MSVC, found in:
+<<<<<<< HEAD
         C:/Users/linxi/OneDrive/Desktop/Project 2-1/team_08/build/CMakeFiles/4.1.1/CompilerIdCXX/CompilerIdCXX.exe
       
   -
@@ -1386,12 +1447,26 @@ events:
     backtrace:
       - "C:/Program Files/CMake/share/cmake-4.1/Modules/CMakeDetermineCompilerABI.cmake:83 (try_compile)"
       - "C:/Program Files/CMake/share/cmake-4.1/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+=======
+        C:/Users/fazev/project2-1/team_08-1/build/CMakeFiles/3.27.1/CompilerIdCXX/CompilerIdCXX.exe
+      
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/MinGW/share/cmake-3.27/Modules/CMakeDetermineCompilerABI.cmake:57 (try_compile)"
+      - "C:/MinGW/share/cmake-3.27/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+>>>>>>> c7a5110e96cd28a5524743bebd3e87fc40a6bf4c
       - "CMakeLists.txt:2 (project)"
     checks:
       - "Detecting C compiler ABI info"
     directories:
+<<<<<<< HEAD
       source: "C:/Users/linxi/OneDrive/Desktop/Project 2-1/team_08/build/CMakeFiles/CMakeScratch/TryCompile-0d9qlf"
       binary: "C:/Users/linxi/OneDrive/Desktop/Project 2-1/team_08/build/CMakeFiles/CMakeScratch/TryCompile-0d9qlf"
+=======
+      source: "C:/Users/fazev/project2-1/team_08-1/build/CMakeFiles/CMakeScratch/TryCompile-qh7dly"
+      binary: "C:/Users/fazev/project2-1/team_08-1/build/CMakeFiles/CMakeScratch/TryCompile-qh7dly"
+>>>>>>> c7a5110e96cd28a5524743bebd3e87fc40a6bf4c
     cmakeVariables:
       CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS"
       CMAKE_C_FLAGS_DEBUG: "/Zi /Ob0 /Od /RTC1"
@@ -1400,6 +1475,7 @@ events:
       variable: "CMAKE_C_ABI_COMPILED"
       cached: true
       stdout: |
+<<<<<<< HEAD
         Change Dir: 'C:/Users/linxi/OneDrive/Desktop/Project 2-1/team_08/build/CMakeFiles/CMakeScratch/TryCompile-0d9qlf'
         
         Run Build Command(s): "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_5ae45.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
@@ -1428,11 +1504,42 @@ events:
           Deleting file "cmTC_5ae45.dir\\Debug\\cmTC_5ae45.tlog\\unsuccessfulbuild".
           Touching "cmTC_5ae45.dir\\Debug\\cmTC_5ae45.tlog\\cmTC_5ae45.lastbuildstate".
         Done Building Project "C:\\Users\\linxi\\OneDrive\\Desktop\\Project 2-1\\team_08\\build\\CMakeFiles\\CMakeScratch\\TryCompile-0d9qlf\\cmTC_5ae45.vcxproj" (default targets).
+=======
+        Change Dir: 'C:/Users/fazev/project2-1/team_08-1/build/CMakeFiles/CMakeScratch/TryCompile-qh7dly'
+        
+        Run Build Command(s): "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_e30fb.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
+        MSBuild version 17.14.23+b0019275e for .NET Framework
+        Build started 4-10-2025 18:22:47.
+        
+        Project "C:\\Users\\fazev\\project2-1\\team_08-1\\build\\CMakeFiles\\CMakeScratch\\TryCompile-qh7dly\\cmTC_e30fb.vcxproj" on node 1 (default targets).
+        PrepareForBuild:
+          Creating directory "cmTC_e30fb.dir\\Debug\\".
+          Structured output is enabled. The formatting of compiler diagnostics will reflect the error hierarchy. See https://aka.ms/cpp/structured-output for more details.
+          Creating directory "C:\\Users\\fazev\\project2-1\\team_08-1\\build\\CMakeFiles\\CMakeScratch\\TryCompile-qh7dly\\Debug\\".
+          Creating directory "cmTC_e30fb.dir\\Debug\\cmTC_e30fb.tlog\\".
+        InitializeBuildStatus:
+          Creating "cmTC_e30fb.dir\\Debug\\cmTC_e30fb.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
+          Touching "cmTC_e30fb.dir\\Debug\\cmTC_e30fb.tlog\\unsuccessfulbuild".
+        ClCompile:
+          C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64\\CL.exe /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_e30fb.dir\\Debug\\\\" /Fd"cmTC_e30fb.dir\\Debug\\vc143.pdb" /external:W1 /Gd /TC /errorReport:queue "C:\\MinGW\\share\\cmake-3.27\\Modules\\CMakeCCompilerABI.c"
+          Microsoft (R) C/C++ Optimizing Compiler Version 19.44.35216 for x64
+          Copyright (C) Microsoft Corporation.  All rights reserved.
+          cl /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_e30fb.dir\\Debug\\\\" /Fd"cmTC_e30fb.dir\\Debug\\vc143.pdb" /external:W1 /Gd /TC /errorReport:queue "C:\\MinGW\\share\\cmake-3.27\\Modules\\CMakeCCompilerABI.c"
+          CMakeCCompilerABI.c
+        Link:
+          C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:"C:\\Users\\fazev\\project2-1\\team_08-1\\build\\CMakeFiles\\CMakeScratch\\TryCompile-qh7dly\\Debug\\cmTC_e30fb.exe" /INCREMENTAL /ILK:"cmTC_e30fb.dir\\Debug\\cmTC_e30fb.ilk" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/fazev/project2-1/team_08-1/build/CMakeFiles/CMakeScratch/TryCompile-qh7dly/Debug/cmTC_e30fb.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/Users/fazev/project2-1/team_08-1/build/CMakeFiles/CMakeScratch/TryCompile-qh7dly/Debug/cmTC_e30fb.lib" /MACHINE:X64  /machine:x64 cmTC_e30fb.dir\\Debug\\CMakeCCompilerABI.obj
+          cmTC_e30fb.vcxproj -> C:\\Users\\fazev\\project2-1\\team_08-1\\build\\CMakeFiles\\CMakeScratch\\TryCompile-qh7dly\\Debug\\cmTC_e30fb.exe
+        FinalizeBuildStatus:
+          Deleting file "cmTC_e30fb.dir\\Debug\\cmTC_e30fb.tlog\\unsuccessfulbuild".
+          Touching "cmTC_e30fb.dir\\Debug\\cmTC_e30fb.tlog\\cmTC_e30fb.lastbuildstate".
+        Done Building Project "C:\\Users\\fazev\\project2-1\\team_08-1\\build\\CMakeFiles\\CMakeScratch\\TryCompile-qh7dly\\cmTC_e30fb.vcxproj" (default targets).
+>>>>>>> c7a5110e96cd28a5524743bebd3e87fc40a6bf4c
         
         Build succeeded.
             0 Warning(s)
             0 Error(s)
         
+<<<<<<< HEAD
         Time Elapsed 00:00:00.49
         
       exitCode: 0
@@ -1469,21 +1576,40 @@ events:
     backtrace:
       - "C:/Program Files/CMake/share/cmake-4.1/Modules/CMakeDetermineCompilerABI.cmake:83 (try_compile)"
       - "C:/Program Files/CMake/share/cmake-4.1/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+=======
+        Time Elapsed 00:00:00.66
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/MinGW/share/cmake-3.27/Modules/CMakeDetermineCompilerABI.cmake:57 (try_compile)"
+      - "C:/MinGW/share/cmake-3.27/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+>>>>>>> c7a5110e96cd28a5524743bebd3e87fc40a6bf4c
       - "CMakeLists.txt:2 (project)"
     checks:
       - "Detecting CXX compiler ABI info"
     directories:
+<<<<<<< HEAD
       source: "C:/Users/linxi/OneDrive/Desktop/Project 2-1/team_08/build/CMakeFiles/CMakeScratch/TryCompile-hvsg01"
       binary: "C:/Users/linxi/OneDrive/Desktop/Project 2-1/team_08/build/CMakeFiles/CMakeScratch/TryCompile-hvsg01"
     cmakeVariables:
       CMAKE_CXX_FLAGS: "/DWIN32 /D_WINDOWS /GR /EHsc"
       CMAKE_CXX_FLAGS_DEBUG: "/Zi /Ob0 /Od /RTC1"
       CMAKE_CXX_SCAN_FOR_MODULES: "OFF"
+=======
+      source: "C:/Users/fazev/project2-1/team_08-1/build/CMakeFiles/CMakeScratch/TryCompile-wkpqmc"
+      binary: "C:/Users/fazev/project2-1/team_08-1/build/CMakeFiles/CMakeScratch/TryCompile-wkpqmc"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: "/DWIN32 /D_WINDOWS /GR /EHsc"
+      CMAKE_CXX_FLAGS_DEBUG: "/Zi /Ob0 /Od /RTC1"
+>>>>>>> c7a5110e96cd28a5524743bebd3e87fc40a6bf4c
       CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
     buildResult:
       variable: "CMAKE_CXX_ABI_COMPILED"
       cached: true
       stdout: |
+<<<<<<< HEAD
         Change Dir: 'C:/Users/linxi/OneDrive/Desktop/Project 2-1/team_08/build/CMakeFiles/CMakeScratch/TryCompile-hvsg01'
         
         Run Build Command(s): "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_d53fe.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
@@ -1512,11 +1638,42 @@ events:
           Deleting file "cmTC_d53fe.dir\\Debug\\cmTC_d53fe.tlog\\unsuccessfulbuild".
           Touching "cmTC_d53fe.dir\\Debug\\cmTC_d53fe.tlog\\cmTC_d53fe.lastbuildstate".
         Done Building Project "C:\\Users\\linxi\\OneDrive\\Desktop\\Project 2-1\\team_08\\build\\CMakeFiles\\CMakeScratch\\TryCompile-hvsg01\\cmTC_d53fe.vcxproj" (default targets).
+=======
+        Change Dir: 'C:/Users/fazev/project2-1/team_08-1/build/CMakeFiles/CMakeScratch/TryCompile-wkpqmc'
+        
+        Run Build Command(s): "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_9800c.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
+        MSBuild version 17.14.23+b0019275e for .NET Framework
+        Build started 4-10-2025 18:22:48.
+        
+        Project "C:\\Users\\fazev\\project2-1\\team_08-1\\build\\CMakeFiles\\CMakeScratch\\TryCompile-wkpqmc\\cmTC_9800c.vcxproj" on node 1 (default targets).
+        PrepareForBuild:
+          Creating directory "cmTC_9800c.dir\\Debug\\".
+          Structured output is enabled. The formatting of compiler diagnostics will reflect the error hierarchy. See https://aka.ms/cpp/structured-output for more details.
+          Creating directory "C:\\Users\\fazev\\project2-1\\team_08-1\\build\\CMakeFiles\\CMakeScratch\\TryCompile-wkpqmc\\Debug\\".
+          Creating directory "cmTC_9800c.dir\\Debug\\cmTC_9800c.tlog\\".
+        InitializeBuildStatus:
+          Creating "cmTC_9800c.dir\\Debug\\cmTC_9800c.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
+          Touching "cmTC_9800c.dir\\Debug\\cmTC_9800c.tlog\\unsuccessfulbuild".
+        ClCompile:
+          C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64\\CL.exe /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"cmTC_9800c.dir\\Debug\\\\" /Fd"cmTC_9800c.dir\\Debug\\vc143.pdb" /external:W1 /Gd /TP /errorReport:queue "C:\\MinGW\\share\\cmake-3.27\\Modules\\CMakeCXXCompilerABI.cpp"
+          Microsoft (R) C/C++ Optimizing Compiler Version 19.44.35216 for x64
+          Copyright (C) Microsoft Corporation.  All rights reserved.
+          cl /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"cmTC_9800c.dir\\Debug\\\\" /Fd"cmTC_9800c.dir\\Debug\\vc143.pdb" /external:W1 /Gd /TP /errorReport:queue "C:\\MinGW\\share\\cmake-3.27\\Modules\\CMakeCXXCompilerABI.cpp"
+          CMakeCXXCompilerABI.cpp
+        Link:
+          C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:"C:\\Users\\fazev\\project2-1\\team_08-1\\build\\CMakeFiles\\CMakeScratch\\TryCompile-wkpqmc\\Debug\\cmTC_9800c.exe" /INCREMENTAL /ILK:"cmTC_9800c.dir\\Debug\\cmTC_9800c.ilk" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/fazev/project2-1/team_08-1/build/CMakeFiles/CMakeScratch/TryCompile-wkpqmc/Debug/cmTC_9800c.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/Users/fazev/project2-1/team_08-1/build/CMakeFiles/CMakeScratch/TryCompile-wkpqmc/Debug/cmTC_9800c.lib" /MACHINE:X64  /machine:x64 cmTC_9800c.dir\\Debug\\CMakeCXXCompilerABI.obj
+          cmTC_9800c.vcxproj -> C:\\Users\\fazev\\project2-1\\team_08-1\\build\\CMakeFiles\\CMakeScratch\\TryCompile-wkpqmc\\Debug\\cmTC_9800c.exe
+        FinalizeBuildStatus:
+          Deleting file "cmTC_9800c.dir\\Debug\\cmTC_9800c.tlog\\unsuccessfulbuild".
+          Touching "cmTC_9800c.dir\\Debug\\cmTC_9800c.tlog\\cmTC_9800c.lastbuildstate".
+        Done Building Project "C:\\Users\\fazev\\project2-1\\team_08-1\\build\\CMakeFiles\\CMakeScratch\\TryCompile-wkpqmc\\cmTC_9800c.vcxproj" (default targets).
+>>>>>>> c7a5110e96cd28a5524743bebd3e87fc40a6bf4c
         
         Build succeeded.
             0 Warning(s)
             0 Error(s)
         
+<<<<<<< HEAD
         Time Elapsed 00:00:00.49
         
       exitCode: 0
@@ -1548,4 +1705,9 @@ events:
       Running the CXX compiler's linker: "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/VC/Tools/MSVC/14.44.35207/bin/HostX64/x64/link.exe" "-v"
       Microsoft (R) Incremental Linker Version 14.44.35219.0
       Copyright (C) Microsoft Corporation.  All rights reserved.
+=======
+        Time Elapsed 00:00:00.66
+        
+      exitCode: 0
+>>>>>>> c7a5110e96cd28a5524743bebd3e87fc40a6bf4c
 ...

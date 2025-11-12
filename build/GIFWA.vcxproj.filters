@@ -1,6 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
+<<<<<<< HEAD
     <ClCompile Include="C:\Users\linxi\OneDrive\Desktop\Project 2-1\team_08\src\main.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
@@ -23,15 +24,47 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="C:\Users\linxi\OneDrive\Desktop\Project 2-1\team_08\src\BackgroundNoise.cpp">
+=======
+    <ClCompile Include="C:\Users\fazev\project2-1\team_08-1\src\main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\fazev\project2-1\team_08-1\src\Client.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\fazev\project2-1\team_08-1\src\glad.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\fazev\project2-1\team_08-1\src\gl_utils.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\fazev\project2-1\team_08-1\src\Shader.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\fazev\project2-1\team_08-1\src\renderer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\fazev\project2-1\team_08-1\src\stb_impl.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\fazev\project2-1\team_08-1\src\BackgroundNoise.cpp">
+>>>>>>> c7a5110e96cd28a5524743bebd3e87fc40a6bf4c
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
+<<<<<<< HEAD
     <CustomBuild Include="C:\Users\linxi\OneDrive\Desktop\Project 2-1\team_08\CMakeLists.txt" />
   </ItemGroup>
   <ItemGroup>
     <Filter Include="Source Files">
       <UniqueIdentifier>{6BBE8BD4-2F2C-3F51-964D-280F1CBA49A7}</UniqueIdentifier>
+=======
+    <CustomBuild Include="C:\Users\fazev\project2-1\team_08-1\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{ECE99541-231C-3DFD-8D33-15395A4F702F}</UniqueIdentifier>
+>>>>>>> c7a5110e96cd28a5524743bebd3e87fc40a6bf4c
     </Filter>
   </ItemGroup>
 </Project>
