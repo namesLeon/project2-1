@@ -2,17 +2,10 @@
 <Project>
   <ProjectOutputs>
     <ProjectOutput>
-<<<<<<< HEAD
-      <FullPath>C:\Users\linxi\OneDrive\Desktop\Project 2-1\team_08\build\x64\Release\ZERO_CHECK</FullPath>
-    </ProjectOutput>
-    <ProjectOutput>
-      <FullPath>C:\Users\linxi\OneDrive\Desktop\Project 2-1\team_08\build\Release\GIFWA.exe</FullPath>
-=======
       <FullPath>C:\Users\fazev\project2-1\team_08-1\build\x64\Release\ZERO_CHECK</FullPath>
     </ProjectOutput>
     <ProjectOutput>
       <FullPath>C:\Users\fazev\project2-1\team_08-1\build\Release\GIFWA.exe</FullPath>
->>>>>>> c7a5110e96cd28a5524743bebd3e87fc40a6bf4c
     </ProjectOutput>
   </ProjectOutputs>
   <ContentFiles />
