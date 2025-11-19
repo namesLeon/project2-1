@@ -6,6 +6,7 @@ from core.tracking.backends.opencv_haar.tracker import OpenCVHaarEyeTracker
 from core.tracking.utils.draw import draw_gaze_overlay
 from core.tracking.postprocess.CircleSmoothing import CircleSmooth
 from core.tracking.postprocess.EMASmoothing import EMA
+# Running EMA before Circle Smooth will not smooth properly.
 smoother = CircleSmooth()
 smoother2 = EMA(0.35)
 

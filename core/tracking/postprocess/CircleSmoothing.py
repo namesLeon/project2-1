@@ -21,11 +21,11 @@ class CircleSmooth:
         # Used to keep track of the state of the circle.
         self.isMoving = False
         # Radius of the smoothing circle in the eye box units.
-        self.RADIUS = 0.12
+        self.RADIUS = 0.11
         # The rate at which the center moves to the next center spot
         # measured in percentage. So, the circle travels a certain percent
         # to the new center spot each update.
-        self.INTERPOLATION_RATE = 0.1
+        self.INTERPOLATION_RATE = 0.2
         self.counter = 0
 
     # Checks if the current gaze_xy point is inside the circle.
