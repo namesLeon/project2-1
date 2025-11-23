@@ -27,6 +27,7 @@
   ```
 
 ## How to run eye tracker
+- You need Python 3.12 or older for Google's MediaPipe to run
 - in a new terminal you want to make sure you are in the `team_08` directory then run the line: `python3 -m scripts.run_eye_tracker`
 - click 'esc' or 'q' to kill
 
