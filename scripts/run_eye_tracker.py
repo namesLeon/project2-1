@@ -18,15 +18,13 @@ def main():
     cap.set(cv2.CAP_PROP_FRAME_HEIGHT, args.height)
     cap.set(cv2.CAP_PROP_FPS, 60)
 
-    # Initialize MediaPipe FaceMesh
     mp_face_mesh = mp.solutions.face_mesh.FaceMesh(
         max_num_faces=1,
-        refine_landmarks=True,          # iris landmarks
+        refine_landmarks=True,         
         min_detection_confidence=0.5,
         min_tracking_confidence=0.5,
     )
 
-    # Our new tracker that already smooths and writes gaze_out.txt
     tracker = MediaPipeEyeTracker(smoothing=0.7, window_size=5)
 
     cv2.namedWindow("Eye Tracker", cv2.WINDOW_NORMAL)
@@ -41,24 +39,18 @@ def main():
             print("⚠️  Cannot read from camera.")
             break
 
-        # Convert to RGB for MediaPipe
         frame_rgb = cv2.cvtColor(frame_bgr, cv2.COLOR_BGR2RGB)
 
-        # Process frame; returns the tracker itself as 'g'
         g = tracker.process(frame_rgb, mp_face_mesh)
 
-        # g.gaze_xy is normalized [0, 1] and already written to gaze_out.txt
-        # Draw a simple overlay: a circle at the gaze location + FPS text.
         gx, gy = g.gaze_xy
 
         if 0.0 <= gx <= 1.0 and 0.0 <= gy <= 1.0:
             h, w, _ = frame_bgr.shape
             px = int(gx * w)
             py = int(gy * h)
-            # circle at gaze position
             cv2.circle(frame_bgr, (px, py), 10, (0, 255, 0), 2)
 
-        # FPS estimate
         now = time.time()
         dt = now - last
         last = now
