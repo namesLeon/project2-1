@@ -140,9 +140,5 @@ bool pollEyeInput(EyeInput& eye) {
     eye.gaze.y = clamp01(static_cast<float>(y));
     lastWrite = nowWrite;
 
-    
-    std::cout << "[EYE] Parsed gaze = x:" << eye.gaze.x
-              << " y:" << eye.gaze.y << "  (" << gazePath.string() << ")\n";
-
     return true; 
 }
