@@ -4,6 +4,7 @@ import cv2
 import mediapipe as mp
 
 from core.tracking.backends.mediapipe.tracker import MediaPipeEyeTracker
+from core.tracking.utils.mediaPipeDraw import MediaPipeDraw
 
 
 def main():
@@ -33,6 +34,9 @@ def main():
     last = time.time()
     fps = 0.0
 
+    draw = MediaPipeDraw()
+    draw.toggleGazeVisuals() # The gaze circle is drawn by default
+
     while True:
         ok, frame_bgr = cap.read()
         if not ok:
@@ -49,7 +53,7 @@ def main():
             h, w, _ = frame_bgr.shape
             px = int(gx * w)
             py = int(gy * h)
-            cv2.circle(frame_bgr, (px, py), 10, (0, 255, 0), 2)
+            draw.drawGaze(frame_bgr, (px, py))
 
         now = time.time()
         dt = now - last
@@ -57,22 +61,15 @@ def main():
         if dt > 0:
             fps = 0.9 * fps + 0.1 * (1.0 / dt) if fps > 0 else (1.0 / dt)
 
-        cv2.putText(
-            frame_bgr,
-            f"FPS: {fps:.1f}",
-            (10, 30),
-            cv2.FONT_HERSHEY_SIMPLEX,
-            1.0,
-            (0, 255, 255),
-            2,
-            cv2.LINE_AA,
-        )
+        draw.drawFPS(frame_bgr, fps)
 
         cv2.imshow("Eye Tracker", frame_bgr)
 
         key = cv2.waitKey(1) & 0xFF
         if key == ord("q") or key == 27:  # q or ESC
             break
+        elif key == ord("v"):  # v
+            draw.toggleGazeVisuals()
 
     cap.release()
     mp_face_mesh.close()

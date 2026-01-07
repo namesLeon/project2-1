@@ -22,3 +22,4 @@ scripts/run_eye_tracker.py
 .venv/
 build/
 gaze_out.txt
+.idea/

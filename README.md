@@ -20,6 +20,7 @@
 ## How to run eye tracker
 - in a new terminal you want to make sure you are in the `team_08` directory then run the line: `python3 -m scripts.run_eye_tracker`
 - click 'esc' or 'q' to kill
+- click 'v' to toggle the gaze visuals
 
 ## What you should be seeing
 You should now be on a boat in venice, the eye tracker is not fully working (yet), we are writing to the gaze_out.txt file and the position should update.
