@@ -1,8 +1,3 @@
-#define NOMINMAX
-#define WIN32_LEAN_AND_MEAN
-// #include <windows.h>
-// #include <mmsystem.h>
-#pragma comment(lib, "winmm.lib")
 
 #include <algorithm>
 #include <chrono>
@@ -154,7 +149,7 @@ int main() {
         double mx, my;
         glfwGetCursorPos(window, &mx, &my);
         glm::vec4 mouseUniform((float)mx, (float)my,
-            glfwGetMouseButton(window, GLFW_MOUSE_BUTTON_LEFT) == GLFW_PRESS ? 1.0f : 0.0f, 0.0f);
+        glfwGetMouseButton(window, GLFW_MOUSE_BUTTON_LEFT) == GLFW_PRESS ? 1.0f : 0.0f, 0.0f);
         shader.setVec4("uMouse", mouseUniform);
 
         // ---- Render ----

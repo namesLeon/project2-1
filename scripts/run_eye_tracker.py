@@ -15,8 +15,6 @@ def main():
     args = ap.parse_args()
 
     cap = cv2.VideoCapture(args.device, cv2.CAP_ANY)
-    cap.set(cv2.CAP_PROP_FRAME_WIDTH, args.width)
-    cap.set(cv2.CAP_PROP_FRAME_HEIGHT, args.height)
     cap.set(cv2.CAP_PROP_FPS, 60)
 
     mp_face_mesh = mp.solutions.face_mesh.FaceMesh(
@@ -29,7 +27,6 @@ def main():
     tracker = MediaPipeEyeTracker(smoothing=0.7, window_size=5)
 
     cv2.namedWindow("Eye Tracker", cv2.WINDOW_NORMAL)
-    cv2.resizeWindow("Eye Tracker", 960, 540)
 
     last = time.time()
     fps = 0.0
@@ -74,6 +71,7 @@ def main():
     cap.release()
     mp_face_mesh.close()
     cv2.destroyAllWindows()
+
 
 
 if __name__ == "__main__":

@@ -1,13 +1,5 @@
 import cv2
-from . .base import Box, Gaze  
-
-def draw_box(img, box: Box, color=(0, 255, 0), thick=2):
-    if not box: return
-    cv2.rectangle(img, (box.x, box.y), (box.x + box.w, box.y + box.h), color, thick)
-
-def draw_point(img, pt, color=(0, 0, 255), r=3):
-    if not pt: return
-    cv2.circle(img, pt, r, color, -1, lineType=cv2.LINE_AA)
+from mediapipe import solutions as mp
 
 def draw_gaze_overlay(img, g: Gaze, fps: float | None = None):
     draw_box(img, g.face, (0, 200, 255))
@@ -21,4 +13,19 @@ def draw_gaze_overlay(img, g: Gaze, fps: float | None = None):
         y = int((g.gaze_xy[1] * 0.5 + 0.5) * h)
         cv2.drawMarker(img, (x, y), (255, 0, 0), markerType=cv2.MARKER_CROSS, markerSize=12, thickness=2)
     if fps is not None:
-        cv2.putText(img, f"FPS: {fps:.1f}", (10, 30), cv2.FONT_HERSHEY_SIMPLEX, 0.8, (255,255,255), 2, cv2.LINE_AA)
+        cv2.putText(img, f"FPS: {fps:.1f}", (10, 30), cv2.FONT_HERSHEY_SIMPLEX, 0.8, (0,255,0), 2, cv2.LINE_AA)
+
+def drawFaceMesh(frame, landmarks):
+    mp.drawing_utils.draw_landmarks(
+        image=frame,
+        landmark_list=landmarks,
+        connections=mp.face_mesh.FACEMESH_TESSELATION,
+        landmark_drawing_spec=None,
+        connection_drawing_spec=mp.drawing_utils.DrawingSpec(color=(255, 0, 0), thickness=1, circle_radius=1)
+    )
+
+def drawIris(frame, irisCoords):
+    h, w, _ = frame.shape
+    coords = (int(irisCoords.x * w), int(irisCoords.y * h))
+
+    cv2.circle(frame, coords, 2, (0, 0, 255), -1)

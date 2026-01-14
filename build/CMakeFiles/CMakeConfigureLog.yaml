@@ -24,7 +24,7 @@ events:
       The output was:
       0
       MSBuild version 17.14.23+b0019275e for .NET Framework
-      Build started 4-10-2025 18:22:45.
+      Build started 18-11-2025 19:15:31.
       
       Project "C:\\Users\\fazev\\project2-1\\team_08-1\\build\\CMakeFiles\\3.27.1\\CompilerIdC\\CompilerIdC.vcxproj" on node 1 (default targets).
       PrepareForBuild:
@@ -53,7 +53,7 @@ events:
           0 Warning(s)
           0 Error(s)
       
-      Time Elapsed 00:00:00.93
+      Time Elapsed 00:00:01.96
       
       
       Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "CompilerIdC.exe"
@@ -79,7 +79,7 @@ events:
       The output was:
       0
       MSBuild version 17.14.23+b0019275e for .NET Framework
-      Build started 4-10-2025 18:22:46.
+      Build started 18-11-2025 19:15:34.
       
       Project "C:\\Users\\fazev\\project2-1\\team_08-1\\build\\CMakeFiles\\3.27.1\\CompilerIdCXX\\CompilerIdCXX.vcxproj" on node 1 (default targets).
       PrepareForBuild:
@@ -108,7 +108,7 @@ events:
           0 Warning(s)
           0 Error(s)
       
-      Time Elapsed 00:00:00.68
+      Time Elapsed 00:00:01.51
       
       
       Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "CompilerIdCXX.exe"
@@ -127,8 +127,8 @@ events:
     checks:
       - "Detecting C compiler ABI info"
     directories:
-      source: "C:/Users/fazev/project2-1/team_08-1/build/CMakeFiles/CMakeScratch/TryCompile-qh7dly"
-      binary: "C:/Users/fazev/project2-1/team_08-1/build/CMakeFiles/CMakeScratch/TryCompile-qh7dly"
+      source: "C:/Users/fazev/project2-1/team_08-1/build/CMakeFiles/CMakeScratch/TryCompile-znph4u"
+      binary: "C:/Users/fazev/project2-1/team_08-1/build/CMakeFiles/CMakeScratch/TryCompile-znph4u"
     cmakeVariables:
       CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS"
       CMAKE_C_FLAGS_DEBUG: "/Zi /Ob0 /Od /RTC1"
@@ -137,40 +137,40 @@ events:
       variable: "CMAKE_C_ABI_COMPILED"
       cached: true
       stdout: |
-        Change Dir: 'C:/Users/fazev/project2-1/team_08-1/build/CMakeFiles/CMakeScratch/TryCompile-qh7dly'
+        Change Dir: 'C:/Users/fazev/project2-1/team_08-1/build/CMakeFiles/CMakeScratch/TryCompile-znph4u'
         
-        Run Build Command(s): "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_e30fb.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
+        Run Build Command(s): "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_1af2c.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
         MSBuild version 17.14.23+b0019275e for .NET Framework
-        Build started 4-10-2025 18:22:47.
+        Build started 18-11-2025 19:15:36.
         
-        Project "C:\\Users\\fazev\\project2-1\\team_08-1\\build\\CMakeFiles\\CMakeScratch\\TryCompile-qh7dly\\cmTC_e30fb.vcxproj" on node 1 (default targets).
+        Project "C:\\Users\\fazev\\project2-1\\team_08-1\\build\\CMakeFiles\\CMakeScratch\\TryCompile-znph4u\\cmTC_1af2c.vcxproj" on node 1 (default targets).
         PrepareForBuild:
-          Creating directory "cmTC_e30fb.dir\\Debug\\".
+          Creating directory "cmTC_1af2c.dir\\Debug\\".
           Structured output is enabled. The formatting of compiler diagnostics will reflect the error hierarchy. See https://aka.ms/cpp/structured-output for more details.
-          Creating directory "C:\\Users\\fazev\\project2-1\\team_08-1\\build\\CMakeFiles\\CMakeScratch\\TryCompile-qh7dly\\Debug\\".
-          Creating directory "cmTC_e30fb.dir\\Debug\\cmTC_e30fb.tlog\\".
+          Creating directory "C:\\Users\\fazev\\project2-1\\team_08-1\\build\\CMakeFiles\\CMakeScratch\\TryCompile-znph4u\\Debug\\".
+          Creating directory "cmTC_1af2c.dir\\Debug\\cmTC_1af2c.tlog\\".
         InitializeBuildStatus:
-          Creating "cmTC_e30fb.dir\\Debug\\cmTC_e30fb.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
-          Touching "cmTC_e30fb.dir\\Debug\\cmTC_e30fb.tlog\\unsuccessfulbuild".
+          Creating "cmTC_1af2c.dir\\Debug\\cmTC_1af2c.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
+          Touching "cmTC_1af2c.dir\\Debug\\cmTC_1af2c.tlog\\unsuccessfulbuild".
         ClCompile:
-          C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64\\CL.exe /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_e30fb.dir\\Debug\\\\" /Fd"cmTC_e30fb.dir\\Debug\\vc143.pdb" /external:W1 /Gd /TC /errorReport:queue "C:\\MinGW\\share\\cmake-3.27\\Modules\\CMakeCCompilerABI.c"
+          C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64\\CL.exe /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_1af2c.dir\\Debug\\\\" /Fd"cmTC_1af2c.dir\\Debug\\vc143.pdb" /external:W1 /Gd /TC /errorReport:queue "C:\\MinGW\\share\\cmake-3.27\\Modules\\CMakeCCompilerABI.c"
           Microsoft (R) C/C++ Optimizing Compiler Version 19.44.35216 for x64
           Copyright (C) Microsoft Corporation.  All rights reserved.
-          cl /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_e30fb.dir\\Debug\\\\" /Fd"cmTC_e30fb.dir\\Debug\\vc143.pdb" /external:W1 /Gd /TC /errorReport:queue "C:\\MinGW\\share\\cmake-3.27\\Modules\\CMakeCCompilerABI.c"
+          cl /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_1af2c.dir\\Debug\\\\" /Fd"cmTC_1af2c.dir\\Debug\\vc143.pdb" /external:W1 /Gd /TC /errorReport:queue "C:\\MinGW\\share\\cmake-3.27\\Modules\\CMakeCCompilerABI.c"
           CMakeCCompilerABI.c
         Link:
-          C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:"C:\\Users\\fazev\\project2-1\\team_08-1\\build\\CMakeFiles\\CMakeScratch\\TryCompile-qh7dly\\Debug\\cmTC_e30fb.exe" /INCREMENTAL /ILK:"cmTC_e30fb.dir\\Debug\\cmTC_e30fb.ilk" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/fazev/project2-1/team_08-1/build/CMakeFiles/CMakeScratch/TryCompile-qh7dly/Debug/cmTC_e30fb.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/Users/fazev/project2-1/team_08-1/build/CMakeFiles/CMakeScratch/TryCompile-qh7dly/Debug/cmTC_e30fb.lib" /MACHINE:X64  /machine:x64 cmTC_e30fb.dir\\Debug\\CMakeCCompilerABI.obj
-          cmTC_e30fb.vcxproj -> C:\\Users\\fazev\\project2-1\\team_08-1\\build\\CMakeFiles\\CMakeScratch\\TryCompile-qh7dly\\Debug\\cmTC_e30fb.exe
+          C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:"C:\\Users\\fazev\\project2-1\\team_08-1\\build\\CMakeFiles\\CMakeScratch\\TryCompile-znph4u\\Debug\\cmTC_1af2c.exe" /INCREMENTAL /ILK:"cmTC_1af2c.dir\\Debug\\cmTC_1af2c.ilk" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/fazev/project2-1/team_08-1/build/CMakeFiles/CMakeScratch/TryCompile-znph4u/Debug/cmTC_1af2c.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/Users/fazev/project2-1/team_08-1/build/CMakeFiles/CMakeScratch/TryCompile-znph4u/Debug/cmTC_1af2c.lib" /MACHINE:X64  /machine:x64 cmTC_1af2c.dir\\Debug\\CMakeCCompilerABI.obj
+          cmTC_1af2c.vcxproj -> C:\\Users\\fazev\\project2-1\\team_08-1\\build\\CMakeFiles\\CMakeScratch\\TryCompile-znph4u\\Debug\\cmTC_1af2c.exe
         FinalizeBuildStatus:
-          Deleting file "cmTC_e30fb.dir\\Debug\\cmTC_e30fb.tlog\\unsuccessfulbuild".
-          Touching "cmTC_e30fb.dir\\Debug\\cmTC_e30fb.tlog\\cmTC_e30fb.lastbuildstate".
-        Done Building Project "C:\\Users\\fazev\\project2-1\\team_08-1\\build\\CMakeFiles\\CMakeScratch\\TryCompile-qh7dly\\cmTC_e30fb.vcxproj" (default targets).
+          Deleting file "cmTC_1af2c.dir\\Debug\\cmTC_1af2c.tlog\\unsuccessfulbuild".
+          Touching "cmTC_1af2c.dir\\Debug\\cmTC_1af2c.tlog\\cmTC_1af2c.lastbuildstate".
+        Done Building Project "C:\\Users\\fazev\\project2-1\\team_08-1\\build\\CMakeFiles\\CMakeScratch\\TryCompile-znph4u\\cmTC_1af2c.vcxproj" (default targets).
         
         Build succeeded.
             0 Warning(s)
             0 Error(s)
         
-        Time Elapsed 00:00:00.66
+        Time Elapsed 00:00:00.83
         
       exitCode: 0
   -
@@ -182,8 +182,8 @@ events:
     checks:
       - "Detecting CXX compiler ABI info"
     directories:
-      source: "C:/Users/fazev/project2-1/team_08-1/build/CMakeFiles/CMakeScratch/TryCompile-wkpqmc"
-      binary: "C:/Users/fazev/project2-1/team_08-1/build/CMakeFiles/CMakeScratch/TryCompile-wkpqmc"
+      source: "C:/Users/fazev/project2-1/team_08-1/build/CMakeFiles/CMakeScratch/TryCompile-qiz4d7"
+      binary: "C:/Users/fazev/project2-1/team_08-1/build/CMakeFiles/CMakeScratch/TryCompile-qiz4d7"
     cmakeVariables:
       CMAKE_CXX_FLAGS: "/DWIN32 /D_WINDOWS /GR /EHsc"
       CMAKE_CXX_FLAGS_DEBUG: "/Zi /Ob0 /Od /RTC1"
@@ -192,40 +192,40 @@ events:
       variable: "CMAKE_CXX_ABI_COMPILED"
       cached: true
       stdout: |
-        Change Dir: 'C:/Users/fazev/project2-1/team_08-1/build/CMakeFiles/CMakeScratch/TryCompile-wkpqmc'
+        Change Dir: 'C:/Users/fazev/project2-1/team_08-1/build/CMakeFiles/CMakeScratch/TryCompile-qiz4d7'
         
-        Run Build Command(s): "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_9800c.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
+        Run Build Command(s): "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_d09b1.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
         MSBuild version 17.14.23+b0019275e for .NET Framework
-        Build started 4-10-2025 18:22:48.
+        Build started 18-11-2025 19:15:37.
         
-        Project "C:\\Users\\fazev\\project2-1\\team_08-1\\build\\CMakeFiles\\CMakeScratch\\TryCompile-wkpqmc\\cmTC_9800c.vcxproj" on node 1 (default targets).
+        Project "C:\\Users\\fazev\\project2-1\\team_08-1\\build\\CMakeFiles\\CMakeScratch\\TryCompile-qiz4d7\\cmTC_d09b1.vcxproj" on node 1 (default targets).
         PrepareForBuild:
-          Creating directory "cmTC_9800c.dir\\Debug\\".
+          Creating directory "cmTC_d09b1.dir\\Debug\\".
           Structured output is enabled. The formatting of compiler diagnostics will reflect the error hierarchy. See https://aka.ms/cpp/structured-output for more details.
-          Creating directory "C:\\Users\\fazev\\project2-1\\team_08-1\\build\\CMakeFiles\\CMakeScratch\\TryCompile-wkpqmc\\Debug\\".
-          Creating directory "cmTC_9800c.dir\\Debug\\cmTC_9800c.tlog\\".
+          Creating directory "C:\\Users\\fazev\\project2-1\\team_08-1\\build\\CMakeFiles\\CMakeScratch\\TryCompile-qiz4d7\\Debug\\".
+          Creating directory "cmTC_d09b1.dir\\Debug\\cmTC_d09b1.tlog\\".
         InitializeBuildStatus:
-          Creating "cmTC_9800c.dir\\Debug\\cmTC_9800c.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
-          Touching "cmTC_9800c.dir\\Debug\\cmTC_9800c.tlog\\unsuccessfulbuild".
+          Creating "cmTC_d09b1.dir\\Debug\\cmTC_d09b1.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
+          Touching "cmTC_d09b1.dir\\Debug\\cmTC_d09b1.tlog\\unsuccessfulbuild".
         ClCompile:
-          C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64\\CL.exe /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"cmTC_9800c.dir\\Debug\\\\" /Fd"cmTC_9800c.dir\\Debug\\vc143.pdb" /external:W1 /Gd /TP /errorReport:queue "C:\\MinGW\\share\\cmake-3.27\\Modules\\CMakeCXXCompilerABI.cpp"
+          C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64\\CL.exe /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"cmTC_d09b1.dir\\Debug\\\\" /Fd"cmTC_d09b1.dir\\Debug\\vc143.pdb" /external:W1 /Gd /TP /errorReport:queue "C:\\MinGW\\share\\cmake-3.27\\Modules\\CMakeCXXCompilerABI.cpp"
           Microsoft (R) C/C++ Optimizing Compiler Version 19.44.35216 for x64
           Copyright (C) Microsoft Corporation.  All rights reserved.
-          cl /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"cmTC_9800c.dir\\Debug\\\\" /Fd"cmTC_9800c.dir\\Debug\\vc143.pdb" /external:W1 /Gd /TP /errorReport:queue "C:\\MinGW\\share\\cmake-3.27\\Modules\\CMakeCXXCompilerABI.cpp"
+          cl /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"cmTC_d09b1.dir\\Debug\\\\" /Fd"cmTC_d09b1.dir\\Debug\\vc143.pdb" /external:W1 /Gd /TP /errorReport:queue "C:\\MinGW\\share\\cmake-3.27\\Modules\\CMakeCXXCompilerABI.cpp"
           CMakeCXXCompilerABI.cpp
         Link:
-          C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:"C:\\Users\\fazev\\project2-1\\team_08-1\\build\\CMakeFiles\\CMakeScratch\\TryCompile-wkpqmc\\Debug\\cmTC_9800c.exe" /INCREMENTAL /ILK:"cmTC_9800c.dir\\Debug\\cmTC_9800c.ilk" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/fazev/project2-1/team_08-1/build/CMakeFiles/CMakeScratch/TryCompile-wkpqmc/Debug/cmTC_9800c.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/Users/fazev/project2-1/team_08-1/build/CMakeFiles/CMakeScratch/TryCompile-wkpqmc/Debug/cmTC_9800c.lib" /MACHINE:X64  /machine:x64 cmTC_9800c.dir\\Debug\\CMakeCXXCompilerABI.obj
-          cmTC_9800c.vcxproj -> C:\\Users\\fazev\\project2-1\\team_08-1\\build\\CMakeFiles\\CMakeScratch\\TryCompile-wkpqmc\\Debug\\cmTC_9800c.exe
+          C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:"C:\\Users\\fazev\\project2-1\\team_08-1\\build\\CMakeFiles\\CMakeScratch\\TryCompile-qiz4d7\\Debug\\cmTC_d09b1.exe" /INCREMENTAL /ILK:"cmTC_d09b1.dir\\Debug\\cmTC_d09b1.ilk" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/fazev/project2-1/team_08-1/build/CMakeFiles/CMakeScratch/TryCompile-qiz4d7/Debug/cmTC_d09b1.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/Users/fazev/project2-1/team_08-1/build/CMakeFiles/CMakeScratch/TryCompile-qiz4d7/Debug/cmTC_d09b1.lib" /MACHINE:X64  /machine:x64 cmTC_d09b1.dir\\Debug\\CMakeCXXCompilerABI.obj
+          cmTC_d09b1.vcxproj -> C:\\Users\\fazev\\project2-1\\team_08-1\\build\\CMakeFiles\\CMakeScratch\\TryCompile-qiz4d7\\Debug\\cmTC_d09b1.exe
         FinalizeBuildStatus:
-          Deleting file "cmTC_9800c.dir\\Debug\\cmTC_9800c.tlog\\unsuccessfulbuild".
-          Touching "cmTC_9800c.dir\\Debug\\cmTC_9800c.tlog\\cmTC_9800c.lastbuildstate".
-        Done Building Project "C:\\Users\\fazev\\project2-1\\team_08-1\\build\\CMakeFiles\\CMakeScratch\\TryCompile-wkpqmc\\cmTC_9800c.vcxproj" (default targets).
+          Deleting file "cmTC_d09b1.dir\\Debug\\cmTC_d09b1.tlog\\unsuccessfulbuild".
+          Touching "cmTC_d09b1.dir\\Debug\\cmTC_d09b1.tlog\\cmTC_d09b1.lastbuildstate".
+        Done Building Project "C:\\Users\\fazev\\project2-1\\team_08-1\\build\\CMakeFiles\\CMakeScratch\\TryCompile-qiz4d7\\cmTC_d09b1.vcxproj" (default targets).
         
         Build succeeded.
             0 Warning(s)
             0 Error(s)
         
-        Time Elapsed 00:00:00.66
+        Time Elapsed 00:00:00.79
         
       exitCode: 0
 ...
