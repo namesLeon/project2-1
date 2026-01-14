@@ -14,7 +14,6 @@ endif()
 # ====== Source files ======
 set(SOURCES
     src/main.cpp
-    src/Client.cpp
     src/glad.c
     src/gl_utils.cpp
     src/Shader.cpp

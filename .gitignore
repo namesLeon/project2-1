@@ -24,4 +24,4 @@ build/
 gaze_out.txt
 .idea/src/BackgroundNoise.cpp
 .idea/
-./build/*
+build/*
