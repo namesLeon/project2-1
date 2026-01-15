@@ -1,6 +1,5 @@
 import cv2
 
-
 class MediaPipeDraw:
 
     def __init__(self):
