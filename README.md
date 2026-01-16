@@ -32,6 +32,6 @@
 - click 'v' to toggle the gaze visuals
 
 ## What you should be seeing
-You should now be on a boat in Venice and the eye tracker is fully working. We are writing to the gaze_out.txt file and the gaze position should update.
+You should now be on a boat in Venice and the eye tracker is fully working. We are writing to the gaze_out.txt file and the gaze position should update. To change between eye tracking and mouse input double click anywhere on the screen!
 
 <!-- - Our script for running the our code is located in: "team_08/scripts/run_eye_tracker.py".  -->
