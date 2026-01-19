@@ -1,7 +1,7 @@
 # Team_08 Project 2-1: Venice parallex effect
 
 ## How to run shader and eye tracker using bash script
- - To run the bash script, the Git Bash terminal
+ - To run the bash script, the Git Bash terminal is required
  - Make sure you are inside the team_08 directory
  - Run the following command:
  - ./run.sh
