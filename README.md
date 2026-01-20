@@ -21,8 +21,8 @@
   (it should be in the Release)
   Mandatory
   ```bash
-  cd build/Release
-  run ./GIFWA
+  cd build
+  ./GIFWA
   ```
 
 ## How to run eye tracker
