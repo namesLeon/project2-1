@@ -4,6 +4,8 @@ Note that MediaPipe FaceMesh is supported only up until Python 3.10. We recommen
 - 2) Run Virtual Room\Virtual Room.exe. A 1920x1080 window should pop up featuring the level.
 Depending on your machine, you might have to install some (general) dependencies. The pop-up launch errors should be sufficient to understand how to fix any possible issues.
 
+Note that only Windows is supported.
+
 ## Unity project & scripts
 level1controller.cs is the script hooked to the main camera in the level. You can check the entire data processing pipeline and the implementation of off-axis projection in it.
 
